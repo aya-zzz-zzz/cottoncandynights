@@ -1303,7 +1303,7 @@ background-image: radial-gradient(ellipse at center ,  rgb(var(--cover-F00T), .1
 /*progress bar background-color & bar-color*/
 ._range_ce0e571 {background-color: rgb(var(--cover-DMut1), .0)   !Important;}
 ._progressBarWrapper_f1fad6d {background-color: rgb(var(--cover-F00TBAR1BG))  !important;border-radius: 1em;
-box-shadow: 0px 0px .8em  rgb(var(--cover-LVib1), .2);}
+box-shadow: 0px 0px .8em  rgb(var(--F00TBARNP), .1);}
 ._indicator_46d3a9b{background: rgb(var(--cover-F00TBAR1));}
 /*time text*/
 ._scrubberTime_f2b9e3c, ._scrubberTimeText_5696619,._scrubberTime_f2b9e3c, ._scrubberTimeText_5696619{
@@ -1455,7 +1455,7 @@ inset 0px 0px 5em color-mix(in srgb, rgba(255, 255, 255, 0.15) 20% , var(--NPBG)
 /*progress bar background-color & bar-color*/
 ._range_ce0e571 {background-color: rgb(var(--cover-DMut1), .0)   !Important;}
 ._progressBarWrapper_f1fad6d {background-color: rgb(var(--F00TBARNPBG))  !important;border-radius: 1em;
-box-shadow: 0px 0px .8em  rgb(var(--cover-LVib1), .2);}
+box-shadow: 0px 0px .8em rgb(var(--F00TBARNP), .1);}
 ._indicator_46d3a9b{background: rgb(var(--F00TBARNP))  ;}
 /*time text*/
 ._scrubberTime_f2b9e3c, ._scrubberTimeText_5696619,._scrubberTime_f2b9e3c, ._scrubberTimeText_5696619{
