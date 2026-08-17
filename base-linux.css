@@ -71,7 +71,6 @@ a,._titleText_51cccae,time{color: color-mix(in srgb, rgb(var(--cover-LVib1), .6)
  /*search bar shadow patch*/
 :is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover{
     box-shadow: 0px 4px 1.5em color-mix(in srgb, rgb(var(--cover-Vib1),.3) 90%, rgba(0, 0, 0, 0.3) 10%);}
-   #main{transform: translateY(-.1em);}
    [class="_container_cb5cbe4"]{transform: translateY(.8em);}
     ._header_3fe665f._scrolled_38d655a:before {display: none;}
    /*search results height*/
@@ -146,9 +145,9 @@ background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 
 ._smallHeader_f2c3791,._smallHeader_f2c3791._showHeader_1038dcf,._smallHeader_cb3dc61._showHeader_2b7360a,._smallHeader_cb3dc61,._smallHeader_1c02955._showHeader_4930400,._smallHeader_1c02955{
     transition: 0ms!Important;
     background: rgba(255, 255, 255, 0)!Important;
-    background-color: color-mix(in srgb, rgb(var(--cover-F00T), .8)95% , rgba(255, 255, 255, 0.5) 15%)  !important;
-    box-shadow: inset 0px 0px 8em color-mix(in srgb, rgb(var(--cover-LVib1), .9)90% , black 10%)
-    , 0px 0px 3em color-mix(in srgb, rgb(var(--cover-LVib1), .9)90% , black 21%) ;
+    background-color: color-mix(in srgb, rgb(var(--cover-F00T), .8)95% , rgba(0, 0, 0, 0.5) 15%)  !important;
+    box-shadow: inset 0px 0px 8em color-mix(in srgb, rgb(var(--cover-DVib1), .9)90% , rgba(255, 255, 255, 0.21) 10%)
+    , 0px 0px 3em color-mix(in srgb, rgb(var(--cover-DVib1), .9)90% , rgba(255, 255, 255, 0.105) 21%) ;
     backdrop-filter: blur(10px);
 ._text_0e64cb5{color: white; }}
 ._smallHeader_f2c3791,._smallHeader_383424b,._smallHeader_cb3dc61{background-color: #0000!important;}
