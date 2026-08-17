@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+element.style{display: none;}
+._aiRestricted_c7d1522{filter: saturate(0) opacity(.2);}
+:root {
+	--font-family: "Rubik", sans-serif;
+    src: url('../font/Roboto-Regular.ttf');}
+[class*="searchField"],
+[class*="label"],
+[class*="wave-text"],
+[class*="subtitle"],
+[class*="Text"],
+[class*="info"],
+[class*="paragraphText"],
+[class*="readMoreButton"],
+[class*="underline"],
+[class*="body"],
+[class*="timeColumn"],
+button,
+[class*="title"],
+[class*="textarea"],
+[data-test="grid-item-detail-text-title-artist"]
+{font-family: var(--font-family) !important;}
+._hasCues_15d8b83 span{
+    font-family: var(--font-family) !important;
+    font-weight: 600;}
+
+#footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span > span{
+    font-weight: 400!important;}
