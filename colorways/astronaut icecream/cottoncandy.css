@@ -30,14 +30,14 @@
         --cover-F00TD:     74, 66, 58    ; /*should be a darker version of F00T color*/
 
         --F00TNP: 23, 5, 64; /*footer color and lyrics container gb now-playing*/
-        --F00TBARNP: 238, 165, 255   ; /*footer progress bar color (now-playing)*/
-        --F00TBARNPBG:  90, 64, 115,.6  ; /*footer progress bar bg color (now-playing)*/
+        --F00TBARNP: 179, 207, 255  ; /*footer progress bar color (now-playing)*/
+        --F00TBARNPBG:  245,245,255,.12  ; /*footer progress bar bg color (now-playing)*/
 
         --NPBG: rgba(29, 7, 64, 0.323);
 
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgba(93, 82, 156, 0.6);
+        --bhdf:    rgba(29, 35, 74, 0.444);
 
         --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
@@ -101,7 +101,6 @@ linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
   animation: blink 10s infinite, blink2 12s infinite ,blink1 17s infinite, blink12 15s infinite;
   background-image: 
   radial-gradient(ellipse at top left, rgb(var(--bg3),0.2), rgb(var(--bg2),0.3),rgba(0, 128, 0, 0) 90%),
-
     linear-gradient(180deg, rgb(9, 0, 18),  rgba(0, 0, 0, 0.347))
 }
 ._fullscreen_236d61b{
