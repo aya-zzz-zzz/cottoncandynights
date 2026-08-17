@@ -4,7 +4,7 @@
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
  /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(236, 214, 185);
+        --bhdf:    rgb(255, 236, 212);
         
         --cover-Vib1:      236, 214, 185 ; /* first vibrant color*/
         --cover-DVib1:     41, 36, 32   ; /* darker version of first vibrant color*/
@@ -26,12 +26,12 @@
         --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
 
         --cover-F00T:      7, 2, 34 ; /*footer color (not now-playing)*/
-        --cover-F00TBAR1:  255, 251, 204   ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TBAR1:  255, 236, 212   ; /*footer progress bar color (not now-playing)*/
         --cover-F00TBAR1BG: 230, 230, 230, .2;
         --cover-F00TD:     74, 66, 58    ; /*should be a darker version of F00T color*/
 
         --F00TNP: 23, 5, 64; /*footer color and lyrics container gb now-playing*/
-        --F00TBARNP:255, 251, 204  ; /*footer progress bar color (now-playing)*/
+        --F00TBARNP:255, 236, 212 ; /*footer progress bar color (now-playing)*/
         --F00TBARNPBG: 230, 230, 230, .25  ; /*footer progress bar bg color (now-playing)*/
 
         --NPBG: rgba(17, 6, 57, 0.279);
