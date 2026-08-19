@@ -43,7 +43,7 @@
 
         --cover-S1D3B4R:     color-mix(in srgb, rgba(255, 255, 255, 0.513) 3% , rgb(var(--cover-F00T), 1) 97%); /*controls sidebar background-color*/
 
-        --sephue: 203deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
+        --sephue: 183deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
         --plylstsat: 1.2; /*controls backdrop-filter for most inner containers, such as the album or playlist tracklist*/
         --plylstbrt: 1.2;
@@ -113,7 +113,7 @@ background-color: rgb(var(--cover-Vib1));}
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1.5) brightness(.8); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.5) brightness(.8); transition: 0ms;}}
 
 /* ==========================================.............................................
    END OF BUILTINTHEME
