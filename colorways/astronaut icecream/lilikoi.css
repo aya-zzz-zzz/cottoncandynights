@@ -25,7 +25,7 @@
         --cardacc2: 214, 178, 255; /*light version of card color mainly for selected sidebar icon*/
 
         --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this was a covertheme compatible theme)*/
-        --cover-DMut1:     32, 32, 32      ; /* darker version of muted color*/
+        --cover-DMut1:     16, 0, 32      ; /* darker version of muted color*/
         --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
 
         --cover-F00T:      18, 7, 45; /*footer color (not now-playing)*/
