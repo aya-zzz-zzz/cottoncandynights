@@ -29,7 +29,7 @@
         --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
 
         --cover-F00T:      18, 7, 45; /*footer color (not now-playing)*/
-        --cover-F00TBAR1:  255, 238, 186    ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TBAR1:  255, 242, 201    ; /*footer progress bar color (not now-playing)*/
         --cover-F00TBAR1BG: 207, 186, 255, .3;
         --cover-F00TD:     74, 66, 58    ; /*should be a darker version of F00T color*/
 
