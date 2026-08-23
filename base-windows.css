@@ -972,7 +972,8 @@ var(--tracksborder) 80%,
     --bladow: color-mix(in srgb, rgb(var(--cover-DMut1), .09) 67% , rgba(0, 0, 0, 0.1)   33%);}}
 .css-5y5x1h:first-child{column-gap: 1.5em;}
 ._items_8615603,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.ALBUM_ITEMS.tidal-ui__occlusion,
-._grid_97562f5,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.TRACK_LIST.tidal-ui__occlusion
+._grid_97562f5,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.TRACK_LIST.tidal-ui__occlusion,
+._moduleContainer_c7ad3d9
 {   padding: 1em;
     padding-top: .8em;
     border-radius: 1em;
