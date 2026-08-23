@@ -314,6 +314,8 @@ transform: translateX(var(--profbuff))!important;}
 /*==========================================.............................................
     PLAYLISTS / ALBUMS
 -----------------------------------------------======================================== */
+/*playlist width*/
+._items_8615603{ width: calc(100% - var(--pageBottomMargin) * 1.9);}
 /*playlist folder color (playlist view)*/
 ._container_7e465e2{
     background-color: rgb(var(--cover-LVib1),.7);}
