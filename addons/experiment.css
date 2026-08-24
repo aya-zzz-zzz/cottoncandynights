@@ -1,0 +1,6 @@
+._tableRow_299a426._tableRowSelected_fb04c2a._tableRowSelectGroupStart_cf1af82._tableRowSelectGroupEnd_b4631c2,._rowContainer_ebb4cfc._selected_8f556cc
+{border-image: linear-gradient(180deg, black, black);}
+
+[aria-checked=true]:is(._shuffleButton_545c75a,._repeatButton_729613e){
+	border:none!important;
+}
