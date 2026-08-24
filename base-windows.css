@@ -974,8 +974,9 @@ var(--tracksborder) 80%,
 ._items_8615603,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.ALBUM_ITEMS.tidal-ui__occlusion,
 ._grid_97562f5,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.TRACK_LIST.tidal-ui__occlusion,
 ._moduleContainer_c7ad3d9
-{   padding: 1em;
-    padding-top: .8em;
+{   padding-top: .8em!important;
+padding-left: .9em!important;
+padding-right: .9em!important;
     border-radius: 1em;
     background-image: 
     radial-gradient(ellipse at center,rgb(var(--cover-DVib1), .01), color-mix(in srgb, rgb(var(--card), .5) 50% , rgba(0, 0, 0, 0.1)  50%) 110%);
