@@ -826,12 +826,14 @@ button._button_c25ce4d._addToPlaylistButton_066d0f8 > svg > use{color: var(--vv)
   -----------------------------------------------======================================== */
 
 /*TEXT*/
-._medium_1l1bl_4._primary_1l1bl_6._marketButton_1l1bl_1 > ._label_1l1bl_1,._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1 > ._label_1l1bl_1{
+[class="_actionContainer_9da0cc3"],[class="_actionContainer_5bb1c14"],
+[class="_actionContainer_5552083"],[class="_actionContainer_7bd364b"]{
+._label_1d16h_1._label_1d16h_1{
     color: rgb(0, 0, 0);
     font-weight: 700;transform: translate(0%, -1%);}
 ._label_1l1bl_1{filter: opacity(1);}
 /*BUTTON 1*/
-._medium_1l1bl_4._primary_1l1bl_6._marketButton_1l1bl_1{
+._marketButton_1d16h_1._medium_1d16h_4._primary_1d16h_6{
     background-color: #00000000;
 ._icon_77f3f89 > use{fill:     color-mix(in srgb, var(--but1) 10% ,rgba(255, 255, 255, 0.6) 90%)  !important;}
     background-image: linear-gradient(var(--rotate),
@@ -843,7 +845,8 @@ button._button_c25ce4d._addToPlaylistButton_066d0f8 > svg > use{color: var(--vv)
     color-mix(in srgb, var(--but1) 60% ,rgb(255, 255, 255) 40%));
     border-radius: .9em;border: 0;background-size: 220% 220%;animation: rotate-gradient 19s cubic-bezier(.29,.44,.67,.56) infinite;transition: 150ms!important;transition-timing-function: cubic-bezier(.18,.64,1,.45);}
 /*BUTTON 2*/
-._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1,._button_538cfb3._primary_7ac4b44._medium_c24bed2._button_94c5125,#main > div.for-cypress__react-router--loaded.mainContent > div > div._header_d2e600f > div > div > div > label > button{transition: 150ms!important;transition-timing-function: cubic-bezier(.18,.64,1,.45);background-color: #00000000;
+._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7
+{transition: 150ms!important;transition-timing-function: cubic-bezier(.18,.64,1,.45);background-color: #00000000;
 ._icon_77f3f89 > use{fill:     color-mix(in srgb, var(--but2) 10% ,rgba(255, 255, 255, 0.6) 90%)  !important;}
 ._label_1l1bl_1{filter: opacity(.98)}
     border-radius: .9em;border: 0;background-size: 220% 220%;animation: rotate-gradient 13s cubic-bezier(.29,.44,.67,.56) infinite;
@@ -855,7 +858,7 @@ button._button_c25ce4d._addToPlaylistButton_066d0f8 > svg > use{color: var(--vv)
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%)); }
 /*BUTTON 1 HOVER*/
-._medium_1l1bl_4._primary_1l1bl_6._marketButton_1l1bl_1:hover,._nowPlayingVisibleAndNotFullscreen_8e806d7._actionButton_b967856._playQueueWithoutHeader_267bffd > div > .tooltip._tooltipContainer_deaee46 > ._button_8aa6e4a:hover,._nowPlayingVisibleAndNotFullscreen_8e806d7._actionButton_b967856._playQueueWithoutHeader_267bffd > .tooltip._tooltipContainer_deaee46 > ._button_8aa6e4a:hover{
+._marketButton_1d16h_1._medium_1d16h_4._primary_1d16h_6:hover,._nowPlayingVisibleAndNotFullscreen_8e806d7._actionButton_b967856._playQueueWithoutHeader_267bffd > div > .tooltip._tooltipContainer_deaee46 > ._button_8aa6e4a:hover,._nowPlayingVisibleAndNotFullscreen_8e806d7._actionButton_b967856._playQueueWithoutHeader_267bffd > .tooltip._tooltipContainer_deaee46 > ._button_8aa6e4a:hover{
     ._label_1l1bl_1:hover{filter: opacity(1)}
 ._icon_77f3f89 > use{fill: rgb(0, 0, 0)!important;transition: 290ms;filter: opacity(1);}
 filter: saturate(1.02) brightness(1.05) !important;
@@ -868,11 +871,12 @@ filter: saturate(1.02) brightness(1.05) !important;
     color-mix(in srgb, var(--but1)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but1)  55% ,rgb(255, 255, 255) 45%));
     transition: 900ms!important;border-radius: .75em!important;background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;transition-timing-function: cubic-bezier(.73,.51,0,1);
-    box-shadow: 0 0 15px #b5d0ff51; }
+    box-shadow: 0 0 15px color-mix(in srgb,  var(--but1) 30%, rgb(255, 255, 255,.3) 70%) ; }
 /*BUTTON 1 ACTIVE*/
-._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1:hover,._button_538cfb3._primary_7ac4b44._medium_c24bed2._button_94c5125:hover,#main > div.for-cypress__react-router--loaded.mainContent > div > div._header_d2e600f > div > div > div > label > button:hover{border-radius: .75em;transition: 900ms!important;transition-timing-function: cubic-bezier(.73,.51,0,1);._label_1l1bl_1{filter: opacity(1)}
+._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1:hover,._button_538cfb3._primary_7ac4b44._medium_c24bed2._button_94c5125:hover,#main > div.for-cypress__react-router--loaded.mainContent > div > div._header_d2e600f > div > div > div > label > button:hover{border-radius: .75em;transition: 900ms!important;transition-timing-function: cubic-bezier(.73,.51,0,1);._label_1l1bl_1{filter: opacity(1)}}
 /*BUTTON 2 HOVER*/
-._icon_77f3f89 > use,._icon_77f3f89 > use,._icon_29252d0._icon_77f3f89>use{
+._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7:hover{
+    ._icon_77f3f89 > use,._icon_77f3f89 > use,._icon_29252d0._icon_77f3f89>use{
     fill: #000000  !important;
     transition: 290ms;filter: opacity(1);}
     filter: saturate(1.02) brightness(1.05) !important;
@@ -884,11 +888,13 @@ filter: saturate(1.02) brightness(1.05) !important;
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but2)  55% ,rgb(255, 255, 255) 45%));
-    background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;box-shadow: 0 0 15px #ffb5fa51;}
-/*BUTTON 2 ACTIVE*/
-._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1:active,._button_538cfb3._primary_7ac4b44._medium_c24bed2._button_94c5125:active,#main > div.for-cypress__react-router--loaded.mainContent > div > div._header_d2e600f > div > div > div > label > button:active{filter: brightness(1);transform: scale(1.01) ;transition: 100ms!important;}
-._medium_1l1bl_4._primary_1l1bl_6._marketButton_1l1bl_1:active,._nowPlayingVisibleAndNotFullscreen_8e806d7._actionButton_b967856._playQueueWithoutHeader_267bffd > div > .tooltip._tooltipContainer_deaee46 > ._button_8aa6e4a:active,._nowPlayingVisibleAndNotFullscreen_8e806d7._actionButton_b967856._playQueueWithoutHeader_267bffd > .tooltip._tooltipContainer_deaee46 > ._button_8aa6e4a:active{filter: brightness(1);transform: scale(1.01);transition: 100ms!important;}
+    background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;
+    box-shadow: 0 0 15px color-mix(in srgb,  var(--but2) 30%, rgb(255, 255, 255,.3) 70%) ; ;}
 
+/*BUTTON 2 ACTIVE*/
+._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7:active,._marketButton_1d16h_1._medium_1d16h_4._primary_1d16h_6:active
+{filter: brightness(1.06)!important;transform: scale(1.01);transition: 100ms!important;}
+}
 /* ==========================================.............................................
      TRACK SELECT
   -----------------------------------------------======================================== */
@@ -977,6 +983,7 @@ var(--tracksborder) 80%,
 {   padding-top: .8em!important;
 padding-left: .9em!important;
 padding-right: .9em!important;
+border-style: solid; border-width: 2px;
     border-radius: 1em;
     background-image: 
     radial-gradient(ellipse at center,rgb(var(--cover-DVib1), .01), color-mix(in srgb, rgb(var(--card), .5) 50% , rgba(0, 0, 0, 0.1)  50%) 110%);
@@ -1221,7 +1228,8 @@ margin-bottom: -140px!important;}
 /*nav item bg color, rounding/size adjustment, bottom margin*/
 /*nav item inactive*/
 ._navigationItem_4e9deae{
-    outline-style: solid!important; outline-color: color-mix(in srgb, rgba(255, 255, 255, 0.4) 40% , rgb(var(--card2), 1) 60%);
+    outline-width: 2px;
+    outline-style: solid!important;outline-color: #0000;
     ._icon_77f3f89 {fill: color-mix(in srgb, rgb(255, 255, 255) 40%, rgb(var(--cover-LVib1), 1) 60%);}
     background-color:  color-mix(in srgb, rgb(var(--cover-F00T), .1) 25%, rgba(255, 255, 255, 0.15) 75%);
     border-radius: 2em;margin-bottom: .6em;
@@ -1229,6 +1237,7 @@ margin-bottom: -140px!important;}
 ._navigationItem_4e9deae ._icon_b8b52c1{transform: translateX(-.018em);}
 /*nav item inactive hover*/
 ._navigationItem_4e9deae:hover{
+    outline-color: #0000;
     transition: 400ms;border-radius: 1em;
     color:  color-mix(in srgb, rgb(0, 0, 0) 5% , rgb(var(--card2), .45) 95%);
     background-color:  color-mix(in srgb, rgba(255, 255, 255, 1) 20% , rgb(var(--cardacc2)) 80%);
@@ -1238,7 +1247,7 @@ margin-bottom: -140px!important;}
     outline-width: .15em;
     box-shadow: inset 0px 0px 1em color-mix(in srgb, rgb(0, 0, 0) 25% , rgb(var(--cardacc2)) 75%);
     color:  color-mix(in srgb, rgb(255, 255, 255) 5% , rgb(var(--cover-Vib1), 1) 95%);
-    outline-color: color-mix(in srgb, rgb(0, 0, 0) 25% , rgb(var(--cardacc2)) 75%);
+    outline-color: #0000;
     transition: 300ms;transition-delay: -50ms;
     background-color:  rgb(var(--cardacc2));}
 /*active nav item icon color*/
@@ -1616,7 +1625,7 @@ box-shadow: 0px 0px 1em #c08dff42;transition: 100ms; }}
     svg > path:nth-child(2){fill: rgb(19, 0, 9)!important;transition: 100ms!important;}
     svg > path:nth-child(3){fill: rgb(0, 9, 20)!important;transition: 100ms!important;}}
 /*inactive hover*/
-._marketButton_1l1bl_1._small_1l1bl_3._tertiary_1l1bl_8:hover{
+._toggleButton_934359e._toggleButtonActive_b595428:hover,[data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
  svg > path:nth-child(1){fill: rgb(247, 135, 255)!important;transition: 400ms!important;transition-delay: -25ms; }
   svg > path:nth-child(2){fill: rgb(255, 221, 0)!important;transition: 300ms!important; transition-delay: 25ms;}
    svg > path:nth-child(3){fill: rgb(92, 187, 255)!important;transition: 210ms!important;transition-delay: 65ms;}}
@@ -1721,8 +1730,7 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     border-color: color-mix(in srgb, rgb(var(--card2), .25) 75% , rgba(255, 255, 255, .3) 25%) ;
     backdrop-filter: brightness(1.0) saturate(1.1);}
 ._primary_1l1bl_6:active{border-style: solid;border-width: 2px;}
-._toggleButton_934359e:hover,._toggleButton_934359e:active{
-    
+._toggleButton_934359e:hover{
     color: rgb(var(--cover-LVib1));
     text-shadow: 0px 0px 5px rgb(var(--cover-LVib1), .7);
     background: linear-gradient(170deg,
@@ -1732,12 +1740,12 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
         color-mix(in srgb, rgb(var(--cover-DMut1), .75) 50% , rgba(0, 0, 0, 0.75) 50%)  , color-mix(in srgb, rgb(var(--cover-DMut1), .78) 50% , rgba(0, 0, 0, 0.78) 50%) ,
         color-mix(in srgb, rgb(var(--cover-DMut1), .8) 50% , rgba(0, 0, 0, 0.8) 50%) );
     background-size: 340% 340%;animation: buttongradient2 620s cubic-bezier(.24,.48,.67,.56) ;transition: 400ms;
-    box-shadow: inset 0px 0px 1em  color-mix(in srgb, rgb(var(--cover-DMut1), .5) 50% , rgba(0, 0, 0, .5) 50%) ,  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), .74) 75% , rgba(0, 0, 0, 0.2) 25%);
+    box-shadow:  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), .74) 75% , rgba(0, 0, 0, 0.2) 25%);
     border-color: color-mix(in srgb, rgb(var(--cover-DMut1), 1) 50% , rgba(0, 0, 0, 1) 50%) ;}
 
 /*primary (active) buttons*/
 }
-#nowPlaying > header > div._buttons_6ec911e > div._contentButtons_6b6c8ea > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._toggleButton_934359e._toggleButtonActive_b595428{
+._toggleButton_934359e._toggleButtonActive_b595428{
     color: color-mix(in srgb, rgb(var(--cover-DVib1)) 70%, black 30%)  !important;
     text-shadow: 0px 0px 5px rgb(var(--cover-LVib1), .7);
      background-image: linear-gradient(var(--rotate),
@@ -1746,10 +1754,11 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     background-size: 340% 340%;animation: buttongradient2 620s cubic-bezier(.24,.48,.67,.56) ;transition: 00ms;
     box-shadow: inset 0px 0px 1em  color-mix(in srgb, rgb(var(--cover-DMut1), .2) 50% , rgba(0, 0, 0, .2) 50%) ,  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), .6) 75% , rgba(0, 0, 0, 0.3) 25%)!important;
     border-color: color-mix(in srgb, rgb(var(--cover-LVib1), .9) 50% , rgb(var(--cover-Vib1), .9) 50%) ;}
-#nowPlaying > header > div._buttons_6ec911e > div._contentButtons_6b6c8ea > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._toggleButton_934359e._toggleButtonActive_b595428:hover{
-transition: 200ms;
-    box-shadow: inset 0px 0px 1em  color-mix(in srgb, rgb(var(--cover-DMut1), .2) 50% , rgba(0, 0, 0, .2) 50%) ,  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), 1) 75% , rgba(0, 0, 0, 0.3) 25%)!important;
-  }
+._toggleButton_934359e._toggleButtonActive_b595428:hover{
+    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 50%) !Important;
+    text-shadow: 0px 0px 1em rgb (var(--cover-LVib1),.3);
+    transition: 200ms;
+    box-shadow: inset 0px 0px 1em  color-mix(in srgb, rgb(var(--cover-DMut1), .2) 50% , rgba(0, 0, 0, .2) 50%) ,  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), 1) 75% , rgba(0, 0, 0, 0.3) 25%)!important;}
 
 /*artist card*/
 ._card_2b91b88{
@@ -1838,7 +1847,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
 [class="_wrapper_512d5f4"]{
 ._syncButton_8b33227{transform:  translateX(-1em) translateY(-2em); }
 ._syncButton_8b33227 svg{transform: scale(1.22);}
-._primary_1l1bl_6{
+._marketButton_1d16h_1._small_1d16h_3._primary_1d16h_6{
     background-color: #0000!important;
     background-image: linear-gradient(var(--rotate),
     color-mix(in srgb, rgb(var(--cover-Vib1)) 100% ,rgb(255, 255, 255) 0%),
@@ -1852,7 +1861,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
     border-style:solid;
     border-color: color-mix(in srgb, rgb(var(--cover-Vib1)) 83% ,rgb(255, 255, 255) 17%);
     box-shadow: inset 0px 0px .85em color-mix(in srgb, rgb(var(--cover-Vib1)) 73% ,rgb(255, 255, 255) 27%),  0px 0px .65em color-mix(in srgb, rgb(var(--cover-DVib1),.5) 33% ,rgb(var(--cover-Vib1),.5) 67%);}
-._primary_1l1bl_6:hover {
+._marketButton_1d16h_1._small_1d16h_3._primary_1d16h_6:hover {
         box-shadow: inset 0px 0px .85em color-mix(in srgb, rgb(var(--cover-Vib1)) 73% ,rgb(255, 255, 255) 27%), 0px 0px .65em color-mix(in srgb, rgb(var(--cover-DVib1),.2) 73% ,rgb(var(--cover-Vib1),1) 27%);
         border-color: color-mix(in srgb, rgb(var(--cover-LVib1)) 77% ,rgb(0, 0, 0) 23%);
         background-color: #0000;background-size: 340% 340%;
@@ -2088,11 +2097,12 @@ span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-si
         --wave-color-solid-accent-fill: white;}
     ._promotionCell_a3b3a98 ._title_66d3d0b{color: white;}
 /*this has to stay at the bottom for reasons unbeknownst to me <3*/ 
+._thumbnail_f82abfa:after,._imageWrapper_aecc0c5:after{box-shadow: none;}
 /*sidebar playlist bg hover remover*/ 
-._contentItem_684cbbe:hover,._contentItem_684cbbe._selected_ae83ba5{background-color: #0000;}
+._contentItem_684cbbe:hover,._contentItem_684cbbe._selected_ae83ba5{background-color: #0000;._thumbnail_f82abfa img{filter: none;}}
 /*sidebar playlist/folder selected effects*/ 
 ._contentItem_684cbbe._selected_ae83ba5{
-._thumbnail_f82abfa{border-style: solid;border-color: rgb(var(--cardacc));}
+._thumbnail_f82abfa{outline-style: solid;outline-width: 2px;outline-color:rgb(var(--cardacc));}
 ._thumbnail_f82abfa img{filter: none;}}
 /*sidebar playlist/folder hover effects*/ 
 ._contentItem_684cbbe:hover{
@@ -2101,6 +2111,10 @@ background-color: color-mix(in srgb, rgb(var(--card2), .9) 55%, rgba(255, 255, 2
 /*sidebar currently playling playlist effect*/ 
 ._overlay_aab3645{background-color: rgb(var(--card),.8);
 ._icon_77f3f89{fill: color-mix(in srgb, rgb(var(--cardacc)) 50%, white 50%)}}
+
+[aria-checked=true]:is(._shuffleButton_545c75a,._repeatButton_729613e){border:none!important; border-color: #0000!important;}
+
+._tableRow_299a426{padding-bottom: 1.5px;}
 /*this has to stay at the bottom for radiant lyrics compat <3*/ 
 
 [class*="_sidebar_"] {background-color: transparent !important;}
