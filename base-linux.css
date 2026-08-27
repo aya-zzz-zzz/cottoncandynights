@@ -314,8 +314,11 @@ transform: translateX(var(--profbuff))!important;}
 /*==========================================.............................................
     PLAYLISTS / ALBUMS
 -----------------------------------------------======================================== */
+._cellImage_0ef8dd3{outline: none;}
 /*playlist width*/
-._items_8615603{ width: calc(100% - var(--pageBottomMargin) * 1.9);}
+._items_8615603{
+    min-width: calc(var(--resonancePageMinWidth) - var(--sidebarWidth));
+    max-width: calc(( var(--pageMaxWidth))*1.01);}
 /*playlist folder color (playlist view)*/
 ._container_7e465e2{
     background-color: rgb(var(--cover-LVib1),.7);}
