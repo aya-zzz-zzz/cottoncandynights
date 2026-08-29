@@ -863,11 +863,10 @@ filter: saturate(1.02) brightness(1.05) !important;
 ._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1:hover,._button_538cfb3._primary_7ac4b44._medium_c24bed2._button_94c5125:hover,#main > div.for-cypress__react-router--loaded.mainContent > div > div._header_d2e600f > div > div > div > label > button:hover{border-radius: .75em;transition: 900ms!important;transition-timing-function: cubic-bezier(.73,.51,0,1);._label_1l1bl_1{filter: opacity(1)}}
 /*BUTTON 2 HOVER*/
 ._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7:hover{
-    ._icon_77f3f89 > use,._icon_77f3f89 > use,._icon_29252d0._icon_77f3f89>use{
-    fill: #000000  !important;
-    transition: 290ms;filter: opacity(1);}
-    filter: saturate(1.02) brightness(1.05) !important;
-    background: linear-gradient(170deg,
+       ._label_1l1bl_1:hover{filter: opacity(1)}
+._icon_77f3f89 > use{fill: rgb(0, 0, 0)!important;transition: 290ms;filter: opacity(1);}
+filter: saturate(1.02) brightness(1.05) !important;
+     background: linear-gradient(170deg,
         #10073100,#10073100,
         #10073100,#10073100,
     color-mix(in srgb, var(--but2)  70% ,rgb(255, 255, 255) 30%),
@@ -875,8 +874,8 @@ filter: saturate(1.02) brightness(1.05) !important;
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but2)  55% ,rgb(255, 255, 255) 45%));
-    background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;
-    box-shadow: 0 0 15px color-mix(in srgb,  var(--but2) 30%, rgb(255, 255, 255,.3) 70%) ; ;}
+    transition: 900ms!important;border-radius: .75em!important;background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;transition-timing-function: cubic-bezier(.73,.51,0,1);
+    box-shadow: 0 0 15px color-mix(in srgb,  var(--but1) 30%, rgb(255, 255, 255,.3) 70%) ;}
 
 /*BUTTON 2 ACTIVE*/
 ._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7:active,._marketButton_1d16h_1._medium_1d16h_4._primary_1d16h_6:active
