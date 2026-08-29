@@ -1,0 +1,120 @@
+/* ==========================================.............................................
+    BUILTINTHEME
+-----------------------------------------------======================================== */
+/* ===========================----COLOR VARIABLES----================================== */
+    :root{
+
+        --cover-Vib1:      243, 139, 168  ; /* first vibrant color*/
+        --cover-DVib1:     17, 17, 27  ; /* darker version of first vibrant color*/
+        --cover-LVib1:     245,194,231 ; /* lighter version of first vibrant color*/
+
+        --lyrtxt:  246, 219, 214 ; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
+
+        --cover-Vib2:      137, 180, 250 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
+        --cover-DVib2:     17, 17, 27    ; /* darker version of second vibrant color*/
+        --cover-LVib2:     180, 190, 254  ; /* lighter version of second vibrant color*/
+
+        --card:      30, 30, 46 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
+        --card2:     49,50,68 ; /* slightly lighter and/or more saturated version of base card color*/
+        --cardacc: 205, 214, 244; /* very pale version of card color mainly for hover effects*/
+        --cardacc2: 235, 160, 172; /*light version of card color mainly for selected sidebar icon*/
+
+        --cover-Mut1:      49, 50, 68 ; /* muted color (these barely show up they're kind of a holdover from when this was a covertheme compatible theme)*/
+        --cover-DMut1:     49, 50, 68      ; /* darker version of muted color*/
+        --cover-LMut1:     127,132,156 ; /* light version of muted color*/
+
+        --cover-F00T:      49, 50, 68 ; /*footer color (not now-playing)*/
+        --cover-F00TBAR1: 245,224,220  ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TBAR1BG: 82, 82, 107, 1;
+        --cover-F00TD:     49, 50, 68    ; /*should be a darker version of F00T color*/
+
+        --F00TNP: 49, 50, 68 ; /*footer color and lyrics container gb now-playing*/
+        --F00TBARNP: 180,190,254   ; /*footer progress bar color (now-playing)*/
+        --F00TBARNPBG:  82, 82, 107, 1  ; /*footer progress bar bg color (now-playing)*/
+
+        --NPBG: rgba(24, 24, 37, 1);
+
+
+        /*bhdf doesnt do nuthin it's just here to make color picking easier*/
+        --bhdf:    rgb(246, 219, 214);
+
+        --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
+
+        --cover-S1D3B4R:     rgb(49,50,68,.5); /*controls sidebar background-color*/
+
+        --sephue: 183deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
+
+        --plylstsat: 1; /*controls backdrop-filter for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrt: 1;
+        --plylstbrdr: rgba(49,50,68); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+
+        --feedsat: 1; /*controls backdrop-filter for home feed inner container*/
+        --feedbrt: 1;
+        --feedbrdr: rgba(49,50,68);/*controls border-color for home feed inner container*/
+
+        /*selected track colors*/
+        --tracksel1: rgb(166,173,200); /*selected track animated gradient color 1*/
+        --tracksel2: rgb(186,194,222); /*selected track animated gradient color 2*/
+        --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
+        --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
+        --tracksborder : rgb(44, 44, 60); /*tracklist divider line color, should be fully opaque*/
+        /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
+        --v1: rgb(243, 139, 168); /*should vaguely match --cover-Vib1*/
+        --v2: rgb(137,180, 250); /*should vaguely match --cover-Vib2*/
+        /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
+        --but1: rgb(243, 139, 168);
+        --but2: rgb(137, 180, 250);}
+     
+/* ===========================----BACKGROUND TEXURES----=============================== */
+
+
+:root{
+    --bg1:  17, 17, 27;
+    --bg2:  17, 17, 27;
+    --bg3:  17, 17, 27;
+    --tt: hsl(263, 29%, 61%);
+    --gr: hsl(319, 100%, 62%);
+    }
+
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+/*now playing background*/
+._background_42cea4e,.now-playing-background-container{
+  animation: blink 10s infinite, blink2 12s infinite ,blink1 17s infinite, blink12 15s infinite;
+  background-image: 
+  radial-gradient(ellipse at top left, rgb(var(--bg3),0.2), rgb(var(--bg2),0.5),rgba(0, 128, 0, 0) 80%),
+    radial-gradient(circle at 10% 20%, hsla(41, 86%, 83%, var(--star1)) .95px, transparent 0),
+    radial-gradient(circle at 35% 45%, hsla(115, 54%, 76%, var(--star2)) .85px, transparent 0),
+     radial-gradient(circle at 35% 45%, hsla(23, 92%, 75%, var(--star1)) .9px, transparent 0),
+    radial-gradient(circle at 70% 10%, hsla(267, 84%, 81%, var(--star3)) 1.1px, transparent 0),
+    radial-gradient(circle at 85% 80%, hsla(0, 59%, 88%, var(--star4)) 1px, transparent 0),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),
+radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--bg3),0.25) 95%, rgb(var(--bg1),0.25) 5%),rgba(12, 12, 12, 0) 70%),
+radial-gradient(circle at bottom right,rgb(var(--bg3),.2),transparent 53%),
+radial-gradient(circle at bottom left,rgb(var(--bg3),.2),transparent 53%),
+radial-gradient(ellipse at top left, rgb(var(--bg2),.7), rgb(var(--bg2),0.4),rgba(0, 128, 0, 0) 90%),
+linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
+!important;
+  background-size:100% 100%, 450px 240px, 350px 350px, 380px 600px,560px 400px, 410px 320px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%!important;
+ }
+
+/*main bg (gradients stack from bottom to top)*/
+._mainContainer_6519c30{
+  animation: blink 10s infinite, blink2 12s infinite ,blink1 17s infinite, blink12 15s infinite;
+  background-image: 
+linear-gradient(180deg, rgb(var(--cover-DVib1)),rgb(var(--cover-DVib1)) )
+}
+._fullscreen_236d61b{
+background-color: rgb(var(--cover-Vib1));}
+._main_a5d9f44{ background-color: #ff000000!important;
+background: none!important;}
+
+/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.5) brightness(.8); transition: 0ms;}}
+
+[class="_header_2fcc3e4"]{
+._toggleButton_934359e._toggleButtonActive_b595428:hover,[data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
+ svg > path:nth-child(1){fill: rgb(245, 194, 231)!important;transition: 400ms!important;transition-delay: -25ms; }
+  svg > path:nth-child(2){fill: rgb(249, 226, 175)!important;transition: 300ms!important; transition-delay: 25ms;}
+   svg > path:nth-child(3){fill: rgb(137, 226, 213)!important;transition: 210ms!important;transition-delay: 65ms;}}
+}
