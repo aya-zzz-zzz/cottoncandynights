@@ -329,8 +329,11 @@ transform: translateX(var(--profbuff))!important;}
 ._cellImage_0ef8dd3{outline: none;}
 /*playlist width*/
 ._items_8615603{
+    transform: translateY(-.75em);
     min-width: calc(var(--resonancePageMinWidth) - var(--sidebarWidth));
     max-width: calc(( var(--pageMaxWidth))*1.01);}
+ @media (max-width:1700px){
+._items_8615603{max-width: 96%}}
 /*playlist folder color (playlist view)*/
 ._container_7e465e2{
     background-color: rgb(var(--cover-LVib1),.7);}
