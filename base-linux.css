@@ -910,7 +910,7 @@ button {color: var(--zz);}}
 button {color: color-mix(in srgb, rgb(var(--cover-LVib1),1) 70% , rgb(255, 255, 255) 30%)!important;}}
 /*track hover*/
 tr._rowContainer_ebb4cfc:hover,._tableRow_299a426:hover{
-    background-color: color-mix(in srgb, rgb(var(--card2),.8) 88%, white 12%);
+    background-color: color-mix(in srgb, rgb(var(--card2),.8) 100%, white 0%);
     border-radius: .8em; }
 tr._rowContainer_ebb4cfc:hover{
     background-color:  rgb(var(--cover-LVib1),.34) !important;border-radius: .8em;
