@@ -6,7 +6,7 @@
 
 ## Instructions:
 
-0. set tidal player background to "Color" in Display section of settings and install [Tidaluna](https://github.com/Inrixia/TidaLuna)
+0. set tidal player background to "Color" in Display section of settings and install [Tidaluna](https://github.com/Inrixia/TidaLuna) or [Tidalunar](https://github.com/Brskt/TidaLuna) (tidalunar is goated i recommend that one)
 
 1.click the base theme file for your OS
 
