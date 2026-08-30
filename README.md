@@ -2,7 +2,7 @@
 1. [Instructions](https://github.com/aya-zzz-zzz/cottoncandynights#instructions)
 2. [Radiant Lyrics compatibility instructions](https://github.com/aya-zzz-zzz/cottoncandynights#radiant-lyrics-compatibility)
 3. [colorway galleries](https://github.com/aya-zzz-zzz/cottoncandynights#radiant-lyrics-compatibility)
-4. [font galleries](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#instructions) (soon)
+4. [font galleries](https://github.com/aya-zzz-zzz/cottoncandynights/blob/main/README.md#font-gallery-coming-soon--just-wanted-to-add-this-section-early-to-say-the-font-system-is-based-on-the-way-fonts-are-implemented-in-interstellars-tidal_tui) (soon)
 
 ## Instructions:
 1.click the base theme file for your OS
