@@ -176,7 +176,8 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 [class="_container_bb78f1d"],[class="_container_bb78f1d _navHidden_1fca378"]{transform: translateY(-7em)!important;}
 /*top search close button*/
 div._searchField_b2eb7f7>button svg ,div._searchField_b2eb7f7:focus-within>svg, div._searchField_b2eb7f7:focus-within>button svg{
-    color:black;}
+    color:rgb(var(--maintxt  ));}
+._container_f1be359:focus-within{color: rgb(var(--maintxt  ));}
 /*top search bg*/
 :is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover{
     background: color-mix(in srgb, rgb(var(--card2),.7) 95%, rgba(255, 255, 255, 0.7) 5%) !Important;}
