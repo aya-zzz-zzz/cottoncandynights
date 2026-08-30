@@ -791,7 +791,7 @@ button {color: var(--zz);}}
 button {color: color-mix(in srgb, rgb(var(--cover-LVib1),1) 70% , rgb(255, 255, 255) 30%)!important;}}
 /*track hover*/
 tr._rowContainer_ebb4cfc:hover,._tableRow_299a426:hover{
-    background-color: color-mix(in srgb, rgb(var(--card2),.8) 100%, white 0%);
+    background-color: color-mix(in srgb, rgb(var(--card2),.8) 95%, white 5%);
     border-radius: .8em; }
 tr._rowContainer_ebb4cfc:hover{
     background-color:  rgb(var(--cover-LVib1),.34) !important;border-radius: .8em;
@@ -1435,9 +1435,9 @@ filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*new quality tags*/
 /*max tag*/
 ._gradientMax_9111fba {background: none;
-    background-color: color-mix(in srgb, rgb(var(--cover-F00T), 1) 90% , rgb(255, 255, 255) 10%) !important;
+    background-color: var(--footcard) !important;
     border-radius: .65em!Important; border:none!important; 
-    box-shadow: inset 0px 0px 1.3em rgb(var(--cover-Vib1), .1)!important;
+    box-shadow: none!important;
     transition: 00ms;}
 /*max txt*/
 [class="_badge_7b2911e _max_894bc7c"]{
@@ -1449,9 +1449,9 @@ filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*high tag*/
 ._gradientHigh_87f2c3b{
     background: none;
-    background-color: color-mix(in srgb, rgb(var(--cover-F00T), 1) 90% , rgb(255, 255, 255) 10%) !important;
+    background-color: var(--footcard) !important;
     border-radius: .65em!Important; border:none!important; 
-    box-shadow: inset 0px 0px 1.3em rgb(var(--cover-Vib1), .1)!important;
+    box-shadow: none!important;
     transition: 00ms!important;}
 /*high txt*/
 [class="_badge_7b2911e _high_4b5525b"]{
@@ -1462,17 +1462,17 @@ filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 ._high_4b5525b ._glowEffect_74c5e85 {display: none!important;}
 /*low tag*/
 ._gradientLow_3f9bc0d{
-    background-color: color-mix(in srgb, rgb(var(--cover-F00T), 1) 90% , rgb(255, 255, 255) 10%) !important;
+     background-color: var(--footcard) !important;
     border-radius: .65em!Important; border:none!important; 
-    box-shadow: inset 0px 0px 1.3em rgb(var(--cover-DVib1), .1) ;}
+    box-shadow: none!important;}
 /*low txt*/
 [class="_badge_7b2911e"]{
     span{color: rgba(255, 255, 255, 0.869)!important;
     font-weight: 600!important;font-size: 97%!important;
     text-shadow: 0px 0px .3em rgba(255, 255, 255, 0);}}
 ._badge_7b2911e {border: none;box-shadow: none;background: none;height: 33px;padding: 0em!important;width: 111px;min-width: 111px;border-radius: .75em;transform: scale(1);}
-._badge_7b2911e:hover {filter: saturate(1.25) contrast(1.2);animation: rotate-gradient 1.3s cubic-bezier(.33,.48,.63,.47) infinite;transition-timing-function: linear;
-box-shadow: 0px 0px 1em #c08dff42;transition: 100ms; }}
+._badge_7b2911e:hover {filter: saturate(1.1) contrast(1.1);animation: rotate-gradient 1.3s cubic-bezier(.33,.48,.63,.47) infinite;transition-timing-function: linear;
+box-shadow: 0px 0px 1em #c08dff00;transition: 100ms; }}
 ._utilityButtons_4d7aaf9 button{border-radius: .7em;height: 30px;width: 30px;border-style: none;border-width: .1em;border-color: #0000;transition: 350ms!Important;}
 /* ==========================================.............................................
    ==========================================.............................................
@@ -1589,8 +1589,8 @@ filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 ._gradientMax_9111fba {
     background-image: none;
     animation: rotate-gradient 15s ease-in-out infinite; border-radius: .65em!Important; border:none!important; 
-    background-color: color-mix(in srgb, var(--NPBG) 90% , rgb(255, 255, 255) 10%) !important;
-    box-shadow: inset 0px 0px 1.3em rgb(var(--card2), .2)!important;
+ background-color: var(--footcard2) !important;
+  
     transition: 00ms;}
 /*max txt*/
 [class="_badge_7b2911e _max_894bc7c"]{
@@ -1603,9 +1603,9 @@ filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*high tag*/
 ._gradientHigh_87f2c3b{
     background-image: none;
-    background-color: color-mix(in srgb, rgb(var(--F00TNP), .1) 90% , rgb(255, 255, 255) 10%) !important;
+    background-color:var(--footcard2) !important;
     animation: rotate-gradient 15s ease-in-out infinite; border-radius: .65em!Important; border:none!important; 
-    box-shadow: inset 0px 0px 1.3em rgb(var(--card2), .2)!important;
+    box-shadow: none!important;
     transition: 00ms!important;}
 /*high txt*/
 [class="_badge_7b2911e _high_4b5525b"]{
@@ -1617,17 +1617,17 @@ filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*low tag*/
 ._gradientLow_3f9bc0d{
     animation: rotate-gradient 15s ease-in-out infinite; border-radius: .65em!Important; border:none!important; 
-    box-shadow: inset 0px 0px 1.3em rgb(var(--card2), .2)!important;
+    box-shadow: none!important;
     background-image: none;
-    background-color: color-mix(in srgb, rgb(var(--F00TNP), .1) 90% , rgb(255, 255, 255) 10%) !important;}
+     background-color: var(--footcard2) !important;}
 /*low txt*/
 [class="_badge_7b2911e"]{
     span{color: rgba(255, 255, 255, 0.686)!important;
     font-weight: 600!important;font-size: 97%!important;
     text-shadow: 0px 0px .3em rgba(255, 255, 255, 0.636);}}
 ._badge_7b2911e {border: none;box-shadow: none;background: none;height: 33px;padding: 0em!important;width: 111px;min-width: 111px;border-radius: .75em;transform: scale(1);}
-._badge_7b2911e:hover {filter: saturate(1.25) contrast(1.2);animation: rotate-gradient 1.3s cubic-bezier(.33,.48,.63,.47) infinite;transition-timing-function: linear;
-box-shadow: 0px 0px 1em #c08dff42;transition: 100ms; }}
+._badge_7b2911e:hover {filter: saturate(1.1) contrast(1.1);animation: rotate-gradient 1.3s cubic-bezier(.33,.48,.63,.47) infinite;transition-timing-function: linear;
+box-shadow: 0px 0px 1em #c08dff00;transition: 100ms; }}
 ._utilityButtons_4d7aaf9 button{border-radius: .7em;height: 30px;width: 30px;border-style: none;border-width: .1em;border-color: #0000;transition: 350ms!Important;}
 ._activeButton_122ab25 {
     border-radius: .5em !important;background-color: #fff0;transition: 300ms!important; animation: rotate-gradient 9s cubic-bezier(.33,.48,.63,.47) infinite;
