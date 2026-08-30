@@ -1,7 +1,8 @@
 ## Table of Contents:
-1. Instructions
-2. Radiant Lyrics compatibility instructions
-3. colorway galleries
+1. [Instructions](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#instructions)
+2. [Radiant Lyrics compatibility instructions](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#radiant-lyrics-compatibility)
+3. [colorway galleries](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#colorway-gallery)
+4. [font galleries](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#instructions) (soon)
 
 ## Instructions:
 1.click the base theme file for your OS
@@ -64,4 +65,4 @@ namagashi
 ![image](https://i.imgur.com/Ypq4abR.png)
 ![image](https://i.imgur.com/Gh7eMI2.png)
 
-
+## font gallery: coming soon :) just wanted to add this section early to say the font system is based on the way fonts are implemented in Interstellar's [Tidal_TUI](https://github.com/InterstellarOne/Tidal-TUI)
