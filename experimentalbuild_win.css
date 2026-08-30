@@ -1834,7 +1834,7 @@ transition: 10000ms;}
 var(--NPBG)!important;
  border-color:var(--npbrdrclr) ;
 backdrop-filter: blur(2em) brightness(1.02) saturate(1.03);
-    box-shadow: inset 0px 0px 8em color-mix(in srgb, rgba(255, 255, 255, calc(.1 * var(--shadowmult))) 20% , var(--NPBG) 80%) ;
+    box-shadow: inset 0px 0px calc(8em * var(--shadowmult)) color-mix(in srgb, rgba(255, 255, 255, calc(.1 * var(--shadowmult))) 20% , var(--NPBG) 80%) ;
     border-style: solid;border-width: 2px;border-radius: 1em;padding-left: .6em;height: 98%;transform: translateY(2%);}
 /*lyrics provider*/
 /*np lyrics*/
