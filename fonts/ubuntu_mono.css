@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+--font-family: "Ubuntu Mono", monospace;
+--font2:  "Ubuntu", sans-serif;}
+
+[class*="searchField"],
+[class*="label"],
+[class*="wave-text"],
+[class*="subtitle"],
+[class*="Text"],
+[class*="info"],
+[class*="paragraphText"],
+[class*="readMoreButton"],
+[class*="underline"],
+[class*="body"],
+[class*="timeColumn"],
+button,
+[class*="title"],
+[class*="textarea"],
+[data-test="grid-item-detail-text-title-artist"]
+{font-family: var(--font-family) !important;
+font-weight: 800!important;}
+
+._hasCues_15d8b83 span{
+    font-size: 33px !important ;
+    font-family: var(--font-family) !important;
+    font-weight: 600;}
+
+#footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span > span{
+    font-weight: 700!important;}
+#footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span{
+    transform: scale(1.02);}
