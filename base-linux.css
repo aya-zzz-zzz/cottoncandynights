@@ -1,5 +1,3 @@
-
-
 /* { * *
  "name": "cotton candy nights",
  "author": "Aya, featuring some modified work by Interstellar_1 (from her Tidal Light(artist page banner) & Tidal-TUI(font-addon) themes) and Acercandr0 (from their Lunallena theme(original inspiration for the transparent titlebar))",
@@ -68,9 +66,6 @@ border-color: color-mix(in srgb, rgba(255, 255, 255, 0.0) 30% , rgb(var(--cover-
 [class="_container_8dd53e2"]{
 a,._titleText_51cccae,time{color: color-mix(in srgb, rgb(var(--cover-LVib1), .6) 50%, white 50%) !important;;}
 ._icon_77f3f89{fill: color-mix(in srgb, rgb(var(--cover-LVib1), .6) 50%, white 50%) !important;;}}}
- /*search bar shadow patch*/
-:is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover{
-    box-shadow: 0px 4px 1.5em color-mix(in srgb, rgb(var(--cover-Vib1),.3) 90%, rgba(0, 0, 0, 0.3) 10%);}
    [class="_container_cb5cbe4"]{transform: translateY(.8em);}
     ._header_3fe665f._scrolled_38d655a:before {display: none;}
    /*search results height*/
