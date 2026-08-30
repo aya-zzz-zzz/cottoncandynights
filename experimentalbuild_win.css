@@ -1,11 +1,9 @@
 /* { * *
  "name": "cotton candy nights",
- "author": "Aya, featuring some modified work by Interstellar_1 (from her Tidal Light theme) and Acercandr0 (from their Lunallena theme)",
+ "author": "Aya, featuring some modified work by Interstellar_1 (from her Tidal Light(artist page banner) & Tidal-TUI(font-addon) themes) and Acercandr0 (from their Lunallena theme(original inspiration for the transparent titlebar))",
  "description": "colorful dark theme for tidaluna"
  "license": "MIT License"
  * } */
-
-
 
 /* ==========================================.............................................
     ANIMATION BANK
@@ -197,7 +195,7 @@ div._searchField_b2eb7f7>button svg ,div._searchField_b2eb7f7:focus-within>svg, 
     color:black;}
 /*top search bg*/
 :is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover{
-    background: color-mix(in srgb, rgb(var(--cover-Vib2),.8) 95% , rgba(255, 255, 255, .8)5%)!Important;}
+    background: color-mix(in srgb, rgb(var(--card2),.7) 95%, rgba(255, 255, 255, 0.7) 5%) !Important;}
 ._container_f1be359 {
     transform: translateX(calc(var(--playQueueWidth) * -1))!Important;
     background-color: color-mix(in srgb, rgb(var(--cover-LVib1),.7) 95% , rgba(255, 255, 255, 0.8)5%);
@@ -206,7 +204,7 @@ div._searchField_b2eb7f7>button svg ,div._searchField_b2eb7f7:focus-within>svg, 
     color-mix(in srgb, rgb(var(--cover-LVib1),.15) 20% , rgba(0, 0, 0, 0.15)80%); backdrop-filter: blur(10px) ;}
 /*top search text color / icon color*/
 div._searchField_b2eb7f7 input, :is(div._searchField_b2eb7f7 input)::placeholder, :is(div._searchField_b2eb7f7 input):hover, div._searchField_b2eb7f7>svg {
-    color: color-mix(in srgb, rgb(var(--cover-DVib1),.8) 25% , rgba(0, 0, 0, 0.75)75%)!important;
+    color:var(--maintxt2) !important;
     font-weight: 500;}
 div._searchField_b2eb7f7:focus-within{
     background-color: color-mix(in srgb, rgb(var(--cover-LVib1),.95) 95% , rgb(255, 255, 255)5%);
@@ -405,6 +403,11 @@ fill: rgb(0, 0, 0)}
     button._button_11e19aa{ background-color: rgb(109, 0, 0); color: rgb(255, 255, 255)}
     button._button_11e19aa:hover{ background-color: rgba(255, 255, 255, 0.357); color: rgb(0, 0, 0)}
     box-shadow: 0 16px 32px rgb(var(--cover-DVib1),.4);}
+
+._button_3357ce6{
+    background-color: rgb(var(--card));}
+._button_3357ce6:hover{
+    background-color: rgb(var(--card2));}
  /* ==========================================.............................................
     DIALOGUE POPUPS (EG DUPLICATE TRACK ADD TO PLAYLIST, PROBABLY OTHER STUFF, backdrop found in clickable backdrops section) 
    -----------------------------------------------======================================== */
@@ -880,7 +883,7 @@ filter: saturate(1.02) brightness(1.05) !important;
     color-mix(in srgb, var(--but1)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but1)  55% ,rgb(255, 255, 255) 45%));
     transition: 900ms!important;border-radius: .75em!important;background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;transition-timing-function: cubic-bezier(.73,.51,0,1);
-    box-shadow: 0 0 15px color-mix(in srgb,  var(--but1) 30%, rgb(255, 255, 255,.3) 70%) ; }
+    box-shadow: 0 0 15px color-mix(in srgb,  var(--but1) 30%, rgb(255, 255, 255,calc(.3 * var(--shadowmult))) 70%) ; }
 /*BUTTON 1 ACTIVE*/
 ._medium_1l1bl_4._secondary_1l1bl_7._marketButton_1l1bl_1:hover,._button_538cfb3._primary_7ac4b44._medium_c24bed2._button_94c5125:hover,#main > div.for-cypress__react-router--loaded.mainContent > div > div._header_d2e600f > div > div > div > label > button:hover{border-radius: .75em;transition: 900ms!important;transition-timing-function: cubic-bezier(.73,.51,0,1);._label_1l1bl_1{filter: opacity(1)}}
 /*BUTTON 2 HOVER*/
@@ -897,7 +900,7 @@ filter: saturate(1.02) brightness(1.05) !important;
     color-mix(in srgb, var(--but2)  60% ,rgb(255, 255, 255) 40%),
     color-mix(in srgb, var(--but2)  55% ,rgb(255, 255, 255) 45%));
     transition: 900ms!important;border-radius: .75em!important;background-size: 340% 340%;animation: buttongradient2 360s cubic-bezier(.24,.48,.67,.56) ;animation-iteration-count: 1;transition-timing-function: cubic-bezier(.73,.51,0,1);
-    box-shadow: 0 0 15px color-mix(in srgb,  var(--but1) 30%, rgb(255, 255, 255,.3) 70%) ;}
+    box-shadow: 0 0 15px color-mix(in srgb,  var(--but1) 30%, rgb(255, 255, 255,calc(.3 * var(--shadowmult))) 70%) ;}
 
 /*BUTTON 2 ACTIVE*/
 ._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7:active,._marketButton_1d16h_1._medium_1d16h_4._primary_1d16h_6:active
@@ -1241,7 +1244,7 @@ margin-bottom: -140px!important;}
     outline-width: 2px;
     outline-style: solid!important;outline-color: #0000;
     ._icon_77f3f89 {fill: color-mix(in srgb, rgb(255, 255, 255) 40%, rgb(var(--cover-LVib1), 1) 60%);}
-    background-color:  rgb(var(--card2));
+    background-color:  var(--sbacc);
     border-radius: 2em;margin-bottom: .6em;
     transform: scale(.98) translateX(-.1em);}
 ._navigationItem_4e9deae ._icon_b8b52c1{transform: translateX(-.018em);}
@@ -1266,7 +1269,8 @@ margin-bottom: -140px!important;}
 /*folder bg color/playlist&folder border radius*/
 ._thumbnail_f82abfa{
     border-radius: .5em;
-    background-color: rgb(var(--card2), 1);}
+    background-color: var(--sbacc);}
+
 ._fallbackIcon_965f27e{color: color-mix(in srgb, rgb(255, 255, 255) 40% , rgb(var(--cover-LVib1), 1) 60%)}
 /*playlst thumbs*/
 
@@ -2115,7 +2119,7 @@ span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-si
 /*sidebar playlist/folder hover effects*/ 
 ._contentItem_684cbbe:hover{
 ._thumbnail_f82abfa{outline: solid;outline-color: rgb(var(--cardacc));outline-width: 2px;
-background-color: color-mix(in srgb, rgb(var(--card2), .9) 55%, rgba(255, 255, 255, 0.3) 45%)}}
+background-color: var(--sbacc)}}
 /*sidebar currently playling playlist effect*/ 
 ._overlay_aab3645{background-color: rgb(var(--card),.8);
 ._icon_77f3f89{fill: color-mix(in srgb, rgb(var(--cardacc)) 50%, white 50%)}}
