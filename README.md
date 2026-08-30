@@ -1,7 +1,7 @@
 ## Table of Contents:
 1. [Instructions](https://github.com/aya-zzz-zzz/cottoncandynights#instructions)
 2. [Radiant Lyrics compatibility instructions](https://github.com/aya-zzz-zzz/cottoncandynights#radiant-lyrics-compatibility)
-3. [colorway galleries](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#colorway-gallery)
+3. [colorway galleries](https://github.com/aya-zzz-zzz/cottoncandynights#radiant-lyrics-compatibility)
 4. [font galleries](https://github.com/aya-zzz-zzz/cottoncandynights/edit/main/README.md#instructions) (soon)
 
 ## Instructions:
