@@ -1,6 +1,3 @@
-
-
-
 /* ==========================================.............................................
     BUILTINTHEME
 -----------------------------------------------======================================== */
@@ -14,6 +11,10 @@
         --cover-LVib1:     235, 193, 255 ; /* lighter version of first vibrant color*/
 
         --lyrtxt: 255, 243, 207; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
+        --maintxt:   241, 232, 255 ; /*feed/card text*/
+        --maintxt2:  241, 232, 255 ; /*feed/card text*/
+        --maintxt3:   255, 250, 236 ; /*feed section-header text*/
+        --maintxt4:   255, 250, 236 ; /*feed/card text*/
 
         --cover-Vib2:      178, 134, 255 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
         --cover-DVib2:     9, 0, 22    ; /* darker version of second vibrant color*/
@@ -32,20 +33,25 @@
         --cover-F00TBAR1:  255, 242, 201    ; /*footer progress bar color (not now-playing)*/
         --cover-F00TBAR1BG: 207, 186, 255, .3;
         --cover-F00TD:     74, 66, 58    ; /*should be a darker version of F00T color*/
+        --footcard: rgba(237, 227, 255, 0.091);
 
         --F00TNP: 23, 5, 64; /*footer color and lyrics container gb now-playing*/
         --F00TBARNP: 228, 178, 255  ; /*footer progress bar color (now-playing)*/
         --F00TBARNPBG: 207, 186, 255, .3  ; /*footer progress bar bg color (now-playing)*/
+        --footcard2: rgba(162, 134, 255, 0.178);
+        --npbrdrclr: rgba(21, 21, 23, 0.177); /*now playing lyrics container border color*/
 
-        --NPBG: rgba(15, 2, 47, 0.407);
-        --bhdff:    rgb(228, 178, 255);
+        --shadowmult: .7;
+        --glowmult: 1;
 
 
-       
+        --NPBG: rgba(22, 8, 58, 0.4);
+        --bhdff:    rgb(207, 186, 255, .3);
 
         --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
-        --cover-S1D3B4R:     color-mix(in srgb, rgba(0, 0, 0, 0.513) 3% , rgb(var(--cover-F00T), 1) 97%); /*controls sidebar background-color*/
+        --cover-S1D3B4R:     color-mix(in srgb, rgba(0, 0, 0, 0.6) 10% , rgb(var(--cover-F00T), 1) 90%); /*controls sidebar background-color*/
+        --sbacc:     rgb(51, 36, 100); /*controls sidebar nav-item/folder bg*/
 
         --sephue: 223deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
@@ -66,6 +72,7 @@
         /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
         --v1: rgb(127, 104, 255); /*should vaguely match --cover-Vib1*/
         --v2: rgb(181, 131, 255); /*should vaguely match --cover-Vib2*/
+        --vTXT: rgb(255, 255, 255); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
         --but1: rgb(167, 108, 255);
         --but2: rgb(229, 133, 255);}
