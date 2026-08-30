@@ -20,13 +20,21 @@ button,
 [data-test="grid-item-detail-text-title-artist"]
 {font-family: var(--font-family) !important;
 font-weight: 800!important;}
-
 ._hasCues_15d8b83 span{
     font-size: 33px !important ;
     font-family: var(--font-family) !important;
     font-weight: 600;}
-
 #footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span > span{
     font-weight: 700!important;}
 #footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span{
     transform: scale(1.02);}
+[class="_marketButton_1d16h_1 _primary_1d16h_6 _medium_1d16h_4 _button_f1c7fcb"],
+[class="_marketButton_1d16h_1 _secondary_1d16h_7 _medium_1d16h_4 _button_f1c7fcb"]{font-size: 16.9px!important;}
+[class="_titleArtistStack_f04ea70"]{
+._item_39605ae{font-size: 12.8px;}
+._titleContainer_2da23c0 a, ._titleContainer_2da23c0 span{font-size: 13.5px!Important;}
+span{font-size: 12.4px!important; transform: translateY(-.01em);}}
+:is(._dataContainer_66f4f40 ._meta_32e4194) ._metaLine_8299814{font-size: 16px;}
+._biography_3066ef2{.wave-text-body-demi{
+font-weight: 300!important;}}
+._shortcutItem_6c8e7b4 {._marketText_1lyag_1 {font-size: 13px;}}
