@@ -2,7 +2,7 @@
 1. [Instructions](https://github.com/aya-zzz-zzz/cottoncandynights#instructions)
 2. [Radiant Lyrics compatibility instructions](https://github.com/aya-zzz-zzz/cottoncandynights#radiant-lyrics-compatibility)
 3. [colorway galleries](https://github.com/aya-zzz-zzz/cottoncandynights#radiant-lyrics-compatibility)
-4. [font galleries](## font gallery:) (soon)
+4. [font galleries](https://github.com/aya-zzz-zzz/cottoncandynights/blob/main/README.md#font-gallery) (soon)
 
 ## Instructions:
 
