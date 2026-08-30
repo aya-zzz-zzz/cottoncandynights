@@ -160,7 +160,7 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 div[class*="_title_"] {display: none !important;}}
 div[class*="_bar_"] button[class*="_button_"]{
     color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 80%, #ffffff 20%) ;
-    backdrop-filter: blur(3px) ;transition: 0ms;padding: .1em!important;margin-right: 1em;border-radius: .6em;width: 34px;height: 31px;transform: scale(.7) translateX(1em) translateY(.1em);}
+    transition: 0ms;padding: .1em!important;margin-right: 1em;border-radius: .6em;width: 34px;height: 31px;transform: scale(.7) translateX(1em) translateY(.1em);}
 div[class*="_bar_"] button[class*="_button_"] svg{transform: scale(1.3);}
 div[class*="_bar_"] button[class*="_button_"]:hover{
     color: rgb(0, 0, 0)!important;
@@ -1219,7 +1219,9 @@ tr._rowContainer_ebb4cfc:hover{background-color: rgb(21, 12, 54);}
    -----------------------------------------------======================================== 
    -----------------------------------------------======================================== */
 /*"all playlists" txt color*/
-
+#sidebar > div._listSection_26d6dae > div > div > div:nth-child(1) > div._sectionHeader_ca54638._collapsed_5552459 > div > button._actionButton_cc5dee6 > svg > use{
+    fill: rgb(var(--sbacc));
+}
 /*notification dot*/
 ._badgeCounter_bd84d2f{background-color: rgba(255, 255, 255, 0.67);}
 /*sidebar bg, shadow, outline then slight leftward shift*/
@@ -1814,7 +1816,8 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
 ._medium_zmuq1_4{filter: brightness(.1);}}
 
 /*np art*/
-._artwork_b010eae{border-radius: 1em;}
+
+._artwork_b010eae{border-radius: 1em;box-shadow: none;}
 ._artworkTilt_1c6d5cc {border: none;}
 ._glare_fdbaeab{filter: sepia(1) hue-rotate(var(--sephue)) saturate(5) brightness(1.7);}
 ._glare_fdbaeab:hover{filter: saturate(15) brightness(1.7)!important;transition: 10000ms}
