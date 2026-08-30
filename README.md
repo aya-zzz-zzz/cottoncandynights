@@ -69,3 +69,5 @@ namagashi
 ![image](https://i.imgur.com/Gh7eMI2.png)
 
 ## font gallery: coming soon :) just wanted to add this section early to say the font system is based on the way fonts are implemented in Interstellar's [Tidal_TUI](https://github.com/InterstellarOne/Tidal-TUI)
+
+## :addon gallery: coming soon
