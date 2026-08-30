@@ -5,6 +5,8 @@
 4. [font galleries](https://github.com/aya-zzz-zzz/cottoncandynights/blob/main/README.md#font-gallery-coming-soon--just-wanted-to-add-this-section-early-to-say-the-font-system-is-based-on-the-way-fonts-are-implemented-in-interstellars-tidal_tui) (soon)
 
 ## Instructions:
+0. set tidal player background to "Color" in Display section of settings and install [Tidaluna](https://github.com/Inrixia/TidaLuna)
+
 1.click the base theme file for your OS
 
 ![image](https://i.imgur.com/s0Dq4d4.png)
