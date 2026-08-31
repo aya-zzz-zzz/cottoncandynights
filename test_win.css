@@ -34,7 +34,8 @@
 button,
 [class*="title"],
 [class*="textarea"],
-[data-test="grid-item-detail-text-title-artist"]
+[data-test="grid-item-detail-text-title-artist"],
+._marketTooltipContainer_1qti9_1
 {font-family: var(--font-family) !important;
 font-weight: 800!important;}
 ._hasCues_15d8b83 span{
@@ -45,7 +46,7 @@ font-weight: 800!important;}
     font-weight: 700!important;}
 #footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span{
     transform: scale(1);}
-
+._marketTooltipContainer_1qti9_1{ font-size: 16px;}
 [class="_container_84abbc3"]{
 ._label_1d16h_1._label_1d16h_1{font-size: 18px; transform: translateY(-.02em)!important;}}
 
@@ -92,6 +93,10 @@ font-weight: 300!important;}}
     BUILTINTHEME
 -----------------------------------------------======================================== */
 /* ===========================----COLOR VARIABLES----================================== */
+[class="_albumContainer_65fa10b"]{
+[data-wave-color=textSecondary]{color: rgb(var(--maintxt2))!important}
+}
+
     :root{
 
         --cover-Vib1:      243, 139, 168  ; /* first vibrant color*/
@@ -145,7 +150,7 @@ font-weight: 300!important;}}
         --cover-S1D3B4R:     rgb(49,50,68,.5); /*controls sidebar background-color*/
         --sbacc:     rgb(49,50,68); /*controls sidebar nav-item/folder bg*/
 
-        --sephue: 183deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
+        --sephue: 206deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
         --plylstsat: 1; /*controls backdrop-filter for most inner containers, such as the album or playlist tracklist*/
         --plylstbrt: 1;
@@ -214,8 +219,8 @@ background: none!important;}
 ._toggleButton_934359e._toggleButtonActive_b595428:hover,[data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
  svg > path:nth-child(1){fill: rgb(245, 194, 231)!important;transition: 400ms!important;transition-delay: -25ms; }
   svg > path:nth-child(2){fill: rgb(249, 226, 175)!important;transition: 300ms!important; transition-delay: 25ms;}
-   svg > path:nth-child(3){fill: rgb(137, 226, 213)!important;transition: 210ms!important;transition-delay: 65ms;}}
-}
+   svg > path:nth-child(3){fill: rgb(137, 226, 213)!important;transition: 210ms!important;transition-delay: 65ms;}}}
+
 div[class*="_bar_"] button[class*="_button_"]{
     color:  #f5c2e7  !important;}
 /* ==========================================.............................................
@@ -340,8 +345,8 @@ transform: translateY(2.2em);
 /* TOPBAR COLOR*/
 #wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6
 {width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;
-mask: linear-gradient(black 80%,rgba(0, 0, 0, .2) 99%, #0000 100%);
-backdrop-filter: blur(1.7px);
+mask: linear-gradient(black 0%,rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, .8) 80%,rgba(0, 0, 0, .5) 98%, #0000 100%);
+backdrop-filter: blur(2px) ;
 
 background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0))!important; }
 /*fullscreen with footer*/
@@ -615,8 +620,11 @@ fill: rgb(0, 0, 0)}
    background-color: color-mix(in srgb, rgb(var(--card2)) 75%, rgba(255, 255, 255, 0.25) 25%) ;
     animation: rotate-gradient 2s cubic-bezier(.29,.44,.67,.56) infinite;
 ._icon_77f3f89 > use{fill: color-mix(in srgb, var(--v1) 40%, rgba(255, 255, 255, 1) 60%);}
-    box-shadow: 0px 0px .5em color-mix(in srgb, var(--v2) 50%, rgba(0, 0, 0, 0.5) 50%);
+    box-shadow: 0px 0px calc(.5em * var(--shadowmult)) color-mix(in srgb, var(--v2) 50%, rgba(0, 0, 0, 0.5) 50%);
     transition: 243ms;}
+._viewAllButton_4b4f90c:hover span{
+  text-shadow: 0 0 8px hsla(0, 0%, 100%, calc(.4 * var(--shadowmult))), 0 0 16px hsla(0, 0%, 100%, calc(.2 * var(--shadowmult)));
+}
 /*==========================================.............................................
     NOTIFICATION/ERROR OVER-FOOTER POPUPS
 -----------------------------------------------======================================== */
@@ -774,14 +782,14 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
     fill: color-mix(in srgb, var(--v1) 55%, rgba(255, 255, 255, 0.6) 45%);;transition: 000ms;}
 ._fx_e9c441f.css-75d7zy,._playButtonBottomRight_81dad72._playButtonContainer_5ab95ff > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea,._playButton_1bf40b3._small_05d59bf._primary_7ac4b44._button_94c5125{
     transition: 0ms;
-    background-color: rgb(var(--card),.8);}
+    background-color: rgb(var(--card2),.85);}
 ._overlay_91ba65b > ._favoriteButtonContainer_9320e1a > ._button_c372e89{   
     transition: 0ms;
-    background-color: rgb(var(--card),.8);}
+    background-color: rgb(var(--card2),.85);}
 ._fx_e9c441f.css-75d7zy:hover
 ,._playButtonBottomRight_81dad72._playButtonContainer_5ab95ff > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea:hover
 ,._playButton_1bf40b3._small_05d59bf._primary_7ac4b44._button_94c5125:hover{
-    
+    background-color: rgb(var(--card),.87);
     background-size: 7500% 7500%;
     animation: gradient 54s cubic-bezier(.25,.53,.76,.57) infinite;
     backdrop-filter: blur(2px)!important;
@@ -791,12 +799,34 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
     border-radius: 2em;
      box-shadow: 0px 0px 1em color-mix(in srgb, var(--v2) 55%, rgba(255, 255, 255, 0.6) 45%) !important;}
 ._button_c372e89:hover{
-     background-color: color-mix(in srgb, var(--v1) 55%, rgba(255, 255, 255, 0.6) 45%);
+    background-color: rgb(var(--card),.87)!important;
     background-size: 7500% 7500%;
     animation: gradient 54s cubic-bezier(.25,.53,.76,.57) infinite;
     backdrop-filter: blur(2px);
     transition: 200ms;
     box-shadow: 0px 0px 1em color-mix(in srgb, var(--v1) 55%, rgba(255, 255, 255, 0.6) 45%);}}
+
+.css-75d7zy{
+    background-color: rgb(var(--card2),.85);
+._icon_77f3f89{fill: var(--v2)}
+}
+.css-75d7zy:hover{
+      background-color: rgb(var(--card),.87)!important;
+    background-size: 7500% 7500%;
+    animation: gradient 54s cubic-bezier(.25,.53,.76,.57) infinite;
+    backdrop-filter: blur(2px);
+    transition: 200ms;
+    box-shadow: 0px 0px 1em color-mix(in srgb, var(--v2) 55%, rgba(255, 255, 255, 0.6) 45%)!important;}
+
+.css-bzw2lh{
+._icon_77f3f89{fill: rgb(var(--maintxt  ))}}
+
+.css-bzw2lh:hover{
+    background-color: rgb(var(--card),.87);
+    background-size: 7500% 7500%;
+    animation: gradient 54s cubic-bezier(.25,.53,.76,.57) infinite;
+    backdrop-filter: blur(2px);
+    transition: 200ms;}
 
 /* ==========================================.............................................
     SETTINGS / LUNA SETTINGS
@@ -2309,6 +2339,11 @@ a{color: rgb(var(--maintxt));}
 ._artistVariant_63c8c96._card_38c6c04{transform: translatex(.3em);}
 ._artistVariant_63c8c96._card_38c6c04 > ._contentContainer_6f8427a > ._title_3b8740e > ._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1:hover{
     font-weight: 600;color: rgb(var(--card));span{color: black!important;}}
+
+._item_39605ae,.wave-text-capital-demi,._promotionCell_a3b3a98 ._header_1e461f6,._title_66d3d0b,
+[data-wave-color=textSecondary]{color: rgb(var(--maintxt))}
+
+
 /* ==========================================.............................................
        ALBUM CREDITS PAGE
   -----------------------------------------------======================================== */
@@ -2347,11 +2382,14 @@ span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-si
         BITS & BOBS
    -----------------------------------------------======================================== 
    -----------------------------------------------======================================== */
+[src="https://resources.tidal.com/images/1554782a/62ad/4e49/b267/a07006291cf3/640x640.jpg"]{
+    filter: sepia(1) hue-rotate(var(--sephue)) brightness(.7) contrast(1.1);
+}
 ._promotionCell_a3b3a98 ._title_66d3d0b{color: black;}
 :root{ /*tidal internal colors*/
         --wave-color-solid-contrast-darker:  color-mix(in srgb, rgb(var(--cover-LVib1),.6) 50% , white 50%)!important;/*playlist description*/
         --wave-color-solid-accent-fill: white;}
-    ._promotionCell_a3b3a98 ._title_66d3d0b{color: white;}
+    ._promotionCell_a3b3a98 ._title_66d3d0b{color: rgb(var(--maintxt2)  );}
 /*this has to stay at the bottom for reasons unbeknownst to me <3*/ 
 ._thumbnail_f82abfa:after,._imageWrapper_aecc0c5:after,._artworkTilt_1c6d5cc:after,
 ._artworkContainer_3cdbf46:after,._imageContainer_aa04376:after{box-shadow: none;}
