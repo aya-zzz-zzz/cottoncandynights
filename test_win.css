@@ -1,3 +1,17 @@
+[class="MuiStack-root css-1ov46kg"]{
+.css-1mzerio{
+   display: -webkit-box;
+   -webkit-box-orient: vertical;}
+
+.css-1id1h8n{
+    font-size: 95%;
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 10em;
+  line-height: 1.8em;}
+}
 
 
 
@@ -31,14 +45,13 @@ font-weight: 800!important;}
     font-weight: 700!important;}
 #footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span{
     transform: scale(1);}
-[class="_actionContainer_7bd364b"]{
-._label_1d16h_1._label_1d16h_1{font-size: 17.1px!important; font-weight: 900!Important;}}
 
-
+[class="_container_84abbc3"]{
+._label_1d16h_1._label_1d16h_1{font-size: 18px; transform: translateY(-.02em)!important;}}
 
 [class="_titleArtistStack_f04ea70"]{
-._item_39605ae{font-size: 12.8px;}
-._titleContainer_2da23c0 a, ._titleContainer_2da23c0 span{font-size: 13.5px!Important;}
+._item_39605ae{font-size: 13px;}
+._titleContainer_2da23c0 a, ._titleContainer_2da23c0 span{font-size: 15px!Important;}
 span{font-size: 12.4px!important; transform: translateY(-.01em);}}
 :is(._dataContainer_66f4f40 ._meta_32e4194) ._metaLine_8299814{font-size: 16px;}
 ._biography_3066ef2{.wave-text-body-demi{
@@ -46,18 +59,34 @@ font-weight: 300!important;}}
 ._shortcutItem_6c8e7b4 {._marketText_1lyag_1 {font-size: 13.1px; }}
 
 [class="_dataContainer_5bb6028"]{
-  ._artistCreatorText_b699bdf{
-    font-size: 20px;
-  }
-  :is(._dataContainer_5bb6028 ._meta_5a20542) ._metaItem_18d9c95{
-    font-size: 13px;
-  }
-}
+._artistCreatorText_b699bdf{
+    font-size: 20px;}
+:is(._dataContainer_5bb6028 ._meta_5a20542) ._metaItem_18d9c95{
+    font-size: 13px;}}
+
 [class="_dataContainer_66f4f40"]{
 :is(._dataContainer_66f4f40 ._meta_32e4194) ._metaItem_ed501cd{font-size: 12px;}
 ._item_39605ae{font-size: 17px;}}
 [class="_dataContainer_5bb6028"], [class="_dataContainer_66f4f40"] {
  [data-wave-color=textDefault] {transform: translateY(-.55em);}}
+
+ ._tableHeader_ebaf366>span, ._tableRow_299a426>div{font-size: 14.5px;}
+._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1
+ ._marketText_1lyag_1._medium20_1lyag_192{
+    font-size: 110%;}
+
+ div._cardContainer_8d57d95._mobileGrid_07b1be3 > div> div > div._contentContainer_6f8427a > div._title_3b8740e > span{
+    font-size: 16.3px;}
+
+ div._marketText_1lyag_1._paragraph20_1lyag_138._text20_1lyag_291._subtitle_8f7e568 > span > span{
+    font-size: 16px; }
+
+._contentContainer_6f8427a{
+    transform: translateY(-.09em);}
+
+._item_235a32d{
+    ._marketText_1lyag_1, ._link_6a45a19._item_39605ae, a{
+    font-size: 15px;}}
 
 /* ==========================================.............................................
     BUILTINTHEME
@@ -85,7 +114,7 @@ font-weight: 300!important;}}
         --cardacc2: 235, 160, 172; /*light version of card color mainly for selected sidebar icon*/
         --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
 
-        --cover-Mut1:      49, 50, 68 ; /* muted color (these barely show up they're kind of a holdover from when this was a covertheme compatible theme)*/
+        --cover-Mut1:      0,0,255 ; /* cardhover art tint*/
         --cover-DMut1:     49, 50, 68      ; /* darker version of muted color*/
         --cover-LMut1:     127,132,156 ; /* light version of muted color*/
 
@@ -137,8 +166,8 @@ font-weight: 300!important;}}
         --v2: rgb(137,180, 250); /*should vaguely match --cover-Vib2*/
         --vTXT: rgb(17, 17, 27); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
-        --but1: rgb(255, 151, 87);
-        --but2: rgb(187, 132, 255);}
+        --but1: rgb(238, 110, 146);
+        --but2: rgb(174, 111, 251);}
      
 /* ===========================----BACKGROUND TEXURES----=============================== */
 
@@ -187,7 +216,8 @@ background: none!important;}
   svg > path:nth-child(2){fill: rgb(249, 226, 175)!important;transition: 300ms!important; transition-delay: 25ms;}
    svg > path:nth-child(3){fill: rgb(137, 226, 213)!important;transition: 210ms!important;transition-delay: 65ms;}}
 }
-
+div[class*="_bar_"] button[class*="_button_"]{
+    color:  #f5c2e7  !important;}
 /* ==========================================.............................................
    END OF BUILTINTHEME
 -----------------------------------------------======================================== */
@@ -308,7 +338,11 @@ transform: translateY(2.2em);
 [class="_header_2fcc3e4"] {transform: translateY(-2em);}
 [class="_wrapper_512d5f4"] {height:100%;transform: translateY(0em); transition: 300ms; transition-delay: -65ms;}}
 /* TOPBAR COLOR*/
-#wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;backdrop-filter: blur(1.5px)!important;
+#wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6
+{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;
+mask: linear-gradient(black 80%,rgba(0, 0, 0, .2) 99%, #0000 100%);
+backdrop-filter: blur(1.7px);
+
 background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0))!important; }
 /*fullscreen with footer*/
 [class="_fullscreen_236d61b"]{._panelWrapper_5734a06._panelWrapperActive_404b577{
@@ -437,6 +471,9 @@ transform: translateX(var(--profbuff))!important;}
 /*card adjustment*/
 /*MAIN CARDS*/
 [class="_card_38c6c04"]{
+._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1{
+        color: rgb(var(--cover-DVib1));}
+span{ color: rgb(var(--cover-DVib1));}
     box-shadow: 0px 0px .5em rgba(0, 0, 0, 0.1);
 ._imageWrapper_aecc0c5 img {transform: scale(1); border-radius: .7em;}
      background: linear-gradient(120deg,
@@ -447,6 +484,9 @@ transform: translateX(var(--profbuff))!important;}
     background-size: 110% 110%;border-style: solid!important;}
 /*MAIN CARD HOVER*/
 [class="_card_38c6c04"]:hover{
+._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1{
+        color: rgb(var(--maintxt));}
+span{ color: rgb(var(--maintxt));}
 ._badge_57d1ccb {filter: sepia(1) hue-rotate(180deg) contrast(1) opacity(1) brightness(.1) saturate(0.0) invert(0) opacity(1) !important;}
 ._imageWrapper_aecc0c5 img{transform: scale(1.02);transition: 1100ms;border-radius: 1em!important;}
 ._marketText_1lyag_1{color: color-mix(in srgb, rgb(var(--cover-LVib1)) 50%, white 50%);}
@@ -475,7 +515,7 @@ transform: translateX(var(--profbuff))!important;}
     fill: #ffd8f3!important; }}
 /*HORIZONTAL CARD HOVER*/
 ._item_235a32d:hover{
-._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-Vib1),.8)  !important;}
+._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1),.8)  !important;}
 ._icon_77f3f89 {fill: rgb(var(--cover-DVib1),.8) !important;}
     background: linear-gradient(170deg,
     #10073100,
@@ -2108,10 +2148,10 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
 [class="_container_f470b47"]{
 ._marketText_1lyag_1._medium10_1lyag_210,._marketText_1lyag_1._medium10_1lyag_210 {
     color:var(--vTXT);
-    text-shadow: 0px 0px .3em rgba(0, 0, 0, 0.18);}
+    text-shadow: 0px 0px .3em rgba(0, 0, 0, calc(.18 * var(--shadowmult)));}
 ._marketText_1lyag_1._text20_1lyag_291{
     color: var(--vTXT);
-    text-shadow: 0px 0px .3em rgba(0, 0, 0, 0.18);}}
+    text-shadow: 0px 0px .3em rgba(0, 0, 0, calc(.18 * var(--shadowmult)));}}
 ._list_eaac7af{margin-bottom: -.2em;transform: scale(1.01);}
 ._playButtonContainer_ff94fcb > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_19e2b1e > ._icon_77f3f89 > use{
     fill: color-mix(in srgb, rgb(var(--cover-LVib2)) 50%, white 50%);}
@@ -2191,7 +2231,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
 ._badge_57d1ccb {filter: invert(3)!important;}
 ._imageWrapper_aecc0c5 img{transform: scale(1.02);transition: 1100ms;border-radius: 1em!important;}
 ._overlay_91ba65b{transform: scale(1.0);border-radius: .53em!important;                                    
-    background: linear-gradient(color-mix(in srgb,rgb(var(--cover-Vib2),.25) 70%, rgba(0, 0, 0, .25) 30%) , color-mix(in srgb,rgb(var(--cover-Vib1),.25) 70%, rgba(0, 0, 0,.25) 30%) );}
+    background: rgb(var(--cover-LMut1),.1); box-shadow: inset 0px 0px 6em rgb(var(--cover-Mut1),.15);}
     transition: 400ms!important;transition-timing-function: cubic-bezier(.34,.02,0,1.16);
     border-radius:.7em;
     background-color: rgba(119, 119, 119, 0);
@@ -2255,7 +2295,7 @@ a{color: rgb(var(--maintxt));}
 /*ARTIST CARD HOVER*/
 ._artistVariant_63c8c96:hover{
 ._marketText_1lyag_1 {color: rgb(var(--card)) }
-    border-color: color-mix(in srgb, rgb(var(--cover-Vib1),.9) 60%,white 40%);
+    border-color: #0000;
 ._imageWrapper_aecc0c5 img{transform: scale(1);transition: 1000ms; border-radius: 1.7EM;}
     background: linear-gradient(170deg,
         rgb(var(--cover-LVib1),.2),rgb(var(--cover-LVib1),.2),
