@@ -1,0 +1,12 @@
+._trackContent_7b758a9{
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(.32,.3,.32,1);}
+
+[class="_player_8c80ae6 _notFullscreen_60c5a14"] {
+
+._trackContent_7b758a9 { transition:560ms!important;
+  transition-timing-function: cubic-bezier(.32,.3,.32,1)!important;}}
+
+#footerPlayer > div._playerContent_8ec26af > div._trackInfo_739e710 > div{
+    transition-delay: -250ms!important;
+}
