@@ -162,8 +162,6 @@ div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataC
      radial-gradient(circle at 35% 45%, hsla(23, 92%, 75%, var(--star1)) .9px, transparent 0),
     radial-gradient(circle at 70% 10%, hsla(267, 84%, 81%, var(--star3)) 1.1px, transparent 0),
     radial-gradient(circle at 85% 80%, hsla(0, 59%, 88%, var(--star4)) 1px, transparent 0),
-   
-radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--bg3),0.25) 95%, rgb(var(--bg1),0.25) 5%),rgba(12, 12, 12, 0) 70%),
 linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
 !important;
   background-size:100% 100%, 450px 240px, 350px 350px, 380px 600px,560px 400px, 410px 320px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%!important;
