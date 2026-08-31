@@ -1,16 +1,23 @@
-._tableRow_299a426, ._metaItem_18d9c95
-{font-size: 120%}
+._titleText_3a325ca.wave-text-title-bold, ._titleText_7494646.wave-text-title-bold::after{
+font-size: 270%!Important;}
 
-._label_1d16h_1._label_1d16h_1, [data-wave-color=textDefault], ._metaLine_8299814
-{font-size: 112%}
+[class="_wrapper_27ba76d content-header"]{
+div._detailsContainerWithContribution_3630334 > span > span > span > a,
+._artistCreatorText_b699bdf{font-size: 140%;}}
 
-[class="_dataContainer_66f4f40"]{
-._titleText_7494646{font-size: 240%!important}}
+[class="_detailContainer_5b36b6c"]{._item_39605ae{font-size: 140%;}}
+
+._tableRow_299a426, ._metaItem_18d9c95{font-size: 120%}
+
+._label_1d16h_1._label_1d16h_1, [data-wave-color=textDefault], ._metaLine_8299814{font-size: 112%}
+
+:is(._dataContainer_66f4f40 ._meta_32e4194) ._metaLine_8299814{font-size: 130%!Important;}
+
+[class="_dataContainer_66f4f40"]{._titleText_7494646{font-size: 270%!important;padding-bottom: .3em;}}
 
 ._marketText_1lyag_1{font-size: 116%!important}
-[class="_viewAllButton_4b4f90c"]{
-    ._marketText_1lyag_1{font-size: 100%!important}
-}
+
+[class="_viewAllButton_4b4f90c"]{._marketText_1lyag_1{font-size: 100%!important}}
 
 [class="_container_4454af7"]{
 ._marketText_1lyag_1{font-size: 105%!important; transform: translateY(-.27em)}}
@@ -19,10 +26,36 @@
 
 ._headerContainer_5618a8d ._headerText_9398ec6{font-size: 130%!Important;}
 
-[class="_card_38c6c04"]{
-    [class="_contentContainer_6f8427a"]{transform: translateY(-.17em)!important}}
+[class="_card_38c6c04"]{[class="_contentContainer_6f8427a"]{transform: translateY(-.17em)!important}}
+
 [class="_titleArtistStack_f04ea70"]{
-    transform: translateY(-.01em);
-._marketText_1lyag_1._semibold20_1lyag_246{font-size: 110%!important;}
-._item_39605ae{font-size: 108%!Important;}
-a{font-size: 107%}}
+._marketText_1lyag_1._semibold20_1lyag_246{font-size: 110%!important;transform: translateY(-.01em);}
+._item_39605ae{font-size: 108%!Important;transform: translateY(-.01em);}
+a{font-size: 107%;transform: translateY(-.01em);}}
+
+div.tidal-ui__h-stack.css-1cjsosq > div.tidal-ui__v-stack.css-1716k3v > h2{font-size: 150%}
+
+
+
+
+[class="_albumContainer_65fa10b"]{[data-wave-color=textSecondary]{font-size: 90%!important}}
+
+:is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover input{font-size: 120%}
+
+
+div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span > span{
+    font-size: 93%!important}
+
+[data-test="grid-item-playlist"]{
+    ._titleContainer_7908df3{font-size: 112%;transform: translateY(-.1em)}
+    a{font-size: 113%}
+    [data-wave-color=textSecondary]{font-size: 100%;}}
+[data-test="grid-item-folder"]{
+    ._titleContainer_7908df3{font-size: 113%;transform: translateY(-.3em)}
+    [data-wave-color=textSecondary]{font-size: 100%}}
+
+._marketTooltipContainer_1qti9_1{ font-size: 113%;}
+
+[class="_tableHeader_ebaf366 _smallText_a636ed6"]{
+:is(._titleColumn_ac57455,._albumColumn_907bff3,._artistColumn_1e5bae0,._timeColumn_f70e963,._bpmColumn_586ca98,._keyColumn_0b612a0,._dateAddedColumn_87dfbd3) span{
+    font-size: 107%}}
