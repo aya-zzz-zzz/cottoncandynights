@@ -1,6 +1,8 @@
 ._trackContent_7b758a9{
   transition: 450ms;
-  transition-timing-function: cubic-bezier(.32,.3,.32,.98)}
+  transition-timing-function: cubic-bezier(.32,.3,.32,1);}
 
 [class="_player_8c80ae6 _notFullscreen_60c5a14"] {
+  transition: 450ms;
+  transition-timing-function: cubic-bezier(.32,.3,.32,1);
 ._trackContent_7b758a9 {transition-delay: -200ms;}}
