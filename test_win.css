@@ -36,7 +36,7 @@ font-weight: 800!important;}
     font-weight: 700!important;}
 #footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span{
     transform: scale(1);}
-._marketTooltipContainer_1qti9_1{ font-size: 16px;}
+._marketTooltipContainer_1qti9_1{ font-size: 15px;}
 [class="_container_84abbc3"]{
 ._label_1d16h_1._label_1d16h_1{font-size: 18px; transform: translateY(-.02em)!important;}}
 
@@ -79,6 +79,12 @@ font-weight: 300!important;}}
     ._marketText_1lyag_1, ._link_6a45a19._item_39605ae, a{
     font-size: 15px;}}
 
+@container style(--market-button-tertiary-rank-underline: 0px) {
+    ._label_1d16h_1._label_1d16h_1 {
+       font-size: 14.5px!important;
+    }
+}
+
 /* ==========================================.............................................
     BUILTINTHEME
 -----------------------------------------------======================================== */
@@ -94,8 +100,9 @@ font-weight: 300!important;}}
         --lyrtxt:  246, 219, 214 ; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
         --maintxt:  205, 214, 244 ; /*feed/card text*/
         --maintxt2:  186,194,222 ; /*feed/card text*/
-        --maintxt3:  205, 214, 244 ; /*feed section-header text*/
-        --maintxt4:  205, 214, 244 ; /*feed/card text*/
+        --maintxt3:  225, 214, 244 ; /*feed section-header text*/
+        --maintxt4:  217, 223, 242 ; /*footer text color*/
+        --txthvr:  245,224,220 ; /*feed/card text*/
 
         --cover-Vib2:      235, 160, 172 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
         --cover-DVib2:     17, 17, 27    ; /* darker version of second vibrant color*/
@@ -112,15 +119,15 @@ font-weight: 300!important;}}
         --cover-LMut1:     127,132,156 ; /* light version of muted color*/
 
         --cover-F00T:      49, 50, 68 ; /*footer color (not now-playing)*/
-        --cover-F00TBAR1: 245,224,220  ; /*footer progress bar color (not now-playing)*/
-        --cover-F00TBAR1BG: 88, 91, 112, 1;
+        --cover-F00TBAR1: 245,194,231  ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TBAR1BG: 108, 112, 134, .7;
         --cover-F00TD:     49, 50, 68    ; /*should be a darker version of F00T color*/
-        --footcard: rgb(69,71,90);
+        --footcard: rgba(75, 78, 98, 0.7);
 
         --F00TNP: 49, 50, 68 ; /*footer color and lyrics container gb now-playing*/
         --F00TBARNP: 245,194,231   ; /*footer progress bar color (now-playing)*/
         --F00TBARNPBG:  88, 91, 112, 1  ; /*footer progress bar bg color (now-playing)*/
-        --footcard2: rgb(49,50,68);
+        --footcard2: rgb(49,50,68,.8);
         --npbrdrclr: rgba(24, 24, 37, 1); /*now playing lyrics container border color*/
 
         --shadowmult: 0;
@@ -129,7 +136,7 @@ font-weight: 300!important;}}
         --NPBG: rgba(24, 24, 37, 1);
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(77, 255, 0);
+        --bhdf:    rgb(217, 223, 242);
 
         --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
@@ -157,11 +164,12 @@ font-weight: 300!important;}}
         --v2: rgb(200, 159, 249); /*should vaguely match --cover-Vib2*/
         --vTXT: rgb(17, 17, 27); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
-        --but1: rgb(248, 165, 113);
-        --but2: rgb(237, 137, 154);
+        --but1: rgb(250, 159, 103);
+        --but2: rgb(86, 187, 235);
         
-        --ylw: rgb(249, 226,175);
-        --blu: rgb(148, 226, 235);}
+        --ylw: rgb(246, 231, 201);
+        --blu: rgb(175, 212, 231);
+        --red: rgb(243, 139, 168);}
      
 /* ===========================----BACKGROUND TEXURES----=============================== */
 
@@ -392,10 +400,10 @@ div[class*="_bar_"] button[class*="_button_"]:hover{
     animation: bounc .2s cubic-bezier(.29,.44,.67,.56) 1, rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite;filter: brightness(1.2) saturate(1);transition: 200ms!important;}
 div._controls_7a73a1e > button._closeButton_560a9f3._button_8536ec0:hover{
     color: rgb(0, 0, 0)!important;
-    background-color: rgb(255, 0, 0)!important;
+    background-color: var(--red)!important;
     background-size: 130%;
-    background-image: linear-gradient(var(--rotate), color-mix(in srgb, rgb(var(--cover-Vib1), .83) 70%, #ff000065 30%) , color-mix(in srgb, rgb(var(--cover-LVib1), .63) 15%, #ff000065 85%)   );
-    box-shadow: 0px 0px 1em color-mix(in srgb, rgb(var(--cover-DVib1), .5) 60%, #000000 40%)     ,     inset 0px 0px 1.25em color-mix(in srgb, rgb(var(--cover-LVib1), 1) 99%, #ff000065 1%)  ;
+    background-image: linear-gradient(var(--rotate), color-mix(in srgb, rgb(var(--cover-Vib1), .83) 40%, var(--red) 60%) , color-mix(in srgb, rgb(var(--cover-LVib1), .63) 5%, var(--red) 95%)   );
+    box-shadow: 0px 0px 1em color-mix(in srgb, rgb(var(--cover-DVib1), .5) 60%, #000000 40%)     ,     inset 0px 0px 1.25em color-mix(in srgb, rgb(var(--cover-LVib1), .4) 99%, var(--red) 1%)  ;
     animation: bounc .2s cubic-bezier(.29,.44,.67,.56) 1, rotate-gradient 4s cubic-bezier(.33,.48,.63,.47) infinite;filter: brightness(1.13) saturate(1.2);transition: 200ms!important;}
 div[class*="_bar_"] button[class*="_button_"] svg:active{filter: brightness(1.3);transform: scale(1) translateY(.1em)!important;transition: 20ms!important;border-radius: .27em!important;}
 /* =========================================================
@@ -634,13 +642,13 @@ fill: rgb(0, 0, 0)}
     background-color: #0000!important;
     backdrop-filter: blur(15px) ;
     background: linear-gradient(var(--rotate),
-    color-mix(in srgb, var(--v1) 20%, rgba(255, 68, 68, 0.5) 80%) ,
-    color-mix(in srgb, var(--v2) 20%, rgba(255, 68, 68, 0.5) 80%))!important;
+    color-mix(in srgb, var(--v2) 20%,  color-mix(in srgb, #0000 20%, var(--red) 80%) 80%)  ,
+     color-mix(in srgb, #0000 20%, var(--red) 80%) 80%)!important;
     animation: rotate-gradient 22s cubic-bezier(.33,.48,.63,.47) infinite!important;
-    ._iconTextContainer_0f5239a ._errorIcon_212e3b4{fill: rgb(103, 0, 0)}
+    ._iconTextContainer_0f5239a ._errorIcon_212e3b4{fill:  rgb(var(--cover-DVib1))}
     --wave-color-text-main: rgba(0, 0, 0, 0.82);
-    button._button_11e19aa{ background-color: rgb(109, 0, 0); color: rgb(255, 255, 255)}
-    button._button_11e19aa:hover{ background-color: rgba(255, 255, 255, 0.357); color: rgb(0, 0, 0)}
+    button._button_11e19aa{ background-color:  color-mix(in srgb, var(--red) 80%, white 20%); color: rgb(var(--cover-DVib1));}
+    button._button_11e19aa:hover{ background-color: rgb(var(--cover-DVib1),.3); color: rgb(255, 255, 255)}
     box-shadow: 0 16px 32px rgb(var(--cover-DVib1),.4);}
 
 ._button_3357ce6{
@@ -714,8 +722,8 @@ a._button_94c5125, button._button_94c5125, ._button_94c5125{ background-color: r
 --wave-color-solid-contrast-fill: #000 !important;
 ._icon_77f3f89 > use{fill: black;}
 ._actionTextInner_a14f37c{color: black!important;}
-._logout_d89cefd span{color: #ffffff!Important;}}
-[class="_logout_d89cefd _actionItem_e0c1e65"]{background-color: rgba(255, 43, 167, .85);margin: 0px 40px!important;transform: scale(.9);}
+._logout_d89cefd span{color: #ffffff!Important; font-size: 19px;text-align: center; transform: translateX(-.25em);}}
+[class="_logout_d89cefd _actionItem_e0c1e65"]{background-color: rgba(243, 43, 167, .85);margin: 0px 44px!important;transform: scale(.8);}
 [class="_logout_d89cefd _actionItem_e0c1e65"]:hover{
     background-color: rgb(246, 28, 0);border-radius: .3em;transition: 1500ms;transition-timing-function: cubic-bezier(.17,.52,.52,1.01);}
 [class="_container_d3060bb _visible_4bed23e"],[class="_subMenu_706d970"],._submenu_1951fe4{backdrop-filter: blur(1em);}
@@ -734,6 +742,13 @@ span._suggestionText_bf2e71c{ color: rgba(0, 0, 0, 0.55);}
 ._icon_77f3f89 {fill: rgba(0, 0, 0, 0.55);}
 button._container_eca1840:hover, button._container_eca1840:focus{
     background-color: color-mix(in srgb, rgb(var(--cover-Vib2),.9) 50%, rgba(0, 0, 0, 0.6) 50%);}}
+
+[class="_container_79ca9c5"]{
+:is(._detailContainer_bdc1262 span):first-of-type,a,._subContainer_8d7e633 ._createdBy_f17c1c3{
+    color: rgb(var(--cover-DVib1))!important;}
+}
+
+
 /*results*/  
 [class="_resultsPageWrapper_9e61f8e"]{
 a._searchPill_ff832da._active_cb92649 {
@@ -742,7 +757,7 @@ a._searchPill_ff832da._active_cb92649 {
 a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
 --wave-color-text-main: black;}
  /* ==========================================.............................................
-    TOOLTIPS
+    TOOLTIPS/TEXT SELECT
 -----------------------------------------------======================================== */
 /*general tooltip*/
 ._marketTooltipContainer_1qti9_1 {
@@ -759,6 +774,9 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
     color: var(--vv);
     border-color: color-mix(in srgb, var(--v1) 55%, rgba(255, 255, 255, 0.6) 45%);
     animation: rotate-gradient 8.3s cubic-bezier(.33,.48,.63,.47) infinite;border-style: solid;height:max-content;border-radius: .6em;margin-bottom: .5em;padding: .1em;padding-left: .3em;padding-right: .3em;}
+::selection {
+  background-color: rgb(var(--cover-Vib2)); /* Hex, RGB, or named color */
+  color: rgb(var(--cover-DVib1));            /* Text color during selection */}
  /* ==========================================.............................................
     IN-CARD PLAY/FAVORITE BUTTONS 
 -----------------------------------------------======================================== */
@@ -1024,7 +1042,7 @@ animation: rotate-gradient 6s cubic-bezier(.33,.48,.63,.47) infinite;}
 
 :root {
     --vv: rgb(var(--cover-DVib1));
-    --zz:  rgb(var(--maintxt4));
+    --zz:  rgb(var(--maintxt3));
     --market-core-text-10-color: black!important;
     --brunk-color: var(--tracksel1);
     --skrunk-color: var(--tracksel2);}
@@ -1269,7 +1287,7 @@ border-style: solid; border-width: 2px;
     max-width: 80%!Important;}}
 
 ._feed_412931c{
-    ._marketText_1lyag_1{color: rgb(var(--maintxt4))}
+    ._marketText_1lyag_1{color: rgb(var(--maintxt3))}
     background-image: 
     radial-gradient(ellipse at center,rgb(var(--cover-DVib1), calc(.1 * var(--shadowmult))), color-mix(in srgb, rgb(var(--card), calc(.5 * var(--shadowmult))) 50% , rgba(0, 0, 0, calc(.5 * var(--shadowmult)))  50%) 110%);
  backdrop-filter: saturate(var(--feedsat)) brightness(var(--feedbrt));
@@ -1633,13 +1651,13 @@ box-shadow: 0px 0px .8em  rgb(var(--F00TBARNP), .1);}
     font-weight: 800;
     font-size: 91%;
     transform: scale(.96) translateY(-.02em);
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 20%, white 80%) !important;}
+    color: rgb(var(--maintxt4)) !important;}
 ._scrubberRow_ab735c5:hover ._scrubberTime_f2b9e3c, ._scrubberRow_ab735c5:hover ._scrubberTimeText_5696619{
     color: color-mix(in srgb, rgb(var(--cover-LVib1)) 60%, white 40%)  !important;}
 /*buttons*/
 /*shufflerepeat inactive button color, scaling, & hover effect*/
 ._shuffleButton_545c75a, ._repeatButton_729613e{transform: scale(.9);padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 100ms;
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 30%, white 70%)  !important;}
+    color:  rgb(var(--maintxt4))  !important;}
 ._shuffleButton_545c75a:hover, ._repeatButton_729613e:hover{transform: scale(.93)!important;padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 200ms;
     color:  rgb(var(--cover-LVib1), 1) !important;
     filter: drop-shadow(0px 0px .31em rgb(var(--cover-DVib1), .43) );}
@@ -1667,31 +1685,31 @@ filter:  brightness(1.1) saturate(1);
 @media (hover: hover) and (pointer: fine) {:is(._player_8c80ae6 button):not(:disabled):hover {transform: scale(1);}}
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"],[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"],[class="_skipButtonWrapper_dc2a3e5"]{
 /*play next color*/
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1)) 30%, white 70%) !important;transition: 250ms;}}
+._icon_77f3f89 {fill: rgb(var(--maintxt4))!important;transition: 250ms;}}
 ._playButton_3afff86,._skipButtonWrapper_dc2a3e5{transform: none!important;}
 /*play next hover color*/
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"]:hover,[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"]:hover,[class="_skipButtonWrapper_dc2a3e5"]:hover{
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-Vib1),1) 30%, rgba(255, 255, 255, 0.7) 70%)  !important;transition: 250ms; transition-delay: -30ms;}
+._icon_77f3f89 {fill: rgb(var(--txthvr)) !important;transition: 250ms; transition-delay: -30ms;}
 filter: drop-shadow(0px 0px .4em rgb(var(--cover-DVib1), .4) ) brightness(1.1);transition: 400ms;}
 /*left side text & buttons*/
 /*title text*/
 [class="_trackContent_7b758a9"]{
-span{color: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
+span{color:  rgb(var(--maintxt4)); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
 /*artist/album text, little disc icon*/
-a,._sourceTypeIcon_16ea49f{color: color-mix(in srgb, rgba(255, 255, 255, 0.7) 70% ,rgb(var(--cover-LVib1)) 30%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
-span:hover, a:hover{color: white !important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
+a,._sourceTypeIcon_16ea49f{color:  rgb(var(--maintxt4)); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
+span:hover, a:hover{color: rgb(var(--txthvr))!important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
 /*buttons*/
-._contextMenuButton_9741d3a,._blockButton_6cdd552{color: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
-._button_c372e89 svg{fill: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
+._contextMenuButton_9741d3a,._blockButton_6cdd552{color:  rgb(var(--maintxt4));}
+._button_c372e89 svg{fill:  rgb(var(--maintxt4));}
 /*buttons hover*/
-._contextMenuButton_9741d3a:hover{ color: white;
+._contextMenuButton_9741d3a:hover{ color: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 1));}
-._button_c372e89:hover svg{fill: white;
+._button_c372e89:hover svg{fill: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*right side utility buttons*/
 ._utilityButtons_4d7aaf9{transform: scale(1.04);}
-._utilityButtons_4d7aaf9 button{ color: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
-._utilityButtons_4d7aaf9 button:hover{ color: white;}
+._utilityButtons_4d7aaf9 button{ color:  rgb(var(--maintxt4));}
+._utilityButtons_4d7aaf9 button:hover{ color: rgb(var(--txthvr));}
 /*new quality tags*/
 /*max tag*/
 ._gradientMax_9111fba {background: none;
@@ -1785,13 +1803,13 @@ box-shadow: 0px 0px .8em rgb(var(--F00TBARNP), .1);}
     font-weight: 800;
     font-size: 91%;
     transform: scale(.96) translateY(-.02em);
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 60%)  !important;}
+    color:  rgb(var(--maintxt4))!important;}
 ._scrubberRow_ab735c5:hover ._scrubberTime_f2b9e3c, ._scrubberRow_ab735c5:hover ._scrubberTimeText_5696619{
     color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 100% , rgba(0, 0, 0, 0) 0%) !important;}
 /*buttons*/
 /*shufflerepeat inactive button color, scaling, & hover effect*/
 ._shuffleButton_545c75a, ._repeatButton_729613e{transform: scale(.9);padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 100ms;
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 60%)  !important;}
+    color: rgb(var(--maintxt4)) !important;}
 ._shuffleButton_545c75a:hover, ._repeatButton_729613e:hover{transform: scale(.93)!important;padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 200ms;
     color:  rgb(var(--cover-LVib1), 1) !important;
     filter: drop-shadow(0px 0px .31em rgb(var(--cover-DVib1), .43) );}
@@ -1819,31 +1837,31 @@ filter:  brightness(1.1) saturate(1);
 @media (hover: hover) and (pointer: fine) {:is(._player_8c80ae6 button):not(:disabled):hover {transform: scale(1);}}
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"],[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"],[class="_skipButtonWrapper_dc2a3e5"]{
 /*play next color*/
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 60%)   !important;transition: 250ms;}}
+._icon_77f3f89 {fill:  rgb(var(--maintxt4)) !important;transition: 250ms;}}
 ._playButton_3afff86,._skipButtonWrapper_dc2a3e5{transform: none!important;}
 /*play next hover color*/
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"]:hover,[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"]:hover,[class="_skipButtonWrapper_dc2a3e5"]:hover{
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 50% ,rgb(255, 255, 255) 50%) !important;transition: 250ms; transition-delay: -30ms;}
+._icon_77f3f89 {fill: rgb(var(--txthvr)) !important;transition: 250ms; transition-delay: -30ms;}
 filter: drop-shadow(0px 0px .4em rgb(var(--cover-DVib1), .4) ) brightness(1.1);transition: 400ms;}
 /*left side text & buttons*/
 /*title text*/
 [class="_trackContent_7b758a9"]{
-span{color: color-mix(in srgb, white 40% ,rgb(var(--cover-LVib1)) 60%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
+span{color: rgb(var(--cover-LVib1)) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
 /*artist/album text, little disc icon*/
-a,._sourceTypeIcon_16ea49f{color: color-mix(in srgb, rgba(255, 255, 255, .8) 80% ,rgb(var(--cover-LVib1)) 20%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
-span:hover, a:hover{color: white !important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
+a,._sourceTypeIcon_16ea49f{color:  rgb(var(--maintxt4)); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
+span:hover, a:hover{color: rgb(var(--txthvr)) !important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
 /*buttons*/
-._contextMenuButton_9741d3a,._blockButton_6cdd552{color: color-mix(in srgb, rgba(255, 255, 255, .8) 80% ,rgb(var(--cover-LVib1)) 20%) ;}
-._button_c372e89 svg{fill: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
+._contextMenuButton_9741d3a,._blockButton_6cdd552{color:  rgb(var(--maintxt4)) ;}
+._button_c372e89 svg{fill:  rgb(var(--maintxt4));}
 /*buttons hover*/
-._contextMenuButton_9741d3a:hover{ color: white;
+._contextMenuButton_9741d3a:hover{ color: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 1));}
-._button_c372e89:hover svg{fill: white;
+._button_c372e89:hover svg{fill: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*right side utility buttons*/
 ._utilityButtons_4d7aaf9{transform: scale(1.04);}
-._utilityButtons_4d7aaf9 button{ color: color-mix(in srgb, rgba(255, 255, 255, .8) 80% ,rgb(var(--cover-LVib1)) 20%) ;}
-._utilityButtons_4d7aaf9 button:hover{ color: white;}
+._utilityButtons_4d7aaf9 button{ color:  rgb(var(--maintxt4));}
+._utilityButtons_4d7aaf9 button:hover{ color: rgb(var(--txthvr));}
 /*new quality tags*/
 /*max tag*/
 ._gradientMax_9111fba {
@@ -2078,9 +2096,9 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
 
 /*np art*/
 
-._artwork_b010eae{border-radius: 1em;box-shadow: none;}
+._artwork_b010eae{border-radius: 1em;box-shadow: none;border-radius: 10px;}
 ._artworkTilt_1c6d5cc {border: none;}
-._glare_fdbaeab{filter: sepia(1) hue-rotate(var(--sephue)) saturate(5) brightness(1.7);}
+._glare_fdbaeab{filter: sepia(1) hue-rotate(var(--sephue)) saturate(5) brightness(1.7); border-radius: 10px;}
 ._glare_fdbaeab:hover{filter: saturate(15) brightness(1.7)!important;transition: 10000ms}
 ._artworkImage_5bde5a4{transition: 600ms;}
 ._artworkImage_5bde5a4:hover{
