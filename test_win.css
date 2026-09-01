@@ -79,11 +79,7 @@ font-weight: 300!important;}}
     ._marketText_1lyag_1, ._link_6a45a19._item_39605ae, a{
     font-size: 15px;}}
 
-@container style(--market-button-tertiary-rank-underline: 0px) {
-    ._label_1d16h_1._label_1d16h_1 {
-       font-size: 14.5px!important;
-    }
-}
+[class="_card_2b91b88"]{._label_1d16h_1._label_1d16h_1 { font-size: 15.5px!important;}}
 
 /* ==========================================.............................................
     BUILTINTHEME
@@ -100,7 +96,7 @@ font-weight: 300!important;}}
         --lyrtxt:  246, 219, 214 ; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
         --maintxt:  205, 214, 244 ; /*feed/card text*/
         --maintxt2:  186,194,222 ; /*feed/card text*/
-        --maintxt3:  225, 214, 244 ; /*feed section-header text*/
+        --maintxt3:  205, 214, 244  ; /*feed section-header text*/
         --maintxt4:  217, 223, 242 ; /*footer text color*/
         --txthvr:  245,224,220 ; /*feed/card text*/
 
@@ -110,7 +106,7 @@ font-weight: 300!important;}}
 
         --card:      30, 30, 46 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
         --card2:     49,50,68 ; /* slightly lighter and/or more saturated version of base card color*/
-        --cardacc: 205, 214, 244; /* very pale version of card color mainly for hover effects*/
+        --cardacc: 180, 190, 254; /* very pale version of card color mainly for hover effects*/
         --cardacc2: 137, 180, 250; /*light version of card color mainly for selected sidebar icon*/
         --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
 
@@ -125,7 +121,7 @@ font-weight: 300!important;}}
         --footcard: rgba(75, 78, 98, 0.7);
 
         --F00TNP: 49, 50, 68 ; /*footer color and lyrics container gb now-playing*/
-        --F00TBARNP: 245,194,231   ; /*footer progress bar color (now-playing)*/
+        --F00TBARNP: 180,190,254  ; /*footer progress bar color (now-playing)*/
         --F00TBARNPBG:  88, 91, 112, 1  ; /*footer progress bar bg color (now-playing)*/
         --footcard2: rgb(49,50,68,.8);
         --npbrdrclr: rgba(24, 24, 37, 1); /*now playing lyrics container border color*/
@@ -504,34 +500,49 @@ span{ color: rgb(var(--maintxt));}
     border-color:color-mix(in srgb,rgb(var(--cover-Vib1),.5) 50%, rgba(255, 255, 255, 0.75) 50%);}
 /*HORIZONTAL CARD*/
 ._item_235a32d{margin-bottom: -.2em!important;
+    a {color: rgb(var(--cover-DVib1))!important;}
 	._marketText_1lyag_1,._link_6a45a19._item_39605ae{font-weight: 500; color: color-mix(in srgb, var(--zz) 22%, #ffffff 78%);}
-    border-radius: .8em;border-color: color-mix(in srgb, rgb(var(--cover-LVib1),.3) 88%, rgba(255, 255, 255, .7) 12%) ;border-width: 2px;border-style: solid;max-width: 97%;margin: auto;
+    border-radius: .8em;border-color: color-mix(in srgb, rgb(var(--cover-LVib2),.3) 88%, rgba(255, 255, 255, .7) 12%) ;border-width: 1.8px;border-style: solid;max-width: 97%;margin: auto;
      background: linear-gradient(120deg,
- color-mix(in srgb, rgb(var(--cover-LVib1),.35) 66%, rgba(255, 255, 255, 0.55) 34%),
- color-mix(in srgb, rgb(var(--cover-LVib1),.35) 70%, rgba(255, 255, 255, 0.55)30%));
+ color-mix(in srgb, rgb(var(--cover-LVib2),.45) 66%, rgba(255, 255, 255, 0.4) 34%),
+ color-mix(in srgb, rgb(var(--cover-LVib2),.5) 70%, rgba(255, 255, 255, 0.4)30%));
     padding: .5em;padding-right: 0em;padding-left: .8em;padding-top: .5em;padding-bottom: .5em;
     box-shadow: 0px 0px .5em rgba(0, 0, 0, 0.09);
-._icon_77f3f89{fill: #e5eeff!important;transform: scale(1.1654)}
+    ._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1))!important}
+._icon_77f3f89{fill: rgb(var(--cover-DVib1))  !important;transform: scale(1.1654)}
 ._fx_e9c441f.css-75d7zy > ._icon_77f3f89 > use, ._feed_412931c > div > ._cardContainer_092d53a > div._card_039393f > ._card_38c6c04 > ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._playButtonBottomRight_81dad72._playButtonContainer_5ab95ff > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._playIcon_0f33a69._icon_77f3f89 > use, ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._favoriteButtonContainer_9320e1a > ._button_c372e89 > ._icon_77f3f89>use{
-    fill: #ffd8f3!important; }}
+    fill:  rgb(var(--cover-DVib1)) !important; }}
 /*HORIZONTAL CARD HOVER*/
 ._item_235a32d:hover{
-._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1),.8)  !important;}
-._icon_77f3f89 {fill: rgb(var(--cover-DVib1),.8) !important;}
-    background: linear-gradient(170deg,
-    #10073100,
-    color-mix(in srgb, var(--v2) 25%, rgb(var(--cover-DVib2),.1) 75%), color-mix(in srgb, var(--v2) 35%, rgb(var(--cover-DVib2),.1) 65%),
-    color-mix(in srgb, var(--v2) 50%, rgba(255, 255, 255, 0.522) 50%),  color-mix(in srgb, var(--v2) 48%, white 52%),
-    color-mix(in srgb, var(--v2) 46%, white 54%));
+._fx_e9c441f.css-75d7zy > ._icon_77f3f89 > use, ._feed_412931c > div > ._cardContainer_092d53a > div._card_039393f > ._card_38c6c04 > ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._playButtonBottomRight_81dad72._playButtonContainer_5ab95ff > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._playIcon_0f33a69._icon_77f3f89 > use, ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._favoriteButtonContainer_9320e1a > ._button_c372e89 > ._icon_77f3f89>use{
+    fill: rgb(var(--maintxt  ))!important;
+ }
+a {
+        color: color-mix(in srgb,rgb(var(--cover-LVib2),1) 70%, rgba(255, 255, 255, 1) 30%) !important;
+    }
+
+border-color: color-mix(in srgb,rgb(var(--cover-LVib2),1) 70%, rgba(255, 255, 255, 1) 30%) ;
+._marketIcon_1664p_1._singleColor_1664p_6 *{fill:  color-mix(in srgb,rgb(var(--cover-LVib2),1) 70%, rgba(255, 255, 255, 1) 30%)  !important;}
+._icon_77f3f89 {fill: color-mix(in srgb,rgb(var(--cover-LVib2),1) 70%, rgba(255, 255, 255, 1) 30%)  !important;}
+     background: linear-gradient(180deg,
+        #ffffff17,#ffffff17,
+        #ffffff17,#ffffff17,
+        rgb(var(--cover-Vib1),.0), rgb(var(--cover-Vib1),.0),
+          rgb(var(--cover-LVib2),.0), rgb(var(--cover-LVib2),.05),
+        rgb(var(--cover-LVib2),.07), rgb(var(--cover-LVib2),.12),
+        rgb(var(--cover-LVib2),.2));
     background-size: 450% 400%;
-    animation: buttongradient2 750s cubic-bezier(.24,.48,.67,.56) ;
+    animation: buttongradient2 250s cubic-bezier(.24,.48,.67,.56) ;
     animation-iteration-count: 1;
     box-shadow: 0 0 15px #b5d0ff51;
     border-radius: .75em!important;
-    transition: 900ms!important;
+    transition: 700ms!important;
     transition-timing-function: cubic-bezier(.73,.51,0,1);
 ._iconButton_4b3ed40:hover{box-shadow: none!important;}}
  [class^="_trackList_"]{background-color: #0000; padding-bottom: 10em;}}
+
+/*CREDITS TAB*/
+._nameLink_3e7ffb8:hover{color: rgb(var(--txthvr))}
 
 /*==========================================.............................................
     FEED TAB (distinct from home feed also idk if anybody even goes here)
@@ -567,7 +578,9 @@ span{ color: rgb(var(--maintxt));}
     ._artistCreatorText_b699bdf{font-size: 17px;}
     [data-wave-color=textSecondary] {font-size: 12px!Important;
     ._item_39605ae{font-size: 18px;}}}
-
+span._metaItem_ed501cd.wave-text-capital-demi{
+    color: rgb(var(--maintxt))!important
+}
 ._cellImage_0ef8dd3{outline: none;}
 /*playlist width*/
 ._items_8615603{
@@ -669,7 +682,9 @@ fill: rgb(0, 0, 0)}
  /* ==========================================.............................................
     DIALOGUE CONTAINERS (EG PLAYLIST EDIT, UPLOADED TRACK SETTINGS)
    -----------------------------------------------======================================== */
-._dialog_148b5df{ background-color: rgb(var(--cover-LVib1),.5);
+._dialog_148b5df{ background-color: rgb(var(--cover-LVib2),.6);
+:is(:is(div._container_9fe9c00,div._container_9fe9c00>a) div:first-of-type,:is(div._container_9fe9c00,div._container_9fe9c00>a)>a) span:last-of-type:not(:first-of-type){
+    color: black;}
 color: black!important;
 --wave-color-text-main: black;
 --market-core-text-10-color: black;
@@ -1025,15 +1040,17 @@ animation: rotate-gradient 6s cubic-bezier(.33,.48,.63,.47) infinite;}
     background-color: none!important; 
     background: none;
     outline: none;}
+root{
+        --zz: rgb(var(var(--maintxt3)))}
 /*play button color*/
   [class="_nativeRowWrapper_20e35be"]{
 ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_4942431{ transform: scale(.8);border-radius: .7em!important; }
 ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_4942431 > ._icon_77f3f89 > use{
     fill:var(--zz); transform: scale(1.05);}
 ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_4942431:hover{
-    background-color: color-mix(in srgb, rgb(var(--cover-DVib2), 1) 45%, rgb(0, 0, 0) 55%); transition: 225ms;
+    background-color: color-mix(in srgb, rgb(var(--cover-DVib2), 1) 66%, rgb(0, 0, 0) 34%); transition: 225ms;
 ._icon_77f3f89 > use{
-    fill: color-mix(in srgb, rgb(var(--cover-Vib1), 1) 45%, rgb(255, 255, 255) 55%); transition: 150ms;}}}
+    fill: color-mix(in srgb, rgb(var(--cover-Vib2), 1) 45%, rgb(255, 255, 255) 55%)!important; transition: 150ms;}}}
  /*tracklist header text color*/
 [class="_tableHeader_ebaf366 _smallText_a636ed6"]{
 ._trackcells-sort_ecf19dd{color: rgb(var(--cover-LVib1));}
@@ -1059,8 +1076,11 @@ animation: rotate-gradient 6s cubic-bezier(.33,.48,.63,.47) infinite;}
 /*main text/icon color*/
 [class="_tableContainer_556e9aa"],[class="_mediaTable_8895569"],[class="_container_928ac6c"]{
 ._tableRow_299a426,._textMax_002bfe5,._contextMenuButton_4c9ff38,[data-wave-color=textDefault],._rowContainer_ebb4cfc ._timeColumn_3cd7564,._textHigh_bbc1075 {
-    color: var(--zz) !important;}
-button {color: var(--zz);}} 
+    color: rgb(var(--maintxt3))!important;}
+button {color: rgb(var(--maintxt3));;}} 
+[class="_titleText_51cccae table--inactive-title"]{
+    color: rgb(var(--maintxt3));
+}
 ._indexNumber_de640b9{color: var(--zz) !important; filter: opacity(.4);}
 /*artist page selected track*/
 [class="_rowContainer_ebb4cfc _selected_8f556cc"]{
@@ -2349,8 +2369,7 @@ a{color: rgb(var(--maintxt));}
 ._artistVariant_63c8c96._card_38c6c04 > ._contentContainer_6f8427a > ._title_3b8740e > ._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1:hover{
     font-weight: 600;color: rgb(var(--card));span{color: black!important;}}
 
-._item_39605ae,.wave-text-capital-demi,._promotionCell_a3b3a98 ._header_1e461f6,._title_66d3d0b,
-[data-wave-color=textSecondary]{color: rgb(var(--maintxt))}
+
 
 
 /* ==========================================.............................................
