@@ -36,7 +36,7 @@ font-weight: 800!important;}
     font-weight: 700!important;}
 #footerPlayer > div._playerContent_8ec26af > div._utilityContainer_4b1f859 > div._qualityBadgeContainer_b9ec6fa > a > span{
     transform: scale(1);}
-._marketTooltipContainer_1qti9_1{ font-size: 16px;}
+._marketTooltipContainer_1qti9_1{ font-size: 15px;}
 [class="_container_84abbc3"]{
 ._label_1d16h_1._label_1d16h_1{font-size: 18px; transform: translateY(-.02em)!important;}}
 
@@ -79,6 +79,8 @@ font-weight: 300!important;}}
     ._marketText_1lyag_1, ._link_6a45a19._item_39605ae, a{
     font-size: 15px;}}
 
+[class="_card_2b91b88"]{._label_1d16h_1._label_1d16h_1 { font-size: 15.5px!important;}}
+
 /* ==========================================.............................................
     BUILTINTHEME
 -----------------------------------------------======================================== */
@@ -94,8 +96,9 @@ font-weight: 300!important;}}
         --lyrtxt:  246, 219, 214 ; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
         --maintxt:  205, 214, 244 ; /*feed/card text*/
         --maintxt2:  186,194,222 ; /*feed/card text*/
-        --maintxt3:  205, 214, 244 ; /*feed section-header text*/
-        --maintxt4:  205, 214, 244 ; /*feed/card text*/
+        --maintxt3:  205, 214, 244  ; /*feed section-header text*/
+        --maintxt4:  217, 223, 242 ; /*footer text color*/
+        --txthvr:  245,224,220 ; /*feed/card text*/
 
         --cover-Vib2:      235, 160, 172 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
         --cover-DVib2:     17, 17, 27    ; /* darker version of second vibrant color*/
@@ -103,7 +106,7 @@ font-weight: 300!important;}}
 
         --card:      30, 30, 46 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
         --card2:     49,50,68 ; /* slightly lighter and/or more saturated version of base card color*/
-        --cardacc: 205, 214, 244; /* very pale version of card color mainly for hover effects*/
+        --cardacc: 180, 190, 254; /* very pale version of card color mainly for hover effects*/
         --cardacc2: 137, 180, 250; /*light version of card color mainly for selected sidebar icon*/
         --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
 
@@ -112,15 +115,15 @@ font-weight: 300!important;}}
         --cover-LMut1:     127,132,156 ; /* light version of muted color*/
 
         --cover-F00T:      49, 50, 68 ; /*footer color (not now-playing)*/
-        --cover-F00TBAR1: 245,224,220  ; /*footer progress bar color (not now-playing)*/
-        --cover-F00TBAR1BG: 88, 91, 112, 1;
+        --cover-F00TBAR1: 245,194,231  ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TBAR1BG: 108, 112, 134, .7;
         --cover-F00TD:     49, 50, 68    ; /*should be a darker version of F00T color*/
-        --footcard: rgb(69,71,90);
+        --footcard: rgba(75, 78, 98, 0.7);
 
         --F00TNP: 49, 50, 68 ; /*footer color and lyrics container gb now-playing*/
-        --F00TBARNP: 245,194,231   ; /*footer progress bar color (now-playing)*/
+        --F00TBARNP: 180,190,254  ; /*footer progress bar color (now-playing)*/
         --F00TBARNPBG:  88, 91, 112, 1  ; /*footer progress bar bg color (now-playing)*/
-        --footcard2: rgb(49,50,68);
+        --footcard2: rgb(49,50,68,.8);
         --npbrdrclr: rgba(24, 24, 37, 1); /*now playing lyrics container border color*/
 
         --shadowmult: 0;
@@ -129,7 +132,7 @@ font-weight: 300!important;}}
         --NPBG: rgba(24, 24, 37, 1);
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(77, 255, 0);
+        --bhdf:    rgb(217, 223, 242);
 
         --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
@@ -157,11 +160,12 @@ font-weight: 300!important;}}
         --v2: rgb(200, 159, 249); /*should vaguely match --cover-Vib2*/
         --vTXT: rgb(17, 17, 27); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
-        --but1: rgb(248, 165, 113);
-        --but2: rgb(237, 137, 154);
+        --but1: rgb(250, 159, 103);
+        --but2: rgb(82, 186, 234);
         
-        --ylw: rgb(249, 226,175);
-        --blu: rgb(148, 226, 235);}
+        --ylw: rgb(246, 231, 201);
+        --blu: rgb(175, 212, 231);
+        --red: rgb(243, 139, 168);}
      
 /* ===========================----BACKGROUND TEXURES----=============================== */
 
@@ -256,7 +260,6 @@ background: none!important;}
 @keyframes blink2 {0% {--star2: 100%;}50% {--star2: 5%;}100%{--star2: 100%;} }
 @keyframes blink1  {0% {--star3: 10%;}50%   {--star3: 100%;}100%{--star3: 10%;}  }
 @keyframes blink12 {0% {--star4: 100%;}50% {--star4: 10%;}100%{--star4: 100%;} }
-
 
 
 
@@ -477,34 +480,45 @@ span{ color: rgb(var(--maintxt));}
     border-color:color-mix(in srgb,rgb(var(--cover-Vib1),.5) 50%, rgba(255, 255, 255, 0.75) 50%);}
 /*HORIZONTAL CARD*/
 ._item_235a32d{margin-bottom: -.2em!important;
+    a,._marketText_1lyag_1, ._link_6a45a19._item_39605ae {color: rgb(var(--cover-DVib1))!important;}
 	._marketText_1lyag_1,._link_6a45a19._item_39605ae{font-weight: 500; color: color-mix(in srgb, var(--zz) 22%, #ffffff 78%);}
-    border-radius: .8em;border-color: color-mix(in srgb, rgb(var(--cover-LVib1),.3) 88%, rgba(255, 255, 255, .7) 12%) ;border-width: 2px;border-style: solid;max-width: 97%;margin: auto;
+    border-radius: .8em;border-color: color-mix(in srgb, rgb(var(--cover-LVib2),.3) 88%, rgba(255, 255, 255, .7) 12%) ;border-width: 1.8px;border-style: solid;max-width: 97%;margin: auto;
      background: linear-gradient(120deg,
- color-mix(in srgb, rgb(var(--cover-LVib1),.35) 66%, rgba(255, 255, 255, 0.55) 34%),
- color-mix(in srgb, rgb(var(--cover-LVib1),.35) 70%, rgba(255, 255, 255, 0.55)30%));
+ color-mix(in srgb, rgb(var(--cover-LVib2),.45) 66%, rgba(255, 255, 255, 0.4) 34%),
+ color-mix(in srgb, rgb(var(--cover-LVib2),.5) 70%, rgba(255, 255, 255, 0.4)30%));
     padding: .5em;padding-right: 0em;padding-left: .8em;padding-top: .5em;padding-bottom: .5em;
     box-shadow: 0px 0px .5em rgba(0, 0, 0, 0.09);
-._icon_77f3f89{fill: #e5eeff!important;transform: scale(1.1654)}
+    ._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1))!important}
+._icon_77f3f89{fill: rgb(var(--cover-DVib1))  !important;transform: scale(1.1654)}
 ._fx_e9c441f.css-75d7zy > ._icon_77f3f89 > use, ._feed_412931c > div > ._cardContainer_092d53a > div._card_039393f > ._card_38c6c04 > ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._playButtonBottomRight_81dad72._playButtonContainer_5ab95ff > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._playIcon_0f33a69._icon_77f3f89 > use, ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._favoriteButtonContainer_9320e1a > ._button_c372e89 > ._icon_77f3f89>use{
-    fill: #ffd8f3!important; }}
+    fill:  rgb(var(--cover-DVib1)) !important; }}
 /*HORIZONTAL CARD HOVER*/
 ._item_235a32d:hover{
-._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1),.8)  !important;}
-._icon_77f3f89 {fill: rgb(var(--cover-DVib1),.8) !important;}
-    background: linear-gradient(170deg,
-    #10073100,
-    color-mix(in srgb, var(--v2) 25%, rgb(var(--cover-DVib2),.1) 75%), color-mix(in srgb, var(--v2) 35%, rgb(var(--cover-DVib2),.1) 65%),
-    color-mix(in srgb, var(--v2) 50%, rgba(255, 255, 255, 0.522) 50%),  color-mix(in srgb, var(--v2) 48%, white 52%),
-    color-mix(in srgb, var(--v2) 46%, white 54%));
+._fx_e9c441f.css-75d7zy > ._icon_77f3f89 > use, ._feed_412931c > div > ._cardContainer_092d53a > div._card_039393f > ._card_38c6c04 > ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._playButtonBottomRight_81dad72._playButtonContainer_5ab95ff > ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._playIcon_0f33a69._icon_77f3f89 > use, ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea > ._icon_77f3f89 > use, ._aspectRatio1x1_8faaf4e._imageContainer_c0c79a9 > ._overlay_91ba65b > ._favoriteButtonContainer_9320e1a > ._button_c372e89 > ._icon_77f3f89>use{
+    fill: rgb(var(--maintxt  ))!important;}
+a,._marketText_1lyag_1, ._link_6a45a19._item_39605ae { color: color-mix(in srgb,rgb(var(--cover-LVib2),1) 80%, rgba(255, 255, 255, 1) 20%) !important;}
+._paygatedBadge_357e24b{filter: none; transition: 00ms;}
+border-color: color-mix(in srgb,rgb(var(--cover-LVib2),1) 80%, rgba(255, 255, 255, 1) 20%) ;
+._marketIcon_1664p_1._singleColor_1664p_6 *{fill:  color-mix(in srgb,rgb(var(--cover-LVib2),1) 70%, rgba(255, 255, 255, 1) 30%)  !important;}
+._icon_77f3f89 {fill: color-mix(in srgb,rgb(var(--cover-LVib2),1) 80%, rgba(255, 255, 255, 1) 20%)  !important;}
+     background: linear-gradient(180deg,
+        #ffffff17,#ffffff17,
+        #ffffff17,#ffffff17,
+        rgb(var(--cover-Vib1),.0), rgb(var(--cover-Vib1),.0),
+          rgb(var(--cover-LVib2),.0), rgb(var(--cover-LVib2),.05),
+        rgb(var(--cover-LVib2),.07), rgb(var(--cover-LVib2),.11),
+        rgb(var(--cover-LVib2),.175));
     background-size: 450% 400%;
-    animation: buttongradient2 750s cubic-bezier(.24,.48,.67,.56) ;
+    animation: buttongradient2 100s cubic-bezier(.24,.48,.67,.56) ;
     animation-iteration-count: 1;
-    box-shadow: 0 0 15px #b5d0ff51;
     border-radius: .75em!important;
-    transition: 900ms!important;
+    transition: 700ms!important;
     transition-timing-function: cubic-bezier(.73,.51,0,1);
 ._iconButton_4b3ed40:hover{box-shadow: none!important;}}
  [class^="_trackList_"]{background-color: #0000; padding-bottom: 10em;}}
+
+/*CREDITS TAB*/
+._nameLink_3e7ffb8:hover{color: rgb(var(--txthvr))}
 
 /*==========================================.............................................
     FEED TAB (distinct from home feed also idk if anybody even goes here)
@@ -540,7 +554,9 @@ span{ color: rgb(var(--maintxt));}
     ._artistCreatorText_b699bdf{font-size: 17px;}
     [data-wave-color=textSecondary] {font-size: 12px!Important;
     ._item_39605ae{font-size: 18px;}}}
-
+span._metaItem_ed501cd.wave-text-capital-demi{
+    color: rgb(var(--maintxt))!important
+}
 ._cellImage_0ef8dd3{outline: none;}
 /*playlist width*/
 ._items_8615603{
@@ -615,13 +631,13 @@ fill: rgb(0, 0, 0)}
     background-color: #0000!important;
     backdrop-filter: blur(15px) ;
     background: linear-gradient(var(--rotate),
-    color-mix(in srgb, var(--v1) 20%, rgba(255, 68, 68, 0.5) 80%) ,
-    color-mix(in srgb, var(--v2) 20%, rgba(255, 68, 68, 0.5) 80%))!important;
+    color-mix(in srgb, var(--v2) 20%,  color-mix(in srgb, #0000 20%, var(--red) 80%) 80%)  ,
+     color-mix(in srgb, #0000 20%, var(--red) 80%) 80%)!important;
     animation: rotate-gradient 22s cubic-bezier(.33,.48,.63,.47) infinite!important;
-    ._iconTextContainer_0f5239a ._errorIcon_212e3b4{fill: rgb(103, 0, 0)}
+    ._iconTextContainer_0f5239a ._errorIcon_212e3b4{fill:  rgb(var(--cover-DVib1))}
     --wave-color-text-main: rgba(0, 0, 0, 0.82);
-    button._button_11e19aa{ background-color: rgb(109, 0, 0); color: rgb(255, 255, 255)}
-    button._button_11e19aa:hover{ background-color: rgba(255, 255, 255, 0.357); color: rgb(0, 0, 0)}
+    button._button_11e19aa{ background-color:  color-mix(in srgb, var(--red) 80%, white 20%); color: rgb(var(--cover-DVib1));}
+    button._button_11e19aa:hover{ background-color: rgb(var(--cover-DVib1),.3); color: rgb(255, 255, 255)}
     box-shadow: 0 16px 32px rgb(var(--cover-DVib1),.4);}
 
 ._button_3357ce6{
@@ -642,7 +658,9 @@ fill: rgb(0, 0, 0)}
  /* ==========================================.............................................
     DIALOGUE CONTAINERS (EG PLAYLIST EDIT, UPLOADED TRACK SETTINGS)
    -----------------------------------------------======================================== */
-._dialog_148b5df{ background-color: rgb(var(--cover-LVib1),.5);
+._dialog_148b5df{ background-color: rgb(var(--cover-LVib2),.6);
+:is(:is(div._container_9fe9c00,div._container_9fe9c00>a) div:first-of-type,:is(div._container_9fe9c00,div._container_9fe9c00>a)>a) span:last-of-type:not(:first-of-type){
+    color: black;}
 color: black!important;
 --wave-color-text-main: black;
 --market-core-text-10-color: black;
@@ -695,8 +713,8 @@ a._button_94c5125, button._button_94c5125, ._button_94c5125{ background-color: r
 --wave-color-solid-contrast-fill: #000 !important;
 ._icon_77f3f89 > use{fill: black;}
 ._actionTextInner_a14f37c{color: black!important;}
-._logout_d89cefd span{color: #ffffff!Important;}}
-[class="_logout_d89cefd _actionItem_e0c1e65"]{background-color: rgba(255, 43, 167, .85);margin: 0px 40px!important;transform: scale(.9);}
+._logout_d89cefd span{color: #ffffff!Important; font-size: 19px;text-align: center; transform: translateX(-.25em);}}
+[class="_logout_d89cefd _actionItem_e0c1e65"]{background-color: rgba(243, 43, 167, .85);margin: 0px 44px!important;transform: scale(.8);}
 [class="_logout_d89cefd _actionItem_e0c1e65"]:hover{
     background-color: rgb(246, 28, 0);border-radius: .3em;transition: 1500ms;transition-timing-function: cubic-bezier(.17,.52,.52,1.01);}
 [class="_container_d3060bb _visible_4bed23e"],[class="_subMenu_706d970"],._submenu_1951fe4{backdrop-filter: blur(1em);}
@@ -715,6 +733,13 @@ span._suggestionText_bf2e71c{ color: rgba(0, 0, 0, 0.55);}
 ._icon_77f3f89 {fill: rgba(0, 0, 0, 0.55);}
 button._container_eca1840:hover, button._container_eca1840:focus{
     background-color: color-mix(in srgb, rgb(var(--cover-Vib2),.9) 50%, rgba(0, 0, 0, 0.6) 50%);}}
+
+[class="_container_79ca9c5"]{
+:is(._detailContainer_bdc1262 span):first-of-type,a,._subContainer_8d7e633 ._createdBy_f17c1c3{
+    color: rgb(var(--cover-DVib1))!important;}
+}
+
+
 /*results*/  
 [class="_resultsPageWrapper_9e61f8e"]{
 a._searchPill_ff832da._active_cb92649 {
@@ -723,7 +748,7 @@ a._searchPill_ff832da._active_cb92649 {
 a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
 --wave-color-text-main: black;}
  /* ==========================================.............................................
-    TOOLTIPS
+    TOOLTIPS/TEXT SELECT
 -----------------------------------------------======================================== */
 /*general tooltip*/
 ._marketTooltipContainer_1qti9_1 {
@@ -740,6 +765,9 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
     color: var(--vv);
     border-color: color-mix(in srgb, var(--v1) 55%, rgba(255, 255, 255, 0.6) 45%);
     animation: rotate-gradient 8.3s cubic-bezier(.33,.48,.63,.47) infinite;border-style: solid;height:max-content;border-radius: .6em;margin-bottom: .5em;padding: .1em;padding-left: .3em;padding-right: .3em;}
+::selection {
+  background-color: rgb(var(--cover-Vib2)); /* Hex, RGB, or named color */
+  color: rgb(var(--cover-DVib1));            /* Text color during selection */}
  /* ==========================================.............................................
     IN-CARD PLAY/FAVORITE BUTTONS 
 -----------------------------------------------======================================== */
@@ -988,15 +1016,17 @@ animation: rotate-gradient 6s cubic-bezier(.33,.48,.63,.47) infinite;}
     background-color: none!important; 
     background: none;
     outline: none;}
+root{
+        --zz: rgb(var(var(--maintxt3)))}
 /*play button color*/
   [class="_nativeRowWrapper_20e35be"]{
 ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_4942431{ transform: scale(.8);border-radius: .7em!important; }
 ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_4942431 > ._icon_77f3f89 > use{
     fill:var(--zz); transform: scale(1.05);}
 ._notCircleIcon_dad7d82._iconButton_4b3ed40._noPadding_9cb3eea._playButton_4942431:hover{
-    background-color: color-mix(in srgb, rgb(var(--cover-DVib2), 1) 45%, rgb(0, 0, 0) 55%); transition: 225ms;
+    background-color: color-mix(in srgb, rgb(var(--cover-DVib2), 1) 66%, rgb(0, 0, 0) 34%); transition: 225ms;
 ._icon_77f3f89 > use{
-    fill: color-mix(in srgb, rgb(var(--cover-Vib1), 1) 45%, rgb(255, 255, 255) 55%); transition: 150ms;}}}
+    fill: color-mix(in srgb, rgb(var(--cover-Vib2), 1) 45%, rgb(255, 255, 255) 55%)!important; transition: 150ms;}}}
  /*tracklist header text color*/
 [class="_tableHeader_ebaf366 _smallText_a636ed6"]{
 ._trackcells-sort_ecf19dd{color: rgb(var(--cover-LVib1));}
@@ -1005,7 +1035,7 @@ animation: rotate-gradient 6s cubic-bezier(.33,.48,.63,.47) infinite;}
 
 :root {
     --vv: rgb(var(--cover-DVib1));
-    --zz:  rgb(var(--maintxt4));
+    --zz:  rgb(var(--maintxt3));
     --market-core-text-10-color: black!important;
     --brunk-color: var(--tracksel1);
     --skrunk-color: var(--tracksel2);}
@@ -1022,8 +1052,11 @@ animation: rotate-gradient 6s cubic-bezier(.33,.48,.63,.47) infinite;}
 /*main text/icon color*/
 [class="_tableContainer_556e9aa"],[class="_mediaTable_8895569"],[class="_container_928ac6c"]{
 ._tableRow_299a426,._textMax_002bfe5,._contextMenuButton_4c9ff38,[data-wave-color=textDefault],._rowContainer_ebb4cfc ._timeColumn_3cd7564,._textHigh_bbc1075 {
-    color: var(--zz) !important;}
-button {color: var(--zz);}} 
+    color: rgb(var(--maintxt3))!important;}
+button {color: rgb(var(--maintxt3));;}} 
+[class="_titleText_51cccae table--inactive-title"]{
+    color: rgb(var(--maintxt3));
+}
 ._indexNumber_de640b9{color: var(--zz) !important; filter: opacity(.4);}
 /*artist page selected track*/
 [class="_rowContainer_ebb4cfc _selected_8f556cc"]{
@@ -1064,6 +1097,7 @@ transition: 400ms;
 ._backgroundHigh_5fbfac8._icon_77f3f89 > use{fill:var(--vv); transition: 450ms;}
 ._backgroundMax_6e0bc55._icon_77f3f89 > use{fill: var(--vv); transition: 450ms;}
 ._titleCell_e18305f._flexWrapper_9d7a784 > .table--inactive-title._titleText_51cccae,._textMax_002bfe5{color: var(--vv)!important;transition: 300ms;}
+._paygatedBadge_357e24b{filter: invert(1) opacity(.8); transition: 200ms;}
 ._artistText_a1c7611 > ._link_6a45a19._item_39605ae{color: var(--vv);transition: 400ms;}
 ._albumColumn_907bff3 > ._link_6a45a19._albumText_ddf6a0e{color: var(--vv);transition: 550ms;}
 time{color: var(--vv);transition:710ms;}
@@ -1162,7 +1196,7 @@ var(--tracksborder) 80%,
 #ffffff00  calc(100% - 1.5em),
 #0000 100%) 1 ;}
 ._filter_8933b89{margin-bottom: 1.15em!Important;}
-._coverImage_1b29507{ border-radius: .45em;}
+._coverImage_1b29507{ border-radius: .45em; outline: none;}
 /* ==========================================.............................................
     HOME FEED
   -----------------------------------------------======================================== */
@@ -1250,7 +1284,7 @@ border-style: solid; border-width: 2px;
     max-width: 80%!Important;}}
 
 ._feed_412931c{
-    ._marketText_1lyag_1{color: rgb(var(--maintxt4))}
+    ._marketText_1lyag_1{color: rgb(var(--maintxt3))}
     background-image: 
     radial-gradient(ellipse at center,rgb(var(--cover-DVib1), calc(.1 * var(--shadowmult))), color-mix(in srgb, rgb(var(--card), calc(.5 * var(--shadowmult))) 50% , rgba(0, 0, 0, calc(.5 * var(--shadowmult)))  50%) 110%);
  backdrop-filter: saturate(var(--feedsat)) brightness(var(--feedbrt));
@@ -1614,13 +1648,13 @@ box-shadow: 0px 0px .8em  rgb(var(--F00TBARNP), .1);}
     font-weight: 800;
     font-size: 91%;
     transform: scale(.96) translateY(-.02em);
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 20%, white 80%) !important;}
+    color: rgb(var(--maintxt4)) !important;}
 ._scrubberRow_ab735c5:hover ._scrubberTime_f2b9e3c, ._scrubberRow_ab735c5:hover ._scrubberTimeText_5696619{
     color: color-mix(in srgb, rgb(var(--cover-LVib1)) 60%, white 40%)  !important;}
 /*buttons*/
 /*shufflerepeat inactive button color, scaling, & hover effect*/
 ._shuffleButton_545c75a, ._repeatButton_729613e{transform: scale(.9);padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 100ms;
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 30%, white 70%)  !important;}
+    color:  rgb(var(--maintxt4))  !important;}
 ._shuffleButton_545c75a:hover, ._repeatButton_729613e:hover{transform: scale(.93)!important;padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 200ms;
     color:  rgb(var(--cover-LVib1), 1) !important;
     filter: drop-shadow(0px 0px .31em rgb(var(--cover-DVib1), .43) );}
@@ -1648,31 +1682,31 @@ filter:  brightness(1.1) saturate(1);
 @media (hover: hover) and (pointer: fine) {:is(._player_8c80ae6 button):not(:disabled):hover {transform: scale(1);}}
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"],[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"],[class="_skipButtonWrapper_dc2a3e5"]{
 /*play next color*/
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1)) 30%, white 70%) !important;transition: 250ms;}}
+._icon_77f3f89 {fill: rgb(var(--maintxt4))!important;transition: 250ms;}}
 ._playButton_3afff86,._skipButtonWrapper_dc2a3e5{transform: none!important;}
 /*play next hover color*/
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"]:hover,[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"]:hover,[class="_skipButtonWrapper_dc2a3e5"]:hover{
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-Vib1),1) 30%, rgba(255, 255, 255, 0.7) 70%)  !important;transition: 250ms; transition-delay: -30ms;}
+._icon_77f3f89 {fill: rgb(var(--txthvr)) !important;transition: 250ms; transition-delay: -30ms;}
 filter: drop-shadow(0px 0px .4em rgb(var(--cover-DVib1), .4) ) brightness(1.1);transition: 400ms;}
 /*left side text & buttons*/
 /*title text*/
 [class="_trackContent_7b758a9"]{
-span{color: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
+span{color:  rgb(var(--maintxt4)); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
 /*artist/album text, little disc icon*/
-a,._sourceTypeIcon_16ea49f{color: color-mix(in srgb, rgba(255, 255, 255, 0.7) 70% ,rgb(var(--cover-LVib1)) 30%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
-span:hover, a:hover{color: white !important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
+a,._sourceTypeIcon_16ea49f{color:  rgb(var(--maintxt4)); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
+span:hover, a:hover{color: rgb(var(--txthvr))!important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
 /*buttons*/
-._contextMenuButton_9741d3a,._blockButton_6cdd552{color: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
-._button_c372e89 svg{fill: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
+._contextMenuButton_9741d3a,._blockButton_6cdd552{color:  rgb(var(--maintxt4));}
+._button_c372e89 svg{fill:  rgb(var(--maintxt4));}
 /*buttons hover*/
-._contextMenuButton_9741d3a:hover{ color: white;
+._contextMenuButton_9741d3a:hover{ color: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 1));}
-._button_c372e89:hover svg{fill: white;
+._button_c372e89:hover svg{fill: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*right side utility buttons*/
 ._utilityButtons_4d7aaf9{transform: scale(1.04);}
-._utilityButtons_4d7aaf9 button{ color: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
-._utilityButtons_4d7aaf9 button:hover{ color: white;}
+._utilityButtons_4d7aaf9 button{ color:  rgb(var(--maintxt4));}
+._utilityButtons_4d7aaf9 button:hover{ color: rgb(var(--txthvr));}
 /*new quality tags*/
 /*max tag*/
 ._gradientMax_9111fba {background: none;
@@ -1766,13 +1800,13 @@ box-shadow: 0px 0px .8em rgb(var(--F00TBARNP), .1);}
     font-weight: 800;
     font-size: 91%;
     transform: scale(.96) translateY(-.02em);
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 60%)  !important;}
+    color:  rgb(var(--maintxt4))!important;}
 ._scrubberRow_ab735c5:hover ._scrubberTime_f2b9e3c, ._scrubberRow_ab735c5:hover ._scrubberTimeText_5696619{
     color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 100% , rgba(0, 0, 0, 0) 0%) !important;}
 /*buttons*/
 /*shufflerepeat inactive button color, scaling, & hover effect*/
 ._shuffleButton_545c75a, ._repeatButton_729613e{transform: scale(.9);padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 100ms;
-    color: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 60%)  !important;}
+    color: rgb(var(--maintxt4)) !important;}
 ._shuffleButton_545c75a:hover, ._repeatButton_729613e:hover{transform: scale(.93)!important;padding: .35em;padding-bottom:.316em;border-radius: .65em;transition: 200ms;
     color:  rgb(var(--cover-LVib1), 1) !important;
     filter: drop-shadow(0px 0px .31em rgb(var(--cover-DVib1), .43) );}
@@ -1800,31 +1834,31 @@ filter:  brightness(1.1) saturate(1);
 @media (hover: hover) and (pointer: fine) {:is(._player_8c80ae6 button):not(:disabled):hover {transform: scale(1);}}
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"],[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"],[class="_skipButtonWrapper_dc2a3e5"]{
 /*play next color*/
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1)) 40%, white 60%)   !important;transition: 250ms;}}
+._icon_77f3f89 {fill:  rgb(var(--maintxt4)) !important;transition: 250ms;}}
 ._playButton_3afff86,._skipButtonWrapper_dc2a3e5{transform: none!important;}
 /*play next hover color*/
 [class="_playbackButton_c00b950 _playButtonInner_03d539f"]:hover,[class="_skipButtonWrapper_dc2a3e5 _previousWrapper_17b7a1c"]:hover,[class="_skipButtonWrapper_dc2a3e5"]:hover{
-._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 50% ,rgb(255, 255, 255) 50%) !important;transition: 250ms; transition-delay: -30ms;}
+._icon_77f3f89 {fill: rgb(var(--txthvr)) !important;transition: 250ms; transition-delay: -30ms;}
 filter: drop-shadow(0px 0px .4em rgb(var(--cover-DVib1), .4) ) brightness(1.1);transition: 400ms;}
 /*left side text & buttons*/
 /*title text*/
 [class="_trackContent_7b758a9"]{
-span{color: color-mix(in srgb, white 40% ,rgb(var(--cover-LVib1)) 60%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
+span{color: rgb(var(--cover-LVib1)) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
 /*artist/album text, little disc icon*/
-a,._sourceTypeIcon_16ea49f{color: color-mix(in srgb, rgba(255, 255, 255, .8) 80% ,rgb(var(--cover-LVib1)) 20%) ; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
-span:hover, a:hover{color: white !important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
+a,._sourceTypeIcon_16ea49f{color:  rgb(var(--maintxt4)); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.099);}._item_39605ae{ text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.219);font-weight: 500;}
+span:hover, a:hover{color: rgb(var(--txthvr)) !important; text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.157);}
 /*buttons*/
-._contextMenuButton_9741d3a,._blockButton_6cdd552{color: color-mix(in srgb, rgba(255, 255, 255, .8) 80% ,rgb(var(--cover-LVib1)) 20%) ;}
-._button_c372e89 svg{fill: color-mix(in srgb, white 70% ,rgb(var(--cover-LVib1)) 30%);}
+._contextMenuButton_9741d3a,._blockButton_6cdd552{color:  rgb(var(--maintxt4)) ;}
+._button_c372e89 svg{fill:  rgb(var(--maintxt4));}
 /*buttons hover*/
-._contextMenuButton_9741d3a:hover{ color: white;
+._contextMenuButton_9741d3a:hover{ color: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 1));}
-._button_c372e89:hover svg{fill: white;
+._button_c372e89:hover svg{fill: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
 /*right side utility buttons*/
 ._utilityButtons_4d7aaf9{transform: scale(1.04);}
-._utilityButtons_4d7aaf9 button{ color: color-mix(in srgb, rgba(255, 255, 255, .8) 80% ,rgb(var(--cover-LVib1)) 20%) ;}
-._utilityButtons_4d7aaf9 button:hover{ color: white;}
+._utilityButtons_4d7aaf9 button{ color:  rgb(var(--maintxt4));}
+._utilityButtons_4d7aaf9 button:hover{ color: rgb(var(--txthvr));}
 /*new quality tags*/
 /*max tag*/
 ._gradientMax_9111fba {
@@ -2059,9 +2093,9 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
 
 /*np art*/
 
-._artwork_b010eae{border-radius: 1em;box-shadow: none;}
+._artwork_b010eae{border-radius: 1em;box-shadow: none;border-radius: 10px;}
 ._artworkTilt_1c6d5cc {border: none;}
-._glare_fdbaeab{filter: sepia(1) hue-rotate(var(--sephue)) saturate(5) brightness(1.7);}
+._glare_fdbaeab{filter: sepia(1) hue-rotate(var(--sephue)) saturate(5) brightness(1.7); border-radius: 10px;}
 ._glare_fdbaeab:hover{filter: saturate(15) brightness(1.7)!important;transition: 10000ms}
 ._artworkImage_5bde5a4{transition: 600ms;}
 ._artworkImage_5bde5a4:hover{
@@ -2201,6 +2235,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
 /* ==========================================.............................................
     CARDS
    -----------------------------------------------======================================== */
+   ._paygatedBadge_357e24b{background-color: #0000;}
 ._overlay_91ba65b{background: none;}
 @media (min-width: 2400px){[class="_cardContainer_8d57d95"]{--numberOfCardsToDisplay: 9!important;}}
 @media (min-width: 2700px){[class="_cardContainer_8d57d95"]{--numberOfCardsToDisplay: 10!important;}}
@@ -2230,7 +2265,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
 /*MAIN CARD HOVER*/
 [class="_card_38c6c04"]:hover{
 ._badge_57d1ccb {filter: none!important;}
-._explicitBadge_b93510b._explicitBadge_7737e85._badge_57d1ccb{transform: translateY(.49em) scale(.93); filter: invert(1)!important;}
+._explicitBadge_b93510b._explicitBadge_7737e85._badge_57d1ccb{transform: translateY(.49em) scale(.93); filter: invert(1) opacity(.7)!important; transition: 200ms;}
 ._imageWrapper_aecc0c5 img{transform: scale(1.02);transition: 1100ms;border-radius: 1em!important;}
 ._overlay_91ba65b{transform: scale(1.0);border-radius: .53em!important;                                    
     background: rgb(var(--cover-LMut1),.1); box-shadow: inset 0px 0px 6em rgb(var(--cover-Mut1),.15);}
@@ -2266,6 +2301,7 @@ a{color: rgb(var(--maintxt));}
     fill: color-mix(in srgb, var(--v2) 25%, white 75%);}}
 /*HORIZONTAL CARD HOVER*/
 ._item_235a32d:hover{
+    ._paygatedBadge_357e24b{filter: invert(1) opacity(.65); transition: 200ms;}
 ._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1),.8)  !important;}
     background: linear-gradient(170deg,
         #10073100,#10073100,
@@ -2312,8 +2348,7 @@ a{color: rgb(var(--maintxt));}
 ._artistVariant_63c8c96._card_38c6c04 > ._contentContainer_6f8427a > ._title_3b8740e > ._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1:hover{
     font-weight: 600;color: rgb(var(--card));span{color: black!important;}}
 
-._item_39605ae,.wave-text-capital-demi,._promotionCell_a3b3a98 ._header_1e461f6,._title_66d3d0b,
-[data-wave-color=textSecondary]{color: rgb(var(--maintxt))}
+
 
 
 /* ==========================================.............................................
@@ -2323,22 +2358,34 @@ a{color: rgb(var(--maintxt));}
     fill: rgb(var(--cover-Vib2), .8)}
 ._title_46662dc > ._clipText_2333e9d,._clipText_2333e9d._artistName_a1d1fe6{
     color: color-mix(in srgb, var(--vv) 90%, #0000 10%);
-    font-weight: bold;transform: translatey(-.1em);}transition: 0ms;border-radius: 1.1em;transform: translatey(-4.75em);padding-top: 4.6em!important;padding-left: 1.4em;padding-right: 1.4em;padding-bottom: 2em!important;border-style: solid;border-width: 2px;box-shadow: 0px 0px 2em var(--shradow);min-width: calc(var(--resonancePageMinWidth) - var(--sidebarWidth));margin-bottom: 2em;._tabs_4428a34 > .react-tabs{transform: translatey(-1em);}
-    border-color: #09041a;
-   margin: auto;
-   background-color: rgb(var(--card2));
+    font-weight: bold;transform: translatey(-.1em);}transition: 0ms;border-radius: 1.1em;transform: translatey(-4.75em);padding-top: 4.6em!important;padding-left: 1.4em;padding-right: 1.4em;padding-bottom: 2em!important;border-style: solid!important;border-width: 2px!important;box-shadow: 0px 0px 2em var(--shradow);min-width: calc(var(--resonancePageMinWidth) - var(--sidebarWidth));margin-bottom: 2em;._tabs_4428a34 > .react-tabs{transform: translatey(-1em);}
+border-color: var(--plylstbrdr)!important;
+backdrop-filter: brightness(var(--plylstbrt)) saturate(var(--plylstsat));   
 ._header_08270d6{
     border-radius: 1.4em!important;
     background-color:  color-mix(in srgb, rgb(var(--cover-LVib1),1) 40%, rgb(var(--cover-Vib1),1) 60%)!important;
     border-left: 1em solid color-mix(in srgb, rgb(var(--cover-LVib1),1) 40%, rgb(var(--cover-Vib1),1) 60%)!important;
     border-right: 1em solid color-mix(in srgb, rgb(var(--cover-LVib1),1) 40%, rgb(var(--cover-Vib1),1) 60%)!important;}
 ._header_08270d6:hover{
+    ._icon_77f3f89 > use{
+        fill: rgb(var(--cover-LVib1),1)!important;
+    }
+         background: linear-gradient(180deg,
+        #ffffff17,#ffffff17,
+        #ffffff17,#ffffff17,
+        rgb(var(--cover-Vib1),.0), rgb(var(--cover-Vib1),.0),
+          rgb(var(--cover-LVib2),.0), rgb(var(--cover-LVib2),.05),
+        rgb(var(--cover-LVib2),.07), rgb(var(--cover-LVib2),.11),
+        rgb(var(--cover-LVib2),.175));
+    background-size: 450% 400%;
+    animation: buttongradient2 100s cubic-bezier(.24,.48,.67,.56) ;
+    transition: background-color 0ms, border-left 0ms, border-right 0ms;
+    outline-style: solid; outline-width: 2px; outline-color: rgb(var(--cover-LVib1));
 ._title_46662dc > ._clipText_2333e9d,._clipText_2333e9d._artistName_a1d1fe6{
     color: rgb(var(--cover-LVib2));}
-    border-radius: 1.2em!important; transition: 200ms;
-    background-color: color-mix(in srgb, rgb(var(--cover-DVib2),1) 90%, rgb(var(--cover-Vib2),1) 10%)!important;
-    border-left: 1em solid  color-mix(in srgb, rgb(var(--cover-DVib2),1) 90%, rgb(var(--cover-Vib2),1) 10%)!important;
-    border-right: 1em solid  color-mix(in srgb, rgb(var(--cover-DVib2),1) 90%, rgb(var(--cover-Vib2),1) 10%)!important; }}
+    background-color: rgb(var(--cover-DVib1)) !important;
+    border-left: 1em solid  #0000 !important;
+    border-right: 1em solid #0000 !important; }}
 [class="_credits_935a1bc"]{[data-wave-color=textDefault],[data-wave-color=textTertiary]{color: color-mix(in srgb, var(--vv) 90%, #0000 10%);}}
 ._item_e08d6d4>div,._credits_935a1bc{background: #0000; background-color: #0000!important; }
 ._mediaCredits_568fa50._mediaCreditsPadded_aa84d38{margin-top: .375em;border-radius: 1.4em;}
@@ -2346,7 +2393,7 @@ a{color: rgb(var(--maintxt));}
 ul._tabs_4428a34{z-index: 2;position: relative!important; transform: translateX(2em);}
 span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-size: 70%;}
 ._meta_32e4194{transform: translatex(.2em);}
-._mediaCredits_568fa50._mediaCreditsPadded_aa84d38{background-color: color-mix(in srgb, rgb(var(--cover-DVib2),1) 20%, rgb(var(--cover-Vib2),1) 80%)!important;}
+._mediaCredits_568fa50._mediaCreditsPadded_aa84d38{background-color:  rgb(var(--cover-Vib2),1)!important;}
 [class="_titleAndArtistName_9f451e9"]{transform: translateX(1em);}
 [class="_button_a3412d0"]{transform: translateX(2em);}
 [class="_creditsCell_baf4240"]{transform: translateX(-1.3em);}
@@ -2397,3 +2444,7 @@ button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1.
 	max-width: none !important;}
 .rl-stock-background-container{
     filter: sepia(1) hue-rotate(var(--sephue));}
+
+
+
+
