@@ -854,6 +854,11 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
 /* ==========================================.............................................
     SETTINGS / LUNA SETTINGS
 -----------------------------------------------======================================== */
+._customRadioButton_10a3695{
+    box-shadow: 0 0 0 7px rgb(var(--cover-DVib1))!Important;}
+div._container_9a0abb9>svg._icon_ca2e100{
+    color: black
+}
   /*settings*/
 [data-test="settings-page"]{
         --wave-color-solid-contrast-fill: color-mix(in srgb, white 50%, rgb(var(--cover-LVib1)) 50%) ;
@@ -862,73 +867,99 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
 button._customButton_e043d7d:hover{background-color: var(--v1);}}
 ._label_12bd8cc:after{background-color: black;}
 :is(:is(div._container_9fe9c00,div._container_9fe9c00>a) div:first-of-type,:is(div._container_9fe9c00,div._container_9fe9c00>a)>a) span:last-of-type:not(:first-of-type){
-    color: rgb(var(--cover-LVib1))
-}
+    color: rgb(var(--cover-LVib1))}
 ._container_b4f1e20._fillDark_a1e5896 > div,._container_9a0abb9{
-    background: rgb(var(--cover-Vib1), .2) !important;}
+    background: rgb(var(--card2)) !important;}
 ._container_b4f1e20._fillDark_a1e5896, ._container_b4f1e20._noFill_8429ea8 {
-    border: 1px solid rgb(var(--cover-Vib1),1);}
-._checked_3422d33._label_12bd8cc{color: black;background-color: var(--v1);}
-._unchecked_a1bcc16._label_12bd8cc{background-color: var(--v2) ;color: black !important;}
+    border: 1px solid rgb(var(--cover-DVib));}
+._checked_3422d33._label_12bd8cc{
+background-size: 160%;
+background: linear-gradient(var(--rotate),
+var(--tracksel1) ,
+var(--tracksel2)  )!important;
+animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;;}
+._label_12bd8cc._checked_3422d33:after{background-color: rgb(var(--cover-DVib1));}
+._unchecked_a1bcc16._label_12bd8cc{background-color: rgb(var(--cover-LVib1),.4) ; }
+._label_12bd8cc._unchecked_a1bcc16:after{background-color: rgb(var(--maintxt )); transition: 200ms;}
 ._select_ef84104 {background-image: linear-gradient(rgb(var(--cover-LVib1))); border-radius:1em;}
 div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-Vib1)); color: rgb(var(--cover-DVib1))}
-.licenseFrame--C_hup {background: #dbdbff;}
+
+
+
+
 /*Luna settings*/
 /*inactive tab text*/
 .css-71pw0n{
-    color: rgba(255, 255, 255, 0.5);}
+    color: rgb(var(--maintxt));}
 /*inactive tab hover text*/
 .css-71pw0n:hover:not(.Mui-selected){
     color: rgb(255, 255, 255);}
 /*active tab*/
 .css-71pw0n.Mui-selected{
-    background-color: rgba(var(--cover-LVib1),.3);
+    background-color: rgb(var(--card2));
     border-radius: 1em;
-    color: white}
+    color:  rgb(var(--cover-LVib1));}
 .css-71pw0n.Mui-selected .MuiTab-icon{
     color: rgb(var(--cover-LVib1));}
-
-.css-18r1alp{ color: black!important;}
+/*+ -*/
+.css-18r1alp{ color: rgb(var(--maintxt  ))!important;}
 /*text*/
-A .css-yc8597, .css-pfqxe1, .css-1id1h8n, .css-pfqxe1, .css-axw7ok, .css-16hze37{
-    color: rgba(0, 0, 0, 0.845)!important;}
+A .css-yc8597, .css-pfqxe1, .css-1id1h8n, .css-pfqxe1, .css-axw7ok, .css-16hze37,.css-phs6im{
+    color: rgb(var(--maintxt ))!important;}
 [class="MuiContainer-root MuiContainer-maxWidthMd css-1oyb6px"]{margin-bottom: 10em!Important;margin-top: -0EM!important;}
-/*Luna settings bg*/
+
 [class="MuiStack-root css-1ov46kg"]{transform: translateY(-.5em);}
-.css-3ts090{
-    background-color: rgba(255, 255, 255, 0.13);
-}
-[class="MuiContainer-root MuiContainer-maxWidthLg css-sot3eg"]{
-  
-    transform: translateY(-1em);
-    background-image: linear-gradient(rgb(var(--cover-LVib1), .4)) !important;
-    min-width: 102%;margin-top: 1em;padding: 2.3em;padding-top: 2.3em;border-radius: 1em;}
+
 [class="_player_f60dc38 nowPlayingVisible _notFullscreen_1b39238"],[class="_player_f60dc38 nowPlayingVisible"],[class="_player_f60dc38 nowPlayingVisible _controlsHidden_cc249f0"]{[class="_header_f086575"] {display:none;}}
 .css-1lpn1cw.Mui-disabled,.css-5aeqi2.Mui-disabled{
     color: rgba(0, 0, 0, 0.383);}
+/*switches*/
 div > div > span > span.MuiButtonBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.PrivateSwitchBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.css-1y0ghtc > div{
-    background-color: hsla(0, 0%, 0%, 0.901)!important;}
+    background-color: hsla(0, 33%, 1%, 0.901)!important;}
+
+.css-1y0ghtc.Mui-checked + .MuiSwitch-track{ background-size: 160%;
+background: linear-gradient(var(--rotate),
+var(--tracksel1) ,
+var(--tracksel2)  )!important;
+animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
+.css-1y0ghtc + .MuiSwitch-track{background-color: rgba(var(--maintxt))!Important;}
 /*buttons*/
-.css-8wmp9n{background-color: rgba(255, 255, 255, 0.5) !Important;}
-.css-8wmp9n:hover{background-color: rgb(var(--cover-Vib1),.8)!Important;}
+.css-18zd8ak.Mui-disabled{color: rgb(var(--maintxt),.5);}
+[class="MuiStack-root css-1mzerio"]{
+.css-q7mezt{fill: var(--red);}
+.css-1ijz06h{fill:rgb(var(--cover-Vib2));}}
+[aria-label="Disable live reloading"]{
+    .css-q7mezt{fill:rgb(166, 227, 161)  !Important;}}
+
+.css-k0fbwn,.css-3ac9vt,.css-8wmp9n{
+    background-color: rgb(var(--maintxt2))!important;}
+    .css-k0fbwn:hover,.css-3ac9vt:hover,.css-8wmp9n:hover{
+    background-color: rgb(var(--maintxt))!important;}
+
+.css-ng6zqd{background-color: var(--red); color: black;}
+
+.css-1ijz06h{fill: var(--ylw)}
+
+#main > div:nth-child(4) > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div:nth-child(1) > div > div.MuiStack-root.css-12qsudj > div:nth-child(1) > div > div > span{
+    color:  var(--blu)!important;}
+
+/*background*/
+[class="MuiContainer-root MuiContainer-maxWidthLg css-sot3eg"]{
+    transform: translateY(-1em);
+    background-color: rgb(var(--card2))!important;
+    border-style: solid; border-width: 2px; border-color: var(--plylstbrdr);
+    min-width: 102%;margin-top: 1em;padding: 2.3em;padding-top: 2.3em;border-radius: 1em;}
 /*active plugin bg*/
 .css-1m2j012,.css-1v59atl{
-    background-color: rgb(var(--cover-Vib1),.7)!Important;
+    background-color: rgb(var(--cover-DVib1))!Important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px -1px, rgba(0, 0, 0, 0.1) 0px 5px 8px 0px, rgba(0, 0, 0, 0.1) 0px 1px 14px 0px!Important;}
 /*inactive plugin bg*/
 .css-1m2uggs,.css-1l78aht{
-    background-color: rgba(255, 255, 255, 0.21)!Important;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px -1px, rgba(0, 0, 0, 0.1) 0px 5px 8px 0px, rgba(0, 0, 0, 0.1) 0px 1px 14px 0px!Important;}
+    background-color: rgb(var(--card)) !Important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.2) 0px 5px 8px 0px, rgba(0, 0, 0, 0.2) 0px 1px 14px 0px!Important;}
 /*active plugin sub-bg*/
-.css-16a8gxx{
-    border-style: solid!Important;
-    border-color: #ffffff79!Important;
-    background-color: rgb(var(--cover-LVib1), .4)!Important;
-    box-shadow: rgba(219, 197, 255, 0.112) 0px 3px 5px -1px, rgba(0, 0, 0, 0.049) 0px 5px 8px 0px, rgba(255, 183, 250, 0.084) 0px 1px 14px 0px!Important;}
-.css-1y0ghtc.Mui-checked + .MuiSwitch-track{background-color: rgba(255, 255, 255, 0.414) !Important;}
-.css-1y0ghtc + .MuiSwitch-track{background-color: rgba(0, 0, 0, 0.471)!Important;}
-body > div.ReactModalPortal > div > div > div.modalBody--TFBWU.selectableText--UDUkZ.modalText--gCapb.subtitle--dYfEG > neptune-reactive-root > div > button,#main > div.__NEPTUNE_PAGE > neptune-reactive-root > div > div > div:nth-child(2) > div > div.neptune-card > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(1),#main > div.__NEPTUNE_PAGE > neptune-reactive-root > div > div > div:nth-child(2) > div > div.neptune-card > div > div:nth-child(2) > div:nth-child(1) > button:nth-child(2) {
-color: #000000!Important; }
+.css-12qsudj{
+    background-color: rgb(var(--card));}
 .neptune-switch::after {background-color: #000000!Important}
 #main > div:nth-child(3) > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div:nth-child(2) > div.MuiStack-root.css-16a8gxx > div {
 color: #000000;}
@@ -937,16 +968,15 @@ color: #000000;}
     transform: translateY(-1.4em)!Important;}
 .css-1xqp9nb,[class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-1fjnh2a"],.css-msl6v0.MuiSelect-select{
     color: #ffffff!Important;
-    background-color: rgba(11, 0, 23, 0.629)!Important;}
+    background-color: rgb(var(--cover-DVib1))!Important;}
+.css-1mbv9c9{background-color: rgb(var(--cover-DVib1));}
 .css-msl6v0.MuiSelect-select div > div._imageContainer_c0c79a9._aspectRatio1x1_8faaf4e > div._imageWrapper_aecc0c5{border-radius: .34em!Important;}
-.css-yc8597.Mui-selected {
-   color: rgb(255, 255, 255)!Important;
-   background-color: rgb(var(--cover-Vib2),.3)!Important;
-   border-radius: .7em!Important;}
 .css-yc8597.Mui-selected .MuiTab-icon
 {color: rgb(var(--cover-LVib1))}
 [class="MuiTabs-indicator css-snbo3w"]{filter: opacity(0)!Important;}
 ._searchBackdrop_e7b748d{transform:scale(100)!Important;z-index:0!Important;}
+
+.css-3ts090{background-color: rgb(var(--card));}
 
 /* ==========================================.............................................
    ==========================================.............................................
