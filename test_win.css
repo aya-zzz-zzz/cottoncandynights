@@ -924,10 +924,10 @@ var(--tracksel2)  )!important;
 animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
 .css-1y0ghtc + .MuiSwitch-track{background-color: rgba(var(--maintxt))!Important;}
 /*buttons*/
-.css-18zd8ak.Mui-disabled{color: rgb(var(--maintxt),.5);}
+.css-18zd8ak.Mui-disabled{color: rgb(var(--maintxt),.5)!important;}
 [class="MuiStack-root css-1mzerio"]{
-.css-q7mezt{fill: var(--red);}
-.css-1ijz06h{fill:rgb(var(--cover-Vib2));}}
+.css-q7mezt{fill: var(--red)!important;}
+.css-1ijz06h{fill:rgb(var(--cover-Vib2))!important;}}
 [aria-label="Disable live reloading"]{
     .css-q7mezt{fill:rgb(166, 227, 161)  !Important;}}
 
@@ -938,7 +938,7 @@ animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
 
 .css-ng6zqd{background-color: var(--red); color: black;}
 
-.css-1ijz06h{fill: var(--ylw)}
+.css-1ijz06h{fill: var(--ylw)!important}
 
 #main > div:nth-child(4) > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div:nth-child(1) > div > div.MuiStack-root.css-12qsudj > div:nth-child(1) > div > div > span{
     color:  var(--blu)!important;}
