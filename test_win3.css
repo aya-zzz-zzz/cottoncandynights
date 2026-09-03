@@ -889,7 +889,6 @@ div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-Vib1))
 
 /*Luna settings*/
 /*Lunar stuff*/
-/*active tab*/
 .css-yc8597.Mui-selected{
 	  background-color: rgb(var(--card2));
     border-radius: 1em;
@@ -897,6 +896,12 @@ div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-Vib1))
 #main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorError.MuiIconButton-sizeMedium.css-v7lvbx > svg > path
 {fill:var(--red) !important}
 .css-v7lvbx{fill: var(--red)!Important}
+#main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorError.MuiIconButton-sizeMedium.css-1pkggo8 > svg > path
+{fill:var(--red) !important}
+#main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button > svg > path{
+fill: rgb(var(--cover-Vib2)!important}
+
+
 /*inactive tab text*/
 .css-71pw0n{
     color: rgb(var(--maintxt));}
