@@ -900,8 +900,8 @@ div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-Vib1))
 
 #main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorError.MuiIconButton-sizeMedium.css-1pkggo8 > svg > path{
 fill: var(--red)!Important}
-[title="Reload plugin"],[aria-label="Reload store"],[aria-label="Reload theme"]{
-#main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button > svg > path{
+[aria-label="Reload plugin"],[title="Reload store"],[aria-label="Reload theme"]{
+ svg > path{
 fill: rgb(var(--cover-Vib2))!important; }
 }
 
