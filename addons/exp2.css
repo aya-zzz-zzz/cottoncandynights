@@ -1,9 +1,11 @@
 ._trackContent_7b758a9{
+will-change: transform, contents; 
     span{transition: 600ms;}
   transition: 600ms;
   transition-timing-function: cubic-bezier(.32,.3,.32,1);}
 
 [class="_player_8c80ae6 _notFullscreen_60c5a14"] {
+will-change: transform, contents; 
 span{transition: 600ms;}
 ._trackContent_7b758a9 { transition:600ms!important;
  transition-delay: 0ms!important;
