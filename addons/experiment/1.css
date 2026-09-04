@@ -10,3 +10,6 @@ span{transition: 500ms;}
 ._trackContent_7b758a9 { transition:600ms!important;
  transition-delay: 0ms!important;
   transition-timing-function:cubic-bezier(.34,.87,.25,1)!important;}}
+
+
+.css-1tk08rl, .css-1tk08rl > *{transition: opacity 0ms, transform 0ms !Important;}
