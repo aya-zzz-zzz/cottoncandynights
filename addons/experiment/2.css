@@ -1,0 +1,15 @@
+._trackContent_7b758a9{
+will-change: transform, contents; 
+    span{transition: 550ms;}
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(.32,.3,.32,1);}
+
+[class="_player_8c80ae6 _notFullscreen_60c5a14"] {
+will-change: transform, contents; 
+span{transition: 500ms;}
+._trackContent_7b758a9 { transition:600ms!important;
+ transition-delay: 0ms!important;
+  transition-timing-function:cubic-bezier(.34,.87,.25,1)!important;}}
+
+
+.css-1tk08rl, .css-1tk08rl > *{transition: opacity 0ms, transform 0ms !Important;}
