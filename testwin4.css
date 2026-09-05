@@ -1,5 +1,136 @@
+/* ==========================================.............................................
+    BUILTINTHEME
+-----------------------------------------------======================================== */
+/* ===========================----COLOR VARIABLES----================================== */
+    :root{
+
+        --cover-Vib1:      255, 103, 235  ; /* first vibrant color*/
+        --cover-DVib1:     7, 0, 29  ; /* darker version of first vibrant color*/
+        --cover-LVib1:     253, 184, 255 ; /* lighter version of first vibrant color*/
+
+        --lyrtxt: 255, 171, 248; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
+        --maintxt:   241, 232, 255 ; /*feed/card text*/
+        --maintxt2:  241, 232, 255 ; /*feed/card text*/
+        --maintxt3:   216, 218, 255; /*feed section-header text*/
+        --maintxt4:  216, 218, 255 ; /*feed/card text*/
+        --txthvr:  250, 204, 255 ; /*feed/card text*/
+
+        --cover-Vib2:      179, 207, 255 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
+        --cover-DVib2:     0, 7, 67    ; /* darker version of second vibrant color*/
+        --cover-LVib2:     220, 240, 255  ; /* lighter version of second vibrant color*/
+
+        --card:      11, 1, 42 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
+        --card2:     19, 5, 65 ; /* slightly lighter and/or more saturated version of base card color*/
+        --cardacc: 183, 174, 255; /* very pale version of card color mainly for hover effects*/
+        --cardacc2: 229, 163, 255; /*light version of card color mainly for selected sidebar icon*/
+        --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
+
+        --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this was a covertheme compatible theme)*/
+        --cover-DMut1:     16, 0, 32     ; /* darker version of muted color*/
+        --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
+
+        --cover-F00T:      14, 4, 57 ; /*footer color (not now-playing)*/
+        --cover-F00TBAR1:  252, 165, 255    ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TBAR1BG: 93, 82, 156, 0.6;
+        --cover-F00TD:     74, 66, 58    ; /*should be a darker version of F00T color*/
+        --footcard: rgba(231, 227, 255, 0.091);
+
+        --F00TNP: 23, 5, 64; /*footer color and lyrics container gb now-playing*/
+        --F00TBARNP: 179, 207, 255  ; /*footer progress bar color (now-playing)*/
+        --F00TBARNPBG:  245,245,255,.12  ; /*footer progress bar bg color (now-playing)*/
+        --footcard2: rgba(162, 134, 255, 0.178);
+        --npbrdrclr: rgba(21, 21, 23, 0.177); /*now playing lyrics container border color*/
+
+        --shadowmult: 0.7;
+        --glowmult: 1;
+
+        --NPBG: rgba(29, 7, 64, 0.323);
 
 
+        /*bhdf doesnt do nuthin it's just here to make color picking easier*/
+        --bhdf:    rgb(11, 1, 42);
+
+        --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
+
+        --cover-S1D3B4R:     color-mix(in srgb, rgba(255, 255, 255, 0.513) 3% , rgb(var(--cover-F00T), 1) 97%); /*controls sidebar background-color*/
+        --sbacc:     rgb(51, 36, 100); /*controls sidebar nav-item/folder bg*/
+
+        --sephue: 203deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
+
+        --plylstsat: 1.2; /*controls backdrop-filter for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrt: 1.2;
+        --plylstbrdr: rgba(146, 190, 255, 0.17); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+
+        --feedsat: 1.2; /*controls backdrop-filter for home feed inner container*/
+        --feedbrt: 1.1;
+        --feedbrdr: rgba(146, 146, 255, 0.17);/*controls border-color for home feed inner container*/
+
+        /*selected track colors*/
+        --tracksel1: rgb(255, 158, 255); /*selected track animated gradient color 1*/
+        --tracksel2: rgb(174, 158, 255); /*selected track animated gradient color 2*/
+        --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
+        --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
+        --tracksborder : rgb(55, 54, 90); /*tracklist divider line color, should be fully opaque*/
+        /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
+        --v1: rgb(255, 124, 244); /*should vaguely match --cover-Vib1*/
+        --v2: rgb(118, 182, 255); /*should vaguely match --cover-Vib2*/
+        --vTXT: rgb(255, 255, 255); /*should vaguely match --cover-Vib2*/
+        /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
+        --but1: rgb(233, 102, 233);
+        --but2: rgb(87, 148, 233);
+        
+        --ylw: rgb(255, 234, 195);
+        --blu: rgb(178, 232, 255);
+        --red: rgb(255, 35, 149);;}
+     
+/* ===========================----BACKGROUND TEXURES----=============================== */
+
+
+:root{
+    --bg1: 10, 0, 23;
+    --bg2: 14, 0, 58;
+    --bg3: 4, 0, 10;}
+
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+/*now playing background*/
+._background_42cea4e,.now-playing-background-container{
+  animation: blink 10s infinite, blink2 12s infinite ,blink1 17s infinite, blink12 15s infinite;
+  background-image: 
+  radial-gradient(ellipse at top left, rgb(var(--bg3),0.2), rgb(var(--bg2),0.45),rgba(0, 128, 0, 0) 80%),
+    radial-gradient(circle at 10% 20%, hsla(56, 100%, 90%, var(--star1)) .7px, transparent 0),
+    radial-gradient(circle at 35% 45%, hsla(56, 100%, 90%, var(--star2)) .6px, transparent 0),
+     radial-gradient(circle at 35% 45%, hsla(56, 100%, 90%, var(--star1)) .6px, transparent 0),
+    radial-gradient(circle at 70% 10%, hsla(56, 100%, 90%, var(--star3)) .9px, transparent 0),
+    radial-gradient(circle at 85% 80%, hsla(56, 100%, 90%, var(--star4)) .8px, transparent 0),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),
+radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--bg3),0.25) 95%, rgb(var(--bg1),0.25) 5%),rgba(12, 12, 12, 0) 70%),
+radial-gradient(circle at bottom right,rgb(var(--bg3),.2),transparent 53%),
+radial-gradient(circle at bottom left,rgb(var(--bg3),.2),transparent 53%),
+radial-gradient(ellipse at top left, rgb(var(--bg2),.7), rgb(var(--bg2),0.4),rgba(0, 128, 0, 0) 90%),
+linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
+!important;
+  background-size:100% 100%, 450px 240px, 350px 350px, 380px 600px,560px 400px, 410px 320px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%!important;
+ }
+
+/*main bg (gradients stack from bottom to top)*/
+._mainContainer_6519c30{
+  animation: blink 10s infinite, blink2 12s infinite ,blink1 17s infinite, blink12 15s infinite;
+  background-image: 
+  radial-gradient(ellipse at top left, rgb(var(--bg3),0.2), rgb(var(--bg2),0.3),rgba(0, 128, 0, 0) 90%),
+    linear-gradient(180deg, rgb(9, 0, 18),  rgba(0, 0, 0, 0.347))
+}
+._fullscreen_236d61b{
+background-color: rgb(var(--cover-Vib1));}
+._main_a5d9f44{ background-color: #ff000000!important;
+background: none!important;}
+
+/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1.5) brightness(.8); transition: 0ms;}}
+
+/* ==========================================.............................................
+   END OF BUILTINTHEME
+-----------------------------------------------======================================== */
 
 
 
@@ -81,143 +212,7 @@ font-weight: 300!important;}}
 
 [class="_card_2b91b88"]{._label_1d16h_1._label_1d16h_1 { font-size: 15.5px!important;}}
 
-/* ==========================================.............................................
-    BUILTINTHEME
------------------------------------------------======================================== */
-/* ===========================----COLOR VARIABLES----================================== */
-[class="_albumContainer_65fa10b"]{
-[data-wave-color=textSecondary]{color: rgb(var(--maintxt2))!important}}
 
-    :root{
-        --cover-Vib1:      137, 180, 250  ; /* first vibrant color*/
-        --cover-DVib1:     17, 17, 27  ; /* darker version of first vibrant color*/
-        --cover-LVib1:     180,190,254 ; /* lighter version of first vibrant color*/
-
-        --lyrtxt:  246, 219, 214 ; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
-        --maintxt:  205, 214, 244 ; /*feed/card text*/
-        --maintxt2:  186,194,222 ; /*feed/card text*/
-        --maintxt3:  205, 214, 244  ; /*feed section-header text*/
-        --maintxt4:  217, 223, 242 ; /*footer text color*/
-        --txthvr:  245,224,220 ; /*feed/card text*/
-
-        --cover-Vib2:      235, 160, 172 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
-        --cover-DVib2:     17, 17, 27    ; /* darker version of second vibrant color*/
-        --cover-LVib2:     180, 190, 254  ; /* lighter version of second vibrant color*/
-
-        --card:      30, 30, 46 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
-        --card2:     49,50,68 ; /* slightly lighter and/or more saturated version of base card color*/
-        --cardacc: 180, 190, 254; /* very pale version of card color mainly for hover effects*/
-        --cardacc2: 137, 180, 250; /*light version of card color mainly for selected sidebar icon*/
-        --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
-
-        --cover-Mut1:      0,0,255 ; /* cardhover art tint*/
-        --cover-DMut1:     49, 50, 68      ; /* darker version of muted color*/
-        --cover-LMut1:     127,132,156 ; /* light version of muted color*/
-
-        --cover-F00T:      49, 50, 68 ; /*footer color (not now-playing)*/
-        --cover-F00TBAR1: 245,194,231  ; /*footer progress bar color (not now-playing)*/
-        --cover-F00TBAR1BG: 108, 112, 134, .7;
-        --cover-F00TD:     49, 50, 68    ; /*should be a darker version of F00T color*/
-        --footcard: rgba(75, 78, 98, 0.7);
-
-        --F00TNP: 49, 50, 68 ; /*footer color and lyrics container gb now-playing*/
-        --F00TBARNP: 180,190,254  ; /*footer progress bar color (now-playing)*/
-        --F00TBARNPBG:  88, 91, 112, 1  ; /*footer progress bar bg color (now-playing)*/
-        --footcard2: rgb(49,50,68,.8);
-        --npbrdrclr: rgba(24, 24, 37, 1); /*now playing lyrics container border color*/
-
-        --shadowmult: 0;
-        --glowmult: 1;
-
-        --NPBG: rgba(24, 24, 37, 1);
-
-        /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(217, 223, 242);
-
-        --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
-
-        --cover-S1D3B4R:     rgb(49,50,68,.5); /*controls sidebar background-color*/
-        --sbacc:     rgb(49,50,68); /*controls sidebar nav-item/folder bg*/
-
-        --sephue: 206deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
-
-        --plylstsat: 1; /*controls backdrop-filter for most inner containers, such as the album or playlist tracklist*/
-        --plylstbrt: 1;
-        --plylstbrdr: rgba(49,50,68); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
-
-        --feedsat: 1; /*controls backdrop-filter for home feed inner container*/
-        --feedbrt: 1;
-        --feedbrdr: rgba(49,50,68);/*controls border-color for home feed inner container*/
-
-        /*selected track colors*/
-        --tracksel1: rgb(242,205,205); /*selected track animated gradient color 1*/
-        --tracksel2: rgb(245,194,231); /*selected track animated gradient color 2*/
-        --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
-        --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
-        --tracksborder : rgb(49, 50, 68); /*tracklist divider line color, should be fully opaque*/
-        /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
-        --v1: rgb(137, 180, 250); /*should vaguely match --cover-Vib1*/
-        --v2: rgb(200, 159, 249); /*should vaguely match --cover-Vib2*/
-        --vTXT: rgb(17, 17, 27); /*should vaguely match --cover-Vib2*/
-        /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
-        --but1: rgb(250, 159, 103);
-        --but2: rgb(82, 186, 234);
-        
-        --ylw: rgb(246, 231, 201);
-        --blu: rgb(175, 212, 231);
-        --red: rgb(243, 139, 168);}
-     
-/* ===========================----BACKGROUND TEXURES----=============================== */
-
-
-:root{
-    --bg1:  17, 17, 27;
-    --bg2:  17, 17, 27;
-    --bg3:  17, 17, 27;
-    --tt: hsl(263, 29%, 61%);
-    --gr: hsl(319, 100%, 62%);}
-
-/*playlist view background image remover*/
-div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
-/*now playing background*/
-._background_42cea4e,.now-playing-background-container{
-  animation: blink 10s infinite, blink2 12s infinite ,blink1 17s infinite, blink12 15s infinite;
-  background-image: 
-  radial-gradient(ellipse at top left, rgb(var(--bg3),0.0), rgb(var(--bg2),0.0),rgba(0, 0, 0, 0) 80%),
-    radial-gradient(circle at 10% 20%, hsla(41, 86%, 83%, var(--star1)) .95px, transparent 0),
-    radial-gradient(circle at 35% 45%, hsla(115, 54%, 76%, var(--star2)) .85px, transparent 0),
-     radial-gradient(circle at 35% 45%, hsla(23, 92%, 75%, var(--star1)) .9px, transparent 0),
-    radial-gradient(circle at 70% 10%, hsla(267, 84%, 81%, var(--star3)) 1.1px, transparent 0),
-    radial-gradient(circle at 85% 80%, hsla(0, 59%, 88%, var(--star4)) 1px, transparent 0),
-linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
-!important;
-  background-size:100% 100%, 450px 240px, 350px 350px, 380px 600px,560px 400px, 410px 320px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%!important;
- }
-
-/*main bg (gradients stack from bottom to top)*/
-._mainContainer_6519c30{
-  
-  background-image: 
-linear-gradient(180deg, rgb(var(--cover-DVib1)),rgb(var(--cover-DVib1)) )
-}
-._fullscreen_236d61b{
-background-color: rgb(var(--cover-Vib1));}
-._main_a5d9f44{ background-color: #ff000000!important;
-background: none!important;}
-
-/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.5) brightness(.8); transition: 0ms;}}
-
-[class="_header_2fcc3e4"]{
-._toggleButton_934359e._toggleButtonActive_b595428:hover,[data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
- svg > path:nth-child(1){fill: rgb(245, 194, 231)!important;transition: 400ms!important;transition-delay: -25ms; }
-  svg > path:nth-child(2){fill: rgb(249, 226, 175)!important;transition: 300ms!important; transition-delay: 25ms;}
-   svg > path:nth-child(3){fill: rgb(137, 226, 213)!important;transition: 210ms!important;transition-delay: 65ms;}}}
-
-
-/* ==========================================.............................................
-   END OF BUILTINTHEME
------------------------------------------------======================================== */
 
 /* { * *
  "name": "cotton candy nights",
@@ -265,12 +260,7 @@ background: none!important;}
 /* =========================================================
    WINDOWS TYPE SHIT
    ========================================================= */
-   [data-test="playlist-page"]{
-    transform: translateY(-.5em);
-   }
-   [data-test-page-name="album"]{
-     transform: translateY(-.5em);
-   }
+
 /* =========================================================
    footer patch
    ========================================================= */
@@ -306,7 +296,7 @@ border-width: 0px!important;}
   ---------------------------------------------------------------- ========================================================= */
 :root{--wave-color-solid-base-brighter: #0000!Important;}
 /*HEADER REMOVAL SYSTEM*/
-#main{min-height: 100vh;margin-top: 0px !important;}
+#main{min-height: 100vh;margin-top: -10px !important;}
 [class*="MuiContainer"]{margin-top: 70px;padding-bottom: calc(var(--miniPlayerHeight) - 70px);}
 /*no scrollbar */
 * {scrollbar-width: none !important;}.os-scrollbar {display: none;}
@@ -318,14 +308,14 @@ transform: translateX(.5em)!important;transition: 0!important;}}
    /*ARTIST PAGE*/
 ._background_a548b6d {max-width: 97%!important;}
 ._background_a548b6d{
-    transform: translateY(2.5em);
+    transform: translateY(3.25em);
     height: 31em!important;}
 [data-test="artist-profile"]{[class="_dataContainer_108ce86"],[class="_actionContainer_7bd364b"]
 {transform: translateY(-4.8em);}}
 [class="_bar_5b9ac59 _smallText_a636ed6"]{ background: none !important;}
-._moduleContainer_c7ad3d9{transform: translateY(-2em)!important;}
+._moduleContainer_c7ad3d9{transform: translateY(-4em)!important;}
    /*HOME FEED*/
-._feed_412931c{transform: translateY(-3.6em);}
+._feed_412931c{transform: translateY(-2.95em);}
 /*now-playing fullscreen adjustments*/
 [class="_wrapper_512d5f4"]{
     height: calc(100% - (var(--miniPlayerHeight)*0.6 ))!Important;margin-top: 0.65em;}
@@ -507,10 +497,10 @@ span{ color: rgb(var(--maintxt));}
 ._item_235a32d{margin-bottom: -.2em!important;
     a,._marketText_1lyag_1, ._link_6a45a19._item_39605ae {color: rgb(var(--cover-DVib1))!important;}
 	._marketText_1lyag_1,._link_6a45a19._item_39605ae{font-weight: 500; color: color-mix(in srgb, var(--zz) 22%, #ffffff 78%);}
-    border-radius: .8em;border-color: color-mix(in srgb, rgb(var(--cover-LVib2),.3) 88%, rgba(255, 255, 255, .7) 12%) ;border-width: 1.8px;border-style: solid;max-width: 97%;margin: auto;
-     background: linear-gradient(120deg,
- color-mix(in srgb, rgb(var(--cover-LVib2),.45) 66%, rgba(255, 255, 255, 0.4) 34%),
- color-mix(in srgb, rgb(var(--cover-LVib2),.5) 70%, rgba(255, 255, 255, 0.4)30%));
+    border-radius: .8em; border-color: color-mix(in srgb, rgb(var(--cover-Vib1),.2) 50%, rgba(255, 255, 255, 0) 50%);border-width: 1.8px;border-style: solid;max-width: 97%;margin: auto;
+       background: linear-gradient(180deg,
+ color-mix(in srgb, rgb(var(--cover-LVib1),.4) 66%, rgba(255, 255, 255, 0.4) 34%),
+ color-mix(in srgb, rgb(var(--cover-LVib1),.5) 70%, rgba(255, 255, 255, 0.5) 30%));
     padding: .5em;padding-right: 0em;padding-left: .8em;padding-top: .5em;padding-bottom: .5em;
     box-shadow: 0px 0px .5em rgba(0, 0, 0, 0.09);
     ._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1))!important}
@@ -523,17 +513,17 @@ span{ color: rgb(var(--maintxt));}
     fill: rgb(var(--maintxt  ))!important;}
 a,._marketText_1lyag_1, ._link_6a45a19._item_39605ae { color: color-mix(in srgb,rgb(var(--cover-LVib2),1) 80%, rgba(255, 255, 255, 1) 20%) !important;}
 ._paygatedBadge_357e24b{filter: none; transition: 00ms;}
-border-color: color-mix(in srgb,rgb(var(--cover-LVib2),1) 80%, rgba(255, 255, 255, 1) 20%) ;
+border-color:color-mix(in srgb,rgb(var(--cover-Vib1),.5) 50%, rgba(255, 255, 255, 0.75) 50%);
 ._marketIcon_1664p_1._singleColor_1664p_6 *{fill:  color-mix(in srgb,rgb(var(--cover-LVib2),1) 70%, rgba(255, 255, 255, 1) 30%)  !important;}
 ._icon_77f3f89 {fill: color-mix(in srgb,rgb(var(--cover-LVib2),1) 80%, rgba(255, 255, 255, 1) 20%)  !important;}
      background: linear-gradient(180deg,
         #ffffff17,#ffffff17,
         #ffffff17,#ffffff17,
-        rgb(var(--cover-Vib1),.0), rgb(var(--cover-Vib1),.0),
-          rgb(var(--cover-LVib2),.0), rgb(var(--cover-LVib2),.05),
-        rgb(var(--cover-LVib2),.07), rgb(var(--cover-LVib2),.11),
-        rgb(var(--cover-LVib2),.175));
-    background-size: 450% 400%;
+        rgb(var(--cover-Vib1),.1), rgb(var(--cover-Vib1),.1),
+          rgb(var(--cover-Vib1),.1), rgb(var(--cover-Vib1),.07),
+        rgb(var(--cover-LVib2),.1), rgb(var(--cover-Vib1),.11),
+        rgb(var(--cover-Vib1),.175));
+    background-size: 850% 600%;
     animation: buttongradient2 100s cubic-bezier(.24,.48,.67,.56) ;
     animation-iteration-count: 1;
     border-radius: .75em!important;
@@ -900,11 +890,11 @@ div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-Vib1))
 
 #main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorError.MuiIconButton-sizeMedium.css-1pkggo8 > svg > path{
 fill: var(--red)!Important}
-[title="Reload plugin"],[aria-label="Reload store"],[aria-label="Reload theme"]{
-#main > div > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div > div > div > button > svg > path{
-fill: rgb(var(--cover-Vib2))!important; }
-}
-
+[title="Reload store"],[aria-label="Reload theme"]{
+ svg > path{fill: rgb(var(--cover-Vib2))!important; }}
+.css-1m2j012,.css-1v59atl{
+[aria-label="Reload plugin"]{svg > path{
+fill: rgb(var(--cover-Vib2))!important; }}}
 
 /*inactive tab text*/
 .css-71pw0n{
@@ -942,12 +932,18 @@ var(--tracksel2)  )!important;
 animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
 .css-1y0ghtc + .MuiSwitch-track{background-color: rgba(var(--maintxt))!Important;}
 /*buttons*/
-.css-18zd8ak.Mui-disabled{color: rgb(var(--maintxt),.5)!important;}
-[class="MuiStack-root css-1mzerio"]{
-.css-q7mezt{fill: var(--red)!important;}
-[title="Reload plugin"],[aria-label="Reload store"],[aria-label="Reload theme"]{
-.css-1ijz06h{fill:rgb(var(--cover-Vib2))!important;}}}
+[aria-label="Uninstall plugin"]{svg{fill: var(--red)}}
 
+.css-1m8qs7l.Mui-disabled{color: rgb(var(--maintxt  ),.5)}
+.css-18zd8ak.Mui-disabled{color: rgb(var(--maintxt),.5)!important;}
+
+[class="MuiStack-root css-1mzerio"]{
+[aria-label="Reload store"],[aria-label="Reload theme"]{
+.css-1ijz06h{fill:rgb(var(--cover-Vib2))!important;}}}
+.css-1m2j012,.css-1v59atl{.css-q7mezt{fill: var(--red)!important;}
+[title="Reload plugin"]{.css-1ijz06h{fill:rgb(var(--cover-Vib2))!important;}}
+[aria-label="Show settings"],[aria-label="Hide settings"]{svg{fill: rgb(var(--maintxt))!important}}
+}
 
 [aria-label="Disable live reloading"]{
     .css-q7mezt{fill:rgb(166, 227, 161)  !Important;}}
@@ -959,10 +955,20 @@ animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
 
 .css-ng6zqd{background-color: var(--red); color: black;}
 
-
-
 #main > div:nth-child(4) > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div:nth-child(1) > div > div.MuiStack-root.css-12qsudj > div:nth-child(1) > div > div > span{
-    color:  var(--blu)!important;}
+color:  var(--blu)!important;}
+
+.css-1k07t90{background-color: var(--red);}
+.css-vqjpfq{ box-shadow: color-mix(in srgb, var(--red) 80%, #0000 20%) 0px 0px 10px;}
+
+/*Lunar stuff cont. (disabled plugin icon colors)*/
+.css-1lpn1cw.Mui-disabled{
+color: rgb(var(--maintxt),.5)!important;
+svg{fill: rgb(var(--maintxt),.5)!important}
+svg > path {fill: rgb(var(--maintxt),.5)!important;}
+.css-q7mezt {fill: var(--red) !important;}}
+#main > div:nth-child(4) > div > div.MuiContainer-root.MuiContainer-maxWidthLg.css-sot3eg > div > div:nth-child(4) > div > div > button.MuiButtonBase-root.Mui-disabled.MuiIconButton-root.Mui-disabled.MuiIconButton-colorError.MuiIconButton-sizeMedium.css-1pkggo8 > svg > path{
+        fill: rgb(var(--maintxt),.5) !important;}
 
 /*background*/
 [class="MuiContainer-root MuiContainer-maxWidthLg css-sot3eg"]{
@@ -972,6 +978,7 @@ animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
     min-width: 102%;margin-top: 1em;padding: 2.3em;padding-top: 2.3em;border-radius: 1em;}
 /*active plugin bg*/
 .css-1m2j012,.css-1v59atl{
+    outline: solid 2px var(--plylstbrdr);
     background-color: rgb(var(--cover-DVib1))!Important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px -1px, rgba(0, 0, 0, 0.1) 0px 5px 8px 0px, rgba(0, 0, 0, 0.1) 0px 1px 14px 0px!Important;}
 /*inactive plugin bg*/
@@ -1022,7 +1029,7 @@ color: #000000;}
 [class="_dataContainer_5bb6028"],[class="_dataContainer_66f4f40"]{
 [data-wave-color=textDefault]{color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 50%, #ffffff 50%);}
 [data-wave-color=textSecondary],._artistCreatorText_b699bdf,:is(._dataContainer_66f4f40 ._details_e94875f) .artist-link 
-{font-weight: 700!important;color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 50%, #ffffff90 50%)!important;}}
+{font-weight: 700!important;color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 50%, #ffffff 50%)!important;}}
 /*ICON COLOR AND LABEL TEXT COLOR*/  
 [class="_smallButtons_5c1ea50"],[class="_smallButtons_bdfda3f"],[class="_smallHeader_383424b _showHeader_6ef2102"],[class="_smallButtons_e09964e"]{
 ._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 50%, #ffffff90 50%)!important;}
@@ -1574,6 +1581,10 @@ tr._rowContainer_ebb4cfc:hover{background-color: rgb(21, 12, 54);}
 #sidebar > div._listSection_26d6dae > div > div > div:nth-child(1) > div._sectionHeader_ca54638._collapsed_5552459 > div > button._actionButton_cc5dee6 > svg > use{
     fill: rgb(var(--sbacc));
 }
+
+#sidebar > div._listSection_26d6dae > div > div > div:nth-child(1) > div._sectionHeader_ca54638._collapsed_5552459 > div > button._actionButton_cc5dee6 > svg > use{
+    fill: rgb(var(--maintxt))
+}
 /*notification dot*/
 ._badgeCounter_bd84d2f{background-color: rgba(255, 255, 255, 0.67);}
 /*sidebar bg, shadow, outline then slight leftward shift*/
@@ -1774,11 +1785,15 @@ span:hover, a:hover{color: rgb(var(--txthvr))!important; text-shadow: 0px 0px .1
 /*buttons*/
 ._contextMenuButton_9741d3a,._blockButton_6cdd552{color:  rgb(var(--maintxt4));}
 ._button_c372e89 svg{fill:  rgb(var(--maintxt4));}
+
 /*buttons hover*/
 ._contextMenuButton_9741d3a:hover{ color: rgb(var(--txthvr));
 filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 1));}
 ._button_c372e89:hover svg{fill: rgb(var(--txthvr));
-filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
+filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}
+[class="_blockButton_6cdd552"]:hover{
+    svg{fill:   rgb(var(--txthvr));}}}
+
 /*right side utility buttons*/
 ._utilityButtons_4d7aaf9{transform: scale(1.04);}
 ._utilityButtons_4d7aaf9 button{ color:  rgb(var(--maintxt4));}
@@ -1853,7 +1868,7 @@ inset 0px 0px 5em color-mix(in srgb, rgba(255, 255, 255, calc(.1 * var(--shadowm
     border-style: solid;transition: 30ms;transition-timing-function: cubic-bezier(.11,.53,.55,1);
    background-color: var(--footcard2) ;
    box-shadow: inset 0px 0px 1.5em color-mix(in srgb, rgb(var(--cover-DVib1), calc(.14 * var(--shadowmult))) 60% , rgba(0, 0, 0, calc(.14 * var(--shadowmult))) 40%);
-   border-color: var(--footcard2);
+   border-color: color-mix(in srgb, rgb(var(--cover-DVib1), calc(.075 * var(--shadowmult))) 60% , rgba(0, 0, 0, calc(.1 * var(--shadowmult))) 40%) ;
     padding: .28em;padding-left: .34em;border-radius: .67em;}
 /*volume container*/
 ._nativeRangeContainer_635e8f6{
@@ -1928,9 +1943,11 @@ span:hover, a:hover{color: rgb(var(--txthvr)) !important; text-shadow: 0px 0px .
 ._button_c372e89 svg{fill:  rgb(var(--maintxt4));}
 /*buttons hover*/
 ._contextMenuButton_9741d3a:hover{ color: rgb(var(--txthvr));
-filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 1));}
+filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, .2));}
 ._button_c372e89:hover svg{fill: rgb(var(--txthvr));
-filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.4));}}
+filter: drop-shadow(0px 0px .3em rgba(183, 178, 255, 0.2));}
+[class="_blockButton_6cdd552"]:hover{
+    svg{fill:   rgb(var(--txthvr));}}}
 /*right side utility buttons*/
 ._utilityButtons_4d7aaf9{transform: scale(1.04);}
 ._utilityButtons_4d7aaf9 button{ color:  rgb(var(--maintxt4));}
@@ -2352,7 +2369,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
     color-mix(in srgb, rgb(var(--cover-LVib1), 1) 60% , rgb(var(--cover-Vib1), 1)  40%) , 
     color-mix(in srgb, rgb(var(--cover-LVib2), 1) 50% , rgb(var(--cover-Vib2), 1)  50%)       );
     animation: rotate-gradient 5s cubic-bezier(.33,.48,.63,.47) infinite;
-    border-color: color-mix(in srgb, rgb(var(--cover-LVib2), 1) 55% , rgb(var(--cover-Vib2), 1)  45%)  ;
+    border-color: rgb(var(--cover-DVib1));
 ._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1{color: color-mix(in srgb, rgb(var(--card)) 80%, black 20%);}
 ._subtitle_8f7e568._text20_1lyag_291._paragraph20_1lyag_138._marketText_1lyag_1,._link_6a45a19._item_39605ae{color: color-mix(in srgb, rgb(var(--card)) 80%, black 20%);}
 ._artistText_a1c7611,._item_39605ae{color: color-mix(in srgb, rgb(var(--card)) 80%, black 20%);}
