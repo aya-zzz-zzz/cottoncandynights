@@ -933,6 +933,9 @@ animation: rotate-gradient 3s cubic-bezier(.33,.48,.63,.47) infinite!important;}
 .css-1y0ghtc + .MuiSwitch-track{background-color: rgba(var(--maintxt))!Important;}
 /*buttons*/
 [aria-label="Uninstall plugin"]{svg{fill: var(--red)}}
+[aria-label="Remove store"]{
+.css-q7mezt{fill: var(--red)}}
+
 
 .css-1m8qs7l.Mui-disabled{color: rgb(var(--maintxt  ),.5)}
 .css-18zd8ak.Mui-disabled{color: rgb(var(--maintxt),.5)!important;}
@@ -978,11 +981,12 @@ svg > path {fill: rgb(var(--maintxt),.5)!important;}
     min-width: 102%;margin-top: 1em;padding: 2.3em;padding-top: 2.3em;border-radius: 1em;}
 /*active plugin bg*/
 .css-1m2j012,.css-1v59atl{
-    outline: solid 2px var(--plylstbrdr);
+  
     background-color: rgb(var(--cover-DVib1))!Important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px -1px, rgba(0, 0, 0, 0.1) 0px 5px 8px 0px, rgba(0, 0, 0, 0.1) 0px 1px 14px 0px!Important;}
 /*inactive plugin bg*/
 .css-1m2uggs,.css-1l78aht{
+    
     background-color: rgb(var(--card)) !Important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.2) 0px 5px 8px 0px, rgba(0, 0, 0, 0.2) 0px 1px 14px 0px!Important;}
 /*active plugin sub-bg*/
