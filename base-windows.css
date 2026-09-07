@@ -840,8 +840,8 @@ button._button_c25ce4d._addToPlaylistButton_066d0f8 > svg > use{color: var(--vv)
   -----------------------------------------------======================================== */
 
 /*TEXT*/
-[class="_actionContainer_9da0cc3"],[class="_actionContainer_5bb1c14"],
-[class="_actionContainer_5552083"],[class="_actionContainer_7bd364b"]{
+[data-test="header-controls-wrapper"],[data-test="header-controls"]
+{
 ._label_1d16h_1._label_1d16h_1{
     color: rgb(0, 0, 0);
     font-weight: 700;transform: translate(0%, -1%);}
