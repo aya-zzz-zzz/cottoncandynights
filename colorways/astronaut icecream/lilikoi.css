@@ -15,15 +15,17 @@
         --maintxt2:  241, 232, 255 ; /*feed/card text*/
         --maintxt3:   255, 250, 236 ; /*feed section-header text*/
         --maintxt4:   255, 250, 236 ; /*feed/card text*/
+        --txthvr:  250, 204, 255 ; /*feed/card text*/
 
         --cover-Vib2:      178, 134, 255 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
         --cover-DVib2:     9, 0, 22    ; /* darker version of second vibrant color*/
         --cover-LVib2:     255, 250, 224  ; /* lighter version of second vibrant color*/
 
-        --card:     15, 0, 56 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
+        --card:     12, 0, 46 ; /* color of cards and some buttons, should match background color but contrast just enough to be visible*/
         --card2:     24, 7, 72 ; /* slightly lighter and/or more saturated version of base card color*/
         --cardacc: 255, 245, 198; /* very pale version of card color mainly for hover effects*/
         --cardacc2: 214, 178, 255; /*light version of card color mainly for selected sidebar icon*/
+                --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
 
         --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this was a covertheme compatible theme)*/
         --cover-DMut1:     16, 0, 32      ; /* darker version of muted color*/
@@ -33,7 +35,7 @@
         --cover-F00TBAR1:  255, 242, 201    ; /*footer progress bar color (not now-playing)*/
         --cover-F00TBAR1BG: 207, 186, 255, .3;
         --cover-F00TD:     74, 66, 58    ; /*should be a darker version of F00T color*/
-        --footcard: rgba(237, 227, 255, 0.091);
+        --footcard: rgba(78, 60, 161, 0.192);
 
         --F00TNP: 23, 5, 64; /*footer color and lyrics container gb now-playing*/
         --F00TBARNP: 228, 178, 255  ; /*footer progress bar color (now-playing)*/
@@ -46,12 +48,13 @@
 
 
         --NPBG: rgba(22, 8, 58, 0.4);
-        --bhdff:    rgb(207, 186, 255, .3);
+        --bhdff:    rgb(250, 204, 255);
 
         --carddelay: -240ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
         --cover-S1D3B4R:     color-mix(in srgb, rgba(0, 0, 0, 0.6) 10% , rgb(var(--cover-F00T), 1) 90%); /*controls sidebar background-color*/
         --sbacc:     rgb(51, 36, 100); /*controls sidebar nav-item/folder bg*/
+        --ICON: rgb(235, 213, 255);
 
         --sephue: 223deg;   /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
@@ -75,7 +78,11 @@
         --vTXT: rgb(255, 255, 255); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
         --but1: rgb(167, 108, 255);
-        --but2: rgb(229, 133, 255);}
+        --but2: rgb(229, 133, 255);
+        
+        --ylw: rgb(255, 234, 195);
+        --blu: rgb(147, 210, 236);
+        --red: rgb(255, 35, 149);;}
      
 /* ===========================----BACKGROUND TEXURES----=============================== */
 
