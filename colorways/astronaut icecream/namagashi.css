@@ -1,4 +1,3 @@
-
 /* ==========================================.............................................
     BUILTINTHEME
 -----------------------------------------------======================================== */
@@ -12,8 +11,9 @@
         --lyrtxt: 220, 204, 155; /*lyrics text color, color is cut w/ white so make this color a good bit more saturated than the actual color you want*/
         --maintxt:   221,220,206 ; /*feed/card text*/
         --maintxt2:  221,220,206 ; /*feed/card text*/
-        --maintxt3:   0,255,0 ; /*feed section-header text*/
+        --maintxt3:   221,220,206 ; /*feed section-header text*/
         --maintxt4:   221,220,206 ; /*feed/card text*/
+        --txthvr:  220, 204, 155 ; /*feed/card text*/
 
         --cover-Vib2:      156, 171, 202 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
         --cover-DVib2:     0, 7, 67    ; /* darker version of second vibrant color*/
@@ -23,6 +23,7 @@
         --card2:     42, 42, 55 ; /* slightly lighter and/or more saturated version of base card color*/
         --cardacc: 227, 227, 255; /* very pale version of card color mainly for hover effects*/
         --cardacc2: 163, 212, 213; /*light version of card color mainly for selected sidebar icon*/
+        --cardborder: color-mix(in srgb, rgb(var(--card)) 65%, rgb(var(--card2))35% ) ; /*light version of card color mainly for selected sidebar icon*/
 
         --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this was a covertheme compatible theme)*/
         --cover-DMut1:     32, 32, 32      ; /* darker version of muted color*/
@@ -75,7 +76,12 @@
         --vTXT: rgb(17, 17, 27); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
         --but1: rgb(230, 195, 132);
-        --but2: rgb(127, 180, 202);}
+        --but2: rgb(127, 180, 202);
+        
+        --ylw: rgb(230, 195, 132);
+        --blu: rgb(127, 180, 202);
+        --red: rgb(255, 93, 98);
+        }
      
 /* ===========================----BACKGROUND TEXURES----=============================== */
 
@@ -118,3 +124,4 @@ background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
 [id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.5) brightness(.8); transition: 0ms;}}
+
