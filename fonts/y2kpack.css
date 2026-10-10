@@ -1,0 +1,295 @@
+
+
+
+/* ==========================================.............................................
+    Y2K FONT PACK
+-----------------------------------------------======================================== */
+
+    @font-face{
+    font-family: LTWave; /*accent/title - pretty stylized and pretty light,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/LTWave-Medium.otf') ;}
+
+    @font-face{
+    font-family: Audiowide; /*accent/title - pretty stylized and pretty light,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/Audiowide-Regular.ttf') ;}
+
+    @font-face{
+    font-family: ShareTechMono; /*accent/title - pretty stylized and pretty light,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/ShareTechMono-Regular.ttf') ;}
+
+    @font-face{
+    font-family: Disco; /*accent/title - pretty stylized and pretty light,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/disco___.ttf') ;}
+
+@font-face{
+    font-family: AudioNugget; /*accent/title - pretty stylized and pretty light,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/AudioNugget.ttf') ;}
+
+@font-face{
+    font-family: Kilby; /*accent/title - pretty stylized and pretty light,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/Kilby-Regular.otf') ;}
+
+@font-face{
+    font-family: CageRoll; /*accent/title - stylized, slight slant but mostly safe, very nice style,
+     a little short/wide which effects legibiliy*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/Cageroll-Standard.otf') ;
+}
+
+@font-face{
+    font-family: Blooop;  /*accent/title - stylized, blobby and big but generally safe*/
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/blooop.ttf') ;
+}
+
+@font-face{   /*accent/title - hyperstylized DDR-esque, slanted to the point that it can break borders*/
+    font-family: Excelorate;
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/Excelorate-Font.otf') ;
+}
+
+@font-face {
+  font-family: GoldenGirdle; /*accent/title - hyperstylized DDR-esque, similar style to Excelorate but no slant and BIGGER*/
+  src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/golden%20girdle.ttf');
+}
+
+@font-face{ /*backup - hyperlegible, mild style*/
+    font-family: AVFontimer-Regular;
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/AVFontimer-Regular.ttf') ;
+}
+
+@font-face{ /*default - balanced legibility and style*/
+    font-family: Hyperwave;
+    src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/Hyperwave%20Display.otf') ;
+}
+
+@font-face {
+  font-family: NUKLEAR; /* reverse-backup still pretty legible but with more style*/
+  src: url('https://github.com/aya-zzz-zzz/tidaluna_tweaks/raw/refs/heads/main/fontdatabase/NUKLEAR.ttf'); 
+}
+
+
+:root {
+--font-family: "LTWave","Excelorate" ;
+--font1:  "AVFontimer-Regular";
+--font2:  "Blooop";
+--font3:  "Kilby";
+--font4:  "CageRoll";
+--font5:  "NUKLEAR";
+--fontacc4: "AudioNugget";
+--fontacc: "Excelorate";
+--fontacc2: "CageRoll";
+--fontacc3: "GoldenGirdle";}
+
+[class*="searchField"],
+[class*="label"],
+[class*="wave-text"],
+[class*="subtitle"],
+[class*="Text"],
+[class*="info"],
+[class*="paragraphText"],
+[class*="readMoreButton"],
+[class*="underline"],
+[class*="body"],
+[class*="timeColumn"],
+button,
+[class*="title"],
+[class*="textarea"],
+[data-test="grid-item-detail-text-title-artist"],
+._marketTooltipContainer_1qti9_1,
+._indexNumber_de640b9,A .css-yc8597, .css-pfqxe1, .css-1id1h8n, .css-pfqxe1, .css-axw7ok, .css-16hze37, .css-phs6im,.css-htqc2z
+/*most text*/
+{font-family: var(--font-family) !important;
+font-weight: 200!important;}
+
+/*lyrics*/
+._hasCues_15d8b83 span,.rl-wbw-word{
+    font-size: calc(33px * var(--rl-font-scale, 1)) !important ;
+    font-family: var(--font4) !important;
+    font-weight: 500;}
+
+/*now-playing top buttons*/
+[class="_contentButtons_6b6c8ea"]{
+    ._label_1d16h_1._label_1d16h_1{
+        font-family: var(--fontacc) !important;
+        font-size: 12.5px;}}
+
+[data-test="header-controls-wrapper"], [data-test="header-controls"] {
+& ._marketButton_1d16h_1._medium_1d16h_4._secondary_1d16h_7{
+    ._label_1d16h_1._label_1d16h_1{transform: translateX(-.1em)!important;}
+    ._icon_77f3f89 {transform: scale(1.1) translateX(-.132em);}}}
+[data-test="header-controls-wrapper"], [data-test="header-controls"] {
+& ._marketButton_1d16h_1._medium_1d16h_4._primary_1d16h_6 {
+    ._label_1d16h_1._label_1d16h_1{transform: translateX(-.1em)!important;}
+    ._icon_77f3f89 {transform: scale(1.1) translateX(-.3em);}}}
+/*sync button text*/
+[data-test="lyrics-sync-button"]{
+    ._label_1d16h_1._label_1d16h_1{
+        font-size: 15px; font-family: var(--font4) !important;}}
+
+/*feed header text*/
+._headerContainer_5618a8d ._headerText_9398ec6,._marketText_1lyag_1._heading20_1lyag_75{
+       font-family: var(--fontacc2) !important;
+        font-size: 22px;}
+/*feed header smaller text (ie "because you listened to," "independent artists recommended...")*/
+a._contextCard_2b9fbea > div > div > div > span,
+div._header_d978124 > div > div._marketText_1lyag_1._paragraph20_1lyag_138._text20_1lyag_291{
+      font-family: var(--fontacc2) !important;
+        font-size: 20px!important;}
+
+/*main buttons*/
+._label_1d16h_1._label_1d16h_1{
+    font-family: var(--fontacc2) !important;
+    font-size: 17px;
+    transform: translateY(.03em)!important;}
+
+/*playlist view title*/
+[class="_headerContainer_5222193"]{
+    ._titleText_e186d6e{
+    line-height: .9!important; 
+    font-family: var(--fontacc2) !important;
+    font-size: 45px!important;
+    transform: translateY(-.3em);}}
+
+[data-test="playlist-page"]{[data-test="header-background"]{
+    ._title_c9bc1b1{
+    line-height: .9!important; 
+    font-family: var(--fontacc2) !important;
+    font-size: 43px!important;
+    transform: translateY(.2em);}}
+
+/*playlist view dude text*/
+[data-test="header-background"] {
+a,._creatorText_4b3d852 {font-family: var(--fontacc2) !important;
+    font-size: 20px!important; }}     
+[class="wave-text-description-demi _byline_7fe4e61 _details_a0cea14"]{
+    transform: translateY(-.3em);}
+/*playlist view description text*/
+._paragraphText_94232f7{
+    font-family: var(--font3) !important;
+    font-size: 14px!important; 
+    transform: translateY(-.1em);}
+/*playlist view info text*/
+._metaItem_1dfecf9._metaItem_1dfecf9{
+    font-family: var(--font3) !important;
+    font-size: 9.5px!important; }
+[class="_metaLine_fdcfb8f"]{
+transform: translateY(-.7em)!important;}}
+
+/*album view title*/
+._titleText_7494646{
+     line-height: 1!important; 
+     font-family: var(--fontacc2) !important;
+     font-size: 40px!important;
+     transform: translateY(-.25em)!Important;}
+/*album artist*/
+[class="_dataContainer_5bb6028"], [class="_dataContainer_66f4f40"] {
+& [data-wave-color="textSecondary"] {[class="artist-link _albumHeaderArtistLinks_4726853"]{
+    transform: translateY(-.0em);}
+._item_39605ae {font-family:var(--fontacc2) !important; font-size: 16px!important;}}}
+/*album info*/
+[class="_meta_32e4194"]{
+span._metaItem_ed501cd.wave-text-capital-demi{
+    font-family:var(--font3) !important; font-size: 8.25px!important; color: rgb(var(--maintxt)) !important; filter: saturate(1.1);}}
+.wave-badge-color-max,.wave-badge-color-high{
+     font-family:var(--font3) !important; 
+}
+
+/*album/playlist header button text*/
+._buttonTextOffset_a700b81{font-family:var(--font3) !important;font-size: 11px!important;}
+
+/*top card thingies text*/
+._shortcutItem_6c8e7b4 {
+
+._marketText_1lyag_1 {
+       font-size: 14px; }}
+
+._button_wl3o7_17{font-family: var(--font3)!important; font-size: 12.75px;}
+
+/*card title*/
+[class="_card_38c6c04"] {
+    ._titleText_9e9bb51._medium20_1lyag_192._marketText_1lyag_1 {
+      font-size: 15.5px!Important;
+      transform: translateY(.3em)!important;}
+._subtitle_8f7e568._text20_1lyag_291._paragraph20_1lyag_138._marketText_1lyag_1, ._link_6a45a19._item_39605ae, ._artistText_a1c7611 > ._link_6a45a19._item_39605ae{
+         font-size: 14.5px!Important;
+         transform: translateY(.77em)!important; }}
+/*horizontal card title*/
+._item_235a32d { a,h1, h2, h3, p, span 
+{font-size: 14.1px!Important;transform: translateY(.225em);}}
+
+/*tracklist text*/
+._tableRow_299a426{._titleText_51cccae, ._item_39605ae, ._albumText_ddf6a0e,time ,:is(._titleColumn_ac57455,._albumColumn_907bff3,._artistColumn_1e5bae0,._timeColumn_f70e963,._bpmColumn_586ca98,._keyColumn_0b612a0,._dateAddedColumn_87dfbd3) span
+{font-size: 14px!Important;transform: translateY(.075em);}}
+
+._indexNumber_de640b9{
+    display: inline-block; transform: translateY(-.101em);
+    font-family:var(--font3) !important; font-size: 10.5px; }
+
+/*tracklist top text*/
+._trackcells-sort_ecf19dd{font-family:var(--font2) !important;font-size: 10px!important;}
+span._indexColumn_3ac64ab > span > span{font-size: 13.3px!important;}
+
+[class="_tableHeader_ebaf366 _smallText_a636ed6"] { ._icon_77f3f89 { transform: translateY(-.3em);}}
+
+/*footer artist-stack*/
+._trackContent_7b758a9{gap: 1.25em!important}
+
+[class="_titleArtistStack_f04ea70"]{[data-test="footer-track-title"]{span 
+{font-family:var(--fontacc2) !important;font-size: 15.5px;}}
+[data-test="footer-track-title"]{
+transform: translateY(.095em) translateX(-.05em)!important;}
+
+._item_39605ae{ font-family:var(--fontacc2) !important; font-size: 12.5px;}
+[class="_artistRow_bd51a79"]{transform: translateY(-.02em)!important;}
+
+[class="_marketText_1lyag_1 _paragraph10_1lyag_156 _text20_1lyag_291 _playingFromText_ba18302"]{
+font-family:var(--font3) !important; font-size: 10.25px!important; transform: translateY(-.067em); }}
+
+#footerPlayer > div._playerContent_8ec26af > div._trackInfo_739e710 > div > div._titleArtistStack_f04ea70 {
+[href="#sidebar__albums"]{
+    transform: translateY(-.1em);}
+[href="#sidebar__playlists"]{
+    transform: translateY(.03em);}}
+     
+/*footer time text*/
+._scrubberTimeText_5696619{font-family:var(--font3) !important; font-size: 11px!important;}
+[class="_marketText_1lyag_1 _paragraph10_1lyag_156 _scrubberTime_f2b9e3c"]{
+transform: translateY(-.0em)!important;}
+
+/*quality badge text*/
+[class="_qualityBadgeContainer_b9ec6fa"]{
+    span{font-family:var(--font3); font-size: 3px!important; transform: scale(.81) translateX(1.6em) translateY(-.02em);}}
+
+/*artist page text*/
+[data-test="artist-profile"]{
+[class="_titleContainer_9fba00e"]
+{transform: translateY(-.2em);}
+._titleText_57f26b9
+{font-family:var(--fontacc)!important; font-size: 70px!important;}
+div > div._metaText_9f5231f > button > span{
+font-family:var(--font3)!Important;}
+._biography_3066ef2 p,._standalone_zmuq1_2._medium_zmuq1_4._marketLink_zmuq1_1 > ._underline_zmuq1_1,._marketLink_zmuq1_1 ._underline_zmuq1_1{
+    font-size: 14px;font-family: var(--font3)!important;}}
+div._wrapper_88ee7cb._header_b1aed07.content-header > div._headerContainer_d8ee9b4 > div._dataContainer_108ce86 > div > div > button > span{
+    font-family: var(--fontacc2)!important;}
+
+/*artist card button text*/
+[class="_card_2b91b88"]{[class="_actions_5edeed7"]{span
+{font-size: 15px;font-family: var(--fontacc2)!important}}}
+
+._smallHeader_f2c3791 ._titleText_7494646{
+    font-size: 38px!important;
+    transform: translatey(-.04em)!important;}
+
+/*search*/
+input[type=search]{
+    font-family: var(--font3)!important;
+    font-size: 11.5px;}
+[class="_container_5116191 _searchFieldWithPopover_267e090 _isLoggedIn_9399dce"]{
+    input[type=search]{transform: translateY(-.02em);}}
+
+ 
