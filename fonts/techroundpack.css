@@ -70,16 +70,16 @@
 
 
 :root {
---font-family: "LTWave","Excelorate" ;
---font1:  "AVFontimer-Regular";
---font2:  "Blooop";
---font3:  "Kilby";
---font4:  "CageRoll";
---font5:  "NUKLEAR";
---fontacc4: "AudioNugget";
---fontacc: "Excelorate";
---fontacc2: "CageRoll";
---fontacc3: "GoldenGirdle";}
+--font-family: "LTWave","Excelorate","Hyperwave" ;
+--font1:  "AVFontimer-Regular","Hyperwave";
+--font2:  "Blooop","Hyperwave";
+--font3:  "Kilby","Hyperwave";
+--font4:  "CageRoll","Hyperwave";
+--font5:  "NUKLEAR","Hyperwave";
+--fontacc4: "AudioNugget","Hyperwave";
+--fontacc: "Excelorate","Hyperwave";
+--fontacc2: "CageRoll","Hyperwave";
+--fontacc3: "GoldenGirdle","Hyperwave";}
 
 [class*="searchField"],
 [class*="label"],
@@ -286,6 +286,9 @@ font-family:var(--font3)!Important;}
     font-size: 14px;font-family: var(--font3)!important;}}
 div._wrapper_88ee7cb._header_b1aed07.content-header > div._headerContainer_d8ee9b4 > div._dataContainer_108ce86 > div > div > button > span{
     font-family: var(--fontacc2)!important;}
+
+
+
 
 /*artist card button text*/
 [class="_card_2b91b88"]{[class="_actions_5edeed7"]{span
