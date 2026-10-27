@@ -1,4 +1,3 @@
-
 /* { * *
  "name": "cotton candy nights",
  "author": "Aya, featuring some modified work by Interstellar_1 (from her Tidal Light(artist page banner) & Tidal-TUI(font-addon) themes) and Acercandr0 (from their Lunallena theme(original inspiration for the transparent titlebar))",
@@ -1935,21 +1934,27 @@ box-shadow: 0px 0px 1em #c08dff00;transition: 100ms; }}
 .sticky-lyrics-trigger{color: rgba(255, 255, 255, 0.901)!important;}
 /*active*/
 #nowPlaying > header > div._buttons_6ec911e > div._contentButtons_6b6c8ea > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._toggleButton_934359e._toggleButtonActive_b595428{
-      svg > path:nth-child(1){fill: rgb(0, 0, 0)!important;transition: 200ms!important;}
+      svg > path:nth-child(1),svg > path:nth-child(4){fill: rgb(0, 0, 0)!important;transition: 200ms!important;}
   svg > path:nth-child(2){fill: rgba(0, 0, 0, 0.85)!important;transition: 200ms!important;}
    svg > path:nth-child(3){fill: rgba(0, 0, 0, 0.9)!important;transition: 200ms!important;}}
 /*active hover*/
 [class="_marketButton_1l1bl_1 _primary_1l1bl_6 _small_1l1bl_3"]:hover,[data-test=toggle-lyrics][aria-pressed=true]:hover .sticky-lyrics-trigger{
-    svg > path:nth-child(1){fill: rgb(13, 0, 28)!important;transition: 100ms!important;}
+    svg > path:nth-child(1),svg > path:nth-child(4){fill: rgb(13, 0, 28)!important;transition: 100ms!important;}
     svg > path:nth-child(2){fill: rgb(19, 0, 9)!important;transition: 100ms!important;}
     svg > path:nth-child(3){fill: rgb(0, 9, 20)!important;transition: 100ms!important;}}
 /*inactive hover*/
 ._toggleButton_934359e._toggleButtonActive_b595428:hover,[data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
- svg > path:nth-child(1){fill: rgb(247, 135, 255)!important;transition: 400ms!important;transition-delay: -25ms; }
+ svg > path:nth-child(1),svg > path:nth-child(4){fill: rgb(247, 135, 255)!important;transition: 400ms!important;transition-delay: -25ms; }
   svg > path:nth-child(2){fill: rgb(255, 221, 0)!important;transition: 300ms!important; transition-delay: 25ms;}
    svg > path:nth-child(3){fill: rgb(92, 187, 255)!important;transition: 210ms!important;transition-delay: 65ms;}}
 
-
+body.rl-ai-lyrics [data-test=toggle-lyrics][aria-pressed=true] .rl-lyrics-menu-trigger {
+    --rl-ai-c1: #670231!important;
+    --rl-ai-c2: #5a3500!important;;
+    --rl-ai-c3: #016067!important;;
+    --rl-ai-c4: #18015b!important;;
+    --rl-ai-glow: 50%;}
+    
 /*scales down lyrics slightly to fit better in box*/
 [class="rl-wbw-active"]{padding-bottom: 66em!important;}
 /*cover-everywhere*/
