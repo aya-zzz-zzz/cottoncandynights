@@ -145,7 +145,7 @@ background: none!important;}
 
 [class="_header_2fcc3e4"]{
 ._toggleButton_934359e._toggleButtonActive_b595428:hover,[data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
- svg > path:nth-child(1){fill: rgb(159, 255, 127)!important;transition: 400ms!important;transition-delay: -25ms; }
+ svg > path:nth-child(1),svg > path:nth-child(4){fill: rgb(159, 255, 127)!important;transition: 400ms!important;transition-delay: -25ms; }
   svg > path:nth-child(2){fill: rgb(255, 142, 110)!important;transition: 300ms!important; transition-delay: 25ms;}
    svg > path:nth-child(3){fill: rgb(60, 255, 249)!important;transition: 210ms!important;transition-delay: 65ms;}}}
 /* ==========================================.............................................
