@@ -1,4 +1,3 @@
-
 /* ==========================================.............................................
     BUILTINTHEME
 -----------------------------------------------======================================== */
@@ -6,6 +5,7 @@
     :root{
  /*bhdf doesnt do nuthin it's just here to make color picking easier*/
         --bhdf:    rgb(255, 236, 212);
+        --ICON: rgb(255, 236, 205) ;
         
         --cover-Vib1:      236, 214, 185 ; /* first vibrant color*/
         --cover-DVib1:     7, 2, 29  ; /* darker version of first vibrant color*/
