@@ -6,6 +6,7 @@
 [data-wave-color=textSecondary]{color: rgb(var(--maintxt2))!important}}
 
     :root{
+        --ICON: rgb(180,190,254);
         --cover-Vib1:      137, 180, 250  ; /* first vibrant color*/
         --cover-DVib1:     17, 17, 27  ; /* darker version of first vibrant color*/
         --cover-LVib1:     180,190,254 ; /* lighter version of first vibrant color*/
