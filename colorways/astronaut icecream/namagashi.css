@@ -4,6 +4,8 @@
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
 
+--ICON: rgb(127, 180, 202);
+
         --cover-Vib1:      101, 133, 148  ; /* first vibrant color*/
         --cover-DVib1:     26, 26, 34  ; /* darker version of first vibrant color*/
         --cover-LVib1:     127, 180, 202 ; /* lighter version of first vibrant color*/
