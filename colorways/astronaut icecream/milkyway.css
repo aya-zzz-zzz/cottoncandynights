@@ -4,8 +4,9 @@
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
  /*bhdf doesnt do nuthin it's just here to make color picking easier*/
+
         --bhdf:    rgb(245, 169, 255);
-        
+        --ICON: white;
         --cover-Vib1:      200, 200, 200  ; /* first vibrant color*/
         --cover-DVib1:    0, 0, 0  ; /* darker version of first vibrant color*/
         --cover-LVib1:     255, 255, 255 ; /* lighter version of first vibrant color*/
