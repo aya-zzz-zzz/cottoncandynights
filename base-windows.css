@@ -300,7 +300,7 @@ filter: brightness(.25) blur(1em) sepia(1) hue-rotate(var(--sephue)) saturate(3)
     min-width: calc(100.2% - (var(--playQueueWidth) * .85));
     max-width: calc(100.2% - (var(--playQueueWidth) * .85)); 
       border-radius: 2em;
-    height: 33em!important;transform: translateY(1em) translate(-50%); top: -3em!important}
+    height: 33em!important;transform: translateY(1em) translate(-50%); top: -3.7em!important}
 
 
 /* ==========================================.............................................
