@@ -1,3 +1,6 @@
+
+
+
 /* ==========================================.............................................
    techno round FONT PACK
 -----------------------------------------------======================================== */
@@ -322,6 +325,10 @@ input[type=search]{
 /* ==========================================.............................................
     BUILTINTHEME
 -----------------------------------------------======================================== */
+.rl-bubbled .rl-wbw-line{
+    left: 1em!important;
+    margin-right: 1em!important;
+}
 .is-desktop-app{
     
 [data-test=main-layout-sidebar-wrapper]{
@@ -375,8 +382,9 @@ filter: saturate(1.25) brightness(1.1);}
     :root{
  /*bhdf doesnt do nuthin it's just here to make color picking easier*/
         --bhdf:    rgb(67, 123, 96);
-
-        --cover-Vibrant:      255, 96, 157 ; /* covertheme vibrant default*/
+         --cover-LightVibrant: 200,200,200;
+        --cover-LightMuted: 211,211,211;
+        --cover-Vibrant:      150, 150, 150 ; /* covertheme vibrant default*/
         
         --cover-Vib1:      200, 200, 200  ; /* first vibrant color*/
         --cover-DVib1:    0,0,0 ; /* darker version of first vibrant color*/
@@ -412,13 +420,13 @@ filter: saturate(1.25) brightness(1.1);}
         --footcard: rgba(255, 255, 255, 0.128);
 
         --F00TNP: 23, 5, 64; /*footer color and lyrics container gb now-playing*/
-        --F00TBARNP:var(--cover-Vibrant)   ; /*footer progress bar color (now-playing)*/
-        --F00TBARNPBG:230, 230, 230, .5 ; /*footer progress bar bg color (now-playing)*/
+        --F00TBARNP: var(--cover-LightMuted)   ; /*footer progress bar color (now-playing)*/
+        --F00TBARNPBG:230, 230, 230, .225 ; /*footer progress bar bg color (now-playing)*/
         --footcard2: rgba(255, 255, 255, 0.05);
         --npbrdrclr: rgba(21, 21, 23, 0.177); /*now playing lyrics container border color*/
 
         --NPBG: rgba(10.5, 10.5, 12, 0.5) ; transition: 22s!important;
-
+   
 [class*="_bar_"]{
     --cover-Vib1:  var(--cover-Vibrant)  ;
 ._button_8536ec0:hover{
@@ -439,18 +447,18 @@ filter: saturate(1.25) brightness(1.1);}
 
         --plylstsat: 1.3; /*controls backdrop-filter for most inner containers, such as the album or playlist tracklist*/
         --plylstbrt: .75;
-        --plylstbrdr: rgba(var(--cover-LightMuted),.5); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrdr: rgb(155,155,155,.5); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
 
         --feedsat: 1.2; /*controls backdrop-filter for home feed inner container*/
         --feedbrt: .8;
-        --feedbrdr: rgba(var(--cover-LightMuted),.3);/*controls border-color for home feed inner container*/
+        --feedbrdr: rgb(155,155,155,.4);/*controls border-color for home feed inner container*/
 
         /*selected track colors*/
         --tracksel1: color-mix(in srgb, rgb(var(--cover-LightVibrant) ) 80%, rgb(var(--cover-LightMuted)) 20% ) ; /*selected track animated gradient color 1*/
         --tracksel2: color-mix(in srgb, rgb(var(--cover-LightVibrant) ) 20%, rgb(var(--cover-LightMuted)) 80% )   ; /*selected track animated gradient color 2*/
         --trackselshad:  color-mix(in srgb, rgb(var(--cover-LightVibrant) ) 50%, rgb(var(--cover-LightMuted)) 50% ) ; /*selected track inset shadow color*/
         --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
-        --tracksborder : rgb(var(--cover-LightMuted)); /*tracklist divider line color, should be fully opaque*/
+        --tracksborder : rgb(155,155,155); /*tracklist divider line color, should be fully opaque*/
         /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
         --v1: rgb(var(--cover-Vibrant) ); /*should vaguely match --cover-Vib1*/
         --v2: rgb(var(--cover-Vibrant) ); /*should vaguely match --cover-Vib2*/
@@ -478,6 +486,7 @@ tr._rowContainer_ebb4cfc:hover, ._tableRow_299a426:hover{
 }
 
 
+
 :root{
     --bg1: var(--cover-DarkVibrant);
     --bg2: var(--cover-DarkVibrant);
@@ -490,6 +499,7 @@ tr._rowContainer_ebb4cfc:hover, ._tableRow_299a426:hover{
 div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
 /*now playing background*/
 ._background_42cea4e,.now-playing-background-container{
+  
   animation: blink0 10s infinite, blink02 12s infinite ,blink01 17s infinite, blink012 15s infinite;
   background-image: 
   radial-gradient(ellipse at top left,  rgba(var(--bg3),0.0), rgb(var(--bg2),0.0),rgba(0, 128, 0, 0) 80%),
@@ -509,6 +519,8 @@ background-size:100% 100%,222px 310px, 450px 240px, 350px 350px, 380px 600px,560
 
 /*main bg (gradients stack from bottom to top)*/
 ._mainContainer_6519c30{
+
+
 
   animation: blink0 10s infinite, blink02 12s infinite ,blink01 17s infinite, blink012 15s infinite;
   background-image: 
@@ -733,6 +745,7 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 /* =========================================================
   END OF LINUX TYPE SHIT
    ========================================================= */
+
    /* =========================================================
   new artist page
    ========================================================= */
@@ -2474,8 +2487,6 @@ background: none!important;}
 
 
 
-[data-test=now-playing-lyrics] div.rl-wbw-active:not(.rl-wbw-word){ margin-left: 0px!important;}
-
 div > div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > div > div > span:hover,div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > div > div> span.rl-wbw-word.rl-wbw-word-hover{
     color:  color-mix(in srgb, rgb(var(--lyrtxt), .875) 90% , #ffffff70 10%)  !Important;
     text-shadow: 0 0 var(--rl-glow-inner, calc(.875 * var(--glowmult))) rgb(var(--lyrtxt), .275), 0 0 var(--rl-glow-outer, 20px) rgb(var(--cover-Vibrant), .275) !important;}
@@ -3062,3 +3073,4 @@ button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1.
     width: calc(94vw - var(--sidebarWidth)*  .9 - (var(--playQueueWidth) * 1))!important;
     min-width: calc(94vw  - var(--sidebarWidth)* .9 - (var(--playQueueWidth) * 1))!important;
     max-width: calc(94vw  - var(--sidebarWidth)* .9 - (var(--playQueueWidth) * 1))!important;}}
+    
